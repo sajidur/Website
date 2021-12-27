@@ -6,11 +6,12 @@
     <nav
       class="navbar navbar-expand-lg navbar-light bg-white"
     >
-      <img
-        src="../../../../../assets/images/logo EUROPEAN CONSORTIUM.png"
-        style="width: 110px"
-        alt=""
-      />
+    <a href="">
+      <img style="width: 100px;"
+      src="assets/images/logo5_86.png"
+      alt=""
+    />
+    </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -27,10 +28,10 @@
         id="navbarNavAltMarkup"
       >
         <div class="navbar-nav">
-          <a class="nav-item nav-link" href="#">Resources</a>
-          <a class="nav-item nav-link" href="#">Services</a>
-          <a class="nav-item nav-link" href="#">About Us</a>
-          <a class="nav-item nav-link contact-text" href="#contact">Contact</a>
+          <a class="nav-item nav-link" (click)="gotToRedirect('resource-id')">Resources</a>
+          <a class="nav-item nav-link"(click)="gotToRedirect('service-id')">Services</a>
+          <a class="nav-item nav-link" (click)="gotToRedirect('about-id')">About Us</a>
+          <a class="nav-item nav-link contact-text" (click)="gotToRedirect('contact-id')">Contact</a>
         </div>
       </div>
     </nav>
@@ -59,7 +60,7 @@
     </div>
   </div>
 
-  <div id="about" class="about-area">
+  <div id="about-id" class="about-area">
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
@@ -90,9 +91,9 @@
     </div>
   </div>
 
-  <div id="business" class="business-area">
+  <div id="service-id" class="business-area">
     <div class="container">
-      <h1 class="business-header">Test Data</h1>
+      <h1 class="business-header">Service</h1>
 
       <div
         id="accordion1"
@@ -372,7 +373,7 @@
 
   <div class="img-area"></div>
 
-  <div id="contact" class="contact-area">
+  <div id="contact-id" class="contact-area">
     <div class="container">
       <div class="form-shadow">
         <div class="row">
@@ -409,7 +410,7 @@
           </div>
           <div class="col-sm-12">
             <textarea
-              placeholder="Embassy*"
+              placeholder="Address*"
               name=""
               id=""
               class="text-area-cls form-control"
@@ -435,7 +436,7 @@
     </div>
   </div>
 
-  <footer class="footer-area">
+  <footer class="footer-area" id="resource-id">
     <div class="footer-bg-img">
       <div class="container">
         <div class="footer-bg">
@@ -453,7 +454,7 @@
               <div class="d-flex mb-2 text-white">
                 <img
                   class="footer-icon"
-                  src="../../../../../assets/images/address-img.png"
+                  src="assets/images/address-img.png"
                   alt=""
                 />
                 &nbsp;&nbsp;
@@ -464,7 +465,7 @@
               <div class="d-flex mb-2 text-white">
                 <img
                   class="footer-icon"
-                  src="../../../../../assets/images/phone-icon.png"
+                  src="assets/images/phone-icon.png"
                   alt=""
                 />
                 &nbsp;&nbsp;
@@ -473,7 +474,7 @@
               <div class="d-flex mb-2 text-white">
                 <img
                   class="footer-icon"
-                  src="../../../../../assets/images/email-send-icon.png"
+                  src="assets/images/email-send-icon.png"
                   alt=""
                 />
                 &nbsp;&nbsp;

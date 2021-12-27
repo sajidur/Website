@@ -70,6 +70,21 @@ export class DoctorListComponent implements OnInit {
       .addClass("button-deselected");
     $($event.target.classList.add("button-selected"));
   }
-  
+
+  gotToRedirect(id:any) {
+    // $('html,body').animate(
+    //   {
+    //     scrollTop: $('#ContactUsLink').offset().top
+    //   },
+    //   'slow'
+    // );
+    let scrollHere: any;
+		scrollHere = document.getElementById(id);
+		let rect = scrollHere.getBoundingClientRect().top;
+		window.scrollTo({
+      top:rect,
+      behavior:'smooth'
+    })
+  }
 
 }

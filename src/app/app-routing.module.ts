@@ -5,7 +5,7 @@ import { ContentLayoutComponent } from './layout/content-layout/content-layout.c
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/home/doctor-list',
+    redirectTo: '/home',
     pathMatch: 'full'
   },
   {
@@ -20,12 +20,12 @@ const routes: Routes = [
     ]
   },
   // Fallback when no prior routes is matched
-  { path: '**', redirectTo: '/home/doctor-list', pathMatch: 'full' }
+  { path: '**', redirectTo: '/home', pathMatch: 'full' }
 ];
 
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{useHash: true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
