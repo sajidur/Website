@@ -7,8 +7,8 @@
       class="navbar navbar-expand-lg navbar-light bg-white"
     >
     <a href="">
-      <img style="width: 100px;"
-      src="assets/images/logo5_86.png"
+      <img style="width: 70%;"
+      src="assets/images/logo9.png"
       alt=""
     />
     </a>
@@ -28,7 +28,8 @@
         id="navbarNavAltMarkup"
       >
         <div class="navbar-nav">
-          <a class="nav-item nav-link" (click)="gotToRedirect('resource-id')">Resources</a>
+          <a class="nav-item nav-link" href="#">Home</a>
+          <a class="nav-item nav-link" (click)="gotToRedirect('gallery-id')">Gallery</a>
           <a class="nav-item nav-link"(click)="gotToRedirect('service-id')">Services</a>
           <a class="nav-item nav-link" (click)="gotToRedirect('about-id')">About Us</a>
           <a class="nav-item nav-link contact-text" (click)="gotToRedirect('contact-id')">Contact</a>
@@ -37,7 +38,118 @@
     </nav>
   </header>
 
-  <div class="banner-area">
+  <div class="container">
+    <div id="carouselExampleControls" class="carousel slide orange-bg" data-ride="carousel" >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="banner-area1" style="margin-top: 10px;">
+              <div class="banner-image-background">
+                <h1 class="banner-header">Banner &</h1>
+                <h1 class="banner-header">Lorem</h1>
+                <h1 class="banner-header">Area</h1>
+                <h1 class="banner-header">Ipsum</h1>
+                <p class="banner-large-p">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <button
+                  class="btn btn-info"
+                  style="
+                    padding: 12px 25px;
+                    background: #ffffff;
+                    color: #31708e;
+                    text-transform: uppercase;
+                  "
+                >
+                  Excepteur sint occaecat cupidatat non proident
+                </button>
+              </div>
+            </div>
+        </div>
+          <div class="carousel-item">
+            <div class="banner-area2" style="margin-top: 10px;">
+              <div class="banner-image-background">
+                <h1 class="banner-header">Banner &</h1>
+                <h1 class="banner-header">Lorem</h1>
+                <h1 class="banner-header">Area</h1>
+                <h1 class="banner-header">Ipsum</h1>
+                <p class="banner-large-p">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <button
+                  class="btn btn-info"
+                  style="
+                    padding: 12px 25px;
+                    background: #ffffff;
+                    color: #31708e;
+                    text-transform: uppercase;
+                  "
+                >
+                  Excepteur sint occaecat cupidatat non proident
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="banner-area3" style="margin-top: 10px;">
+              <div class="banner-image-background">
+                <h1 class="banner-header">Banner &</h1>
+                <h1 class="banner-header">Lorem</h1>
+                <h1 class="banner-header">Area</h1>
+                <h1 class="banner-header">Ipsum</h1>
+                <p class="banner-large-p">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <button
+                  class="btn btn-info"
+                  style="
+                    padding: 12px 25px;
+                    background: #ffffff;
+                    color: #31708e;
+                    text-transform: uppercase;
+                  "
+                >
+                  Excepteur sint occaecat cupidatat non proident
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="banner-area4" style="margin-top: 10px;">
+              <div class="banner-image-background">
+                <h1 class="banner-header">Banner &</h1>
+                <h1 class="banner-header">Lorem</h1>
+                <h1 class="banner-header">Area</h1>
+                <h1 class="banner-header">Ipsum</h1>
+                <p class="banner-large-p">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <button
+                  class="btn btn-info"
+                  style="
+                    padding: 12px 25px;
+                    background: #ffffff;
+                    color: #31708e;
+                    text-transform: uppercase;
+                  "
+                >
+                  Excepteur sint occaecat cupidatat non proident
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+  <!-- <div class="banner-area" style="margin-top: 10px;">
     <div class="banner-image-background">
       <h1 class="banner-header">Banner &</h1>
       <h1 class="banner-header">Lorem</h1>
@@ -58,13 +170,13 @@
         Excepteur sint occaecat cupidatat non proident
       </button>
     </div>
-  </div>
+  </div> -->
 
   <div id="about-id" class="about-area">
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
-          <div class="about-header">Sample test</div>
+          <div class="about-header">About Us</div>
           <p class="about-p">
             Porta nibh venenatis cras sed felis eget velit aliquet. Vehicula ipsum a arcu cursus. Sagittis id consectetur purus ut faucibus pulvinar elementum integer enim.
           </p>
@@ -371,7 +483,34 @@
     </div>
   </div>
 
-  <div class="img-area"></div>
+  <div id="gallery-id" class="img-area">
+    <div class="container">
+      <h1>
+        <!-- This is gallery area -->
+
+      </h1>
+      <div class="row">
+        <div class="col-sm-4">
+          <img class="w-100" (click)="imageViewer('../../../../../assets/images/gallery/img1.jpg')"  src="../../../../../assets/images/gallery/img1.jpg" alt="">
+        </div>
+        <div class="col-sm-4">
+          <img class="w-100" (click)="imageViewer('../../../../../assets/images/gallery/img2.jpg')"  src="../../../../../assets/images/gallery/img2.jpg" alt="">
+        </div>
+        <div class="col-sm-4">
+          <img class="w-100" (click)="imageViewer('../../../../../assets/images/gallery/img3.jpg')"  src="../../../../../assets/images/gallery/img3.jpg" alt="">
+        </div>
+        <div class="col-sm-4">
+          <img class="w-100" (click)="imageViewer('../../../../../assets/images/gallery/img4.jpg')"  src="../../../../../assets/images/gallery/img4.jpg" alt="">
+        </div>
+        <div class="col-sm-4">
+          <img class="w-100" (click)="imageViewer('../../../../../assets/images/gallery/img5.jpg')"  src="../../../../../assets/images/gallery/img5.jpg" alt="">
+        </div>
+        <div class="col-sm-4">
+          <img class="w-100" (click)="imageViewer('../../../../../assets/images/gallery/img6.jpg')"  src="../../../../../assets/images/gallery/img6.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div id="contact-id" class="contact-area">
     <div class="container">
@@ -441,7 +580,7 @@
       <div class="container">
         <div class="footer-bg">
           <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-3">
               <h1 class="footer-header text-white">
                 Loremn tpsum the askse seneedd
               </h1>
@@ -449,42 +588,45 @@
                 Diam quis enim lobortis scelerisque fermentum dui faucibus in. Fringilla ut morbi tincidunt augue interdum. Nam at lectus urna duis convallis convallis. Imperdiet nulla malesuada pellentesque elit eget.
               </p>
             </div>
-            <div class="col-sm-4">
-              <h1 class="footer-header text-white">Lorem Ipsum</h1>
+            <div class="col-sm-3">
+              <h1 class="footer-header text-white" style="margin-left: 2px;">Lorem Ipsum</h1>
               <div class="d-flex mb-2 text-white">
-                <img
+                <!-- <img
                   class="footer-icon"
                   src="assets/images/address-img.png"
                   alt=""
-                />
+                /> -->
+                <mat-icon style="color: gainsboro;"> location_on</mat-icon>
                 &nbsp;&nbsp;
                 <div style="margin-top: 5px">
-                  Lowem wedwek ipsums
+                  12 Nerva Traian Street, building M37, entry 4, apt. 105, sector 3, Bucharest, Romani
                 </div>
               </div>
               <div class="d-flex mb-2 text-white">
-                <img
+                <!-- <img
                   class="footer-icon"
                   src="assets/images/phone-icon.png"
                   alt=""
-                />
+                /> -->
+                <mat-icon  style="color: gainsboro;"> phone</mat-icon>
                 &nbsp;&nbsp;
-                <div style="margin-top: 5px">+1234 5678 8656</div>
+                <div style="margin-top: 5px">+40 721 198 4590</div>
               </div>
               <div class="d-flex mb-2 text-white">
-                <img
+                <!-- <img
                   class="footer-icon"
                   src="assets/images/email-send-icon.png"
                   alt=""
-                />
+                /> -->
+                <mat-icon style="color: gainsboro;"> email</mat-icon>
                 &nbsp;&nbsp;
-                <div style="margin-top: 5px">lorem@gmail.com</div>
+                <div style="margin-top: 5px">europeanconsortium@gmail.com</div>
               </div>
             </div>
-            <div class="col-sm-4">
-            
+            <div class="col-sm-6">
+          
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14594.50902736247!2d89.05215286944929!3d23.867366325330035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39febdce03404479%3A0x6041d7b112e0f9b3!2sKhajanagar%2C%20Bangladesh!5e0!3m2!1sen!2snl!4v1640270272818!5m2!1sen!2snl"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.585300682196!2d26.11399211490973!3d44.4211548104509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff1e87f1a90d%3A0x31acf47240ac1c5b!2sStrada%20Nerva%20Traian%2012%2C%20Bucure%C8%99ti%20030167%2C%20Romania!5e0!3m2!1sen!2sbd!4v1640926867122!5m2!1sen!2sbd"
                 width="100%"
                 height="350"
                 style="border: 0"
@@ -505,4 +647,12 @@
       </div>
     </div>
   </footer>
+
+  <div id="imageViewModal" class="popUpImageModal">
+    <div class="closeBtn" (click)="closeImage()">&times;</div>
+    <img class="img-responsive modal-content " src="{{imageLink}}">
+  </div>
+  
+
+
 </div>

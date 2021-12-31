@@ -16,11 +16,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./doctor-list.component.scss']
 })
 export class DoctorListComponent implements OnInit {
+  imageLink: any;
 
-
-
-
- 
   constructor(private router: Router) { 
     // this.dataSource.paginator = this.paginator
   }
@@ -34,34 +31,6 @@ export class DoctorListComponent implements OnInit {
   ngAfterViewInit() {
 
   }
-
-
-
-   /** Whether the number of selected elements matches the total number of rows. */
-  //  isAllSelected() {
-  //   const numSelected = this.selection.selected.length;
-  //   const numRows = this.dataSource.data.length;
-  //   return numSelected === numRows;
-  // }
-
-  /** Selects all rows if they are not all selected; otherwise clear selection. */
-  // masterToggle() {
-  //   if (this.isAllSelected()) {
-  //     this.selection.clear();
-  //     return;
-  //   }
-
-  //   this.selection.select(...this.dataSource.data);
-  // }
-
-  /** The label for the checkbox on the passed row */
-  // checkboxLabel(row?: PeriodicElement): string {
-  //   console.log('1111111111111',row)
-  //   if (!row) {
-  //     return `${this.isAllSelected() ? 'deselect' : 'select'} all`;
-  //   }
-  //   return `${this.selection.isSelected(row) ? 'deselect' : 'select'} row ${row.position + 1}`;
-  // }
 
  
   updateSelectedDom($event:any) {
@@ -85,6 +54,31 @@ export class DoctorListComponent implements OnInit {
       top:rect,
       behavior:'smooth'
     })
+  }
+
+  
+  imageViewer(imgLink:any) {
+    this.imageLink = imgLink;
+    const imgModal = document.getElementById('imageViewModal');
+    // const toolbar_header = $('.toolbar_header').height();
+    // const room_controller = $('#room-controller').height(); // footer part
+    // const windowHeight = window.innerHeight;
+    // const middleHeight = windowHeight - (toolbar_header + room_controller);
+    $('.popUpImageModal').css('height', window.innerHeight);
+    if (imgModal) {
+      $('#imageViewModal').show(500);
+      // $('.headerTopLeft').css('z-index', '1');
+    }
+  }
+
+  closeImage() {
+      this.imageLink = null;
+      const modal = document.getElementById('imageViewModal');
+      if (modal) {
+        // $('.headerTopLeft').css('z-index', '1000');
+        modal.style.display = 'none';
+        // sideTab.style.display = 'block';
+      }
   }
 
 }
