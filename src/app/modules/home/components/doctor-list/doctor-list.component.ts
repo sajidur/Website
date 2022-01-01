@@ -60,8 +60,8 @@ export class DoctorListComponent implements OnInit {
   imageViewer(imgLink:any) {
     this.imageLink = imgLink;
     const imgModal = document.getElementById('imageViewModal');
-    const mainContianerId = document.getElementById('main-container-id')
-    $('#mainContianerId').hide();
+    // const mainContianerId = document.getElementById('main-container-id')
+    // $('#mainContianerId').hide();
     $('.popUpImageModal').css('height', window.innerHeight);
     if (imgModal) {
       $('#imageViewModal').show(500);
@@ -72,8 +72,8 @@ export class DoctorListComponent implements OnInit {
   closeImage() {
       this.imageLink = null;
       const modal = document.getElementById('imageViewModal');
-      const mainContianerId = document.getElementById('main-container-id')
-      $('#mainContianerId').show();
+      // const mainContianerId = document.getElementById('main-container-id')
+      // $('#mainContianerId').show();
       if (modal) {
         // $('.headerTopLeft').css('z-index', '1000');
         modal.style.display = 'none';
