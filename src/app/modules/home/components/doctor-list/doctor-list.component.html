@@ -1,9 +1,9 @@
 <div id="mainContianerId" class="container-fluid" style="background-image: linear-gradient(180deg, #fff, #ddd)">
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <a href="">
-        <img style="width: 70%;" src="assets/images/logo9.png" alt="" />
-      </a>
+      <!-- <a href=""> -->
+        <img class="header-img" src="assets/images/logo9.png" alt="" />
+      <!-- </a> -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -11,9 +11,10 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-item nav-link" href="#">Home</a>
-          <a class="nav-item nav-link" (click)="gotToRedirect('gallery-id')">Gallery</a>
-          <a class="nav-item nav-link" (click)="gotToRedirect('service-id')">Services</a>
           <a class="nav-item nav-link" (click)="gotToRedirect('about-id')">About Us</a>
+          <a class="nav-item nav-link" (click)="gotToRedirect('teams-id')">Teams</a>
+          <a class="nav-item nav-link" (click)="gotToRedirect('service-id')">Services</a>
+          <a class="nav-item nav-link" (click)="gotToRedirect('gallery-id')">Gallery</a>
           <a class="nav-item nav-link contact-text" (click)="gotToRedirect('contact-id')">Contact</a>
         </div>
       </div>
@@ -47,12 +48,12 @@
       <div class="carousel-item">
         <div class="banner-area2" style="margin-top: 10px;">
           <div class="banner-image-background">
-            <h1 class="banner-header">Permanent &</h1>
-            <h1 class="banner-header">Recruitment</h1>
-            <h1 class="banner-header">Trusted</h1>
-            <h1 class="banner-header">Clients</h1>
+            <h1 class="banner-header">Permanent and</h1>
+            <h1 class="banner-header">skilled overseas</h1>
+            <h1 class="banner-header"> Construction worker</h1>
+            <h1 class="banner-header"> placement in Europe.</h1>
             <p class="banner-large-p">
-              we help clients gain a competitive edge in the race for talent.
+              Your reliable source of skilled staffs for  project.
             </p>
             <button class="btn btn-info" style="
                     padding: 12px 25px;
@@ -68,12 +69,12 @@
       <div class="carousel-item">
         <div class="banner-area3" style="margin-top: 10px;">
           <div class="banner-image-background">
-            <h1 class="banner-header">Permanent &</h1>
-            <h1 class="banner-header">Recruitment</h1>
-            <h1 class="banner-header">Trusted</h1>
-            <h1 class="banner-header">Clients</h1>
+            <h1 class="banner-header">Permanent IT</h1>
+            <h1 class="banner-header"> staff placement</h1>
+            <!-- <h1 class="banner-header">Trusted</h1>
+            <h1 class="banner-header">Clients</h1> -->
             <p class="banner-large-p">
-              we help clients gain a competitive edge in the race for talent.
+              Your reliable source of employer in Europe.
             </p>
             <button class="btn btn-info" style="
                     padding: 12px 25px;
@@ -89,12 +90,12 @@
       <div class="carousel-item">
         <div class="banner-area4" style="margin-top: 10px;">
           <div class="banner-image-background">
-            <h1 class="banner-header">Permanent &</h1>
-            <h1 class="banner-header">Recruitment</h1>
-            <h1 class="banner-header">Trusted</h1>
-            <h1 class="banner-header">Clients</h1>
+            <h1 class="banner-header">Trusted and</h1> 
+            <h1 class="banner-header">verified employers </h1>
+            <!-- <h1 class="banner-header">Trusted</h1>
+            <h1 class="banner-header">Clients</h1> -->
             <p class="banner-large-p">
-              we help clients gain a competitive edge in the race for talent.
+              For our selected  skilled workers for different sector.
             </p>
             <button class="btn btn-info" style="
                     padding: 12px 25px;
@@ -168,7 +169,7 @@
   </div>
 
 
-  <div id="stuff-id" class="stuff-area">
+  <div id="teams-id" class="stuff-area">
     <div class="container">
       <h1 class="stuff-header">
          Teams
@@ -723,7 +724,9 @@
                 Diam quis enim lobortis scelerisque fermentum dui faucibus in. Fringilla ut morbi tincidunt augue interdum. Nam at lectus urna duis convallis convallis. Imperdiet nulla malesuada pellentesque elit eget.
               </p>
             </div> -->
-            <div class="col-sm-3">
+         <div class="col-lg-6">
+           <div class="row">
+            <div class="col-sm-6">
               <!-- <h1 class="footer-header text-white" style="margin-left: 2px;">Lorem Ipsum</h1> -->
               <h3 class="footer-headline">Address</h3>
               <div class="d-flex mb-3 text-white">
@@ -766,13 +769,53 @@
                 <div style="margin-top: 5px">europeanconsortium@gmail.com</div>
               </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-6">
+              <!-- <h1 class="footer-header text-white" style="margin-left: 2px;">Lorem Ipsum</h1> -->
+              <h3 class="footer-headline">Address</h3>
+              <div class="d-flex mb-3 text-white">
+                <!-- <img
+                  class="footer-icon"
+                  src="assets/images/address-img.png"
+                  alt=""
+                /> -->
+
+                <mat-icon style="color: gainsboro;"> location_on</mat-icon>
+                &nbsp;&nbsp;
+                <div style="margin-top: 5px">
+                  Suite 4 level 4 The Penthouse <br/> Ewropa Business Center <br/> Trip Dun Karm <br/> B'Kara BKR 9034 Malta - EU
+                  <!-- Suite 4, Level 4, THe Penthouse<br />
+                  Ewropa Business Center<br />
+                  Trip Dun Karm<br />
+                  B'Kara BKR 9034, Malta - EU -->
+                </div>
+              </div>
+              <h3 class="footer-headline">Call</h3>
+              <div class="d-flex mb-3 text-white">
+                <!-- <img
+                  class="footer-icon"
+                  src="assets/images/phone-icon.png"
+                  alt=""
+                /> -->
+                <mat-icon style="color: gainsboro;"> phone</mat-icon>
+                &nbsp;&nbsp;
+                <div style="margin-top: 5px">+356 2017 3007</div>
+              </div>
+              <h3 class="footer-headline">Email</h3>
+              <div class="d-flex mb-3 text-white">
+                <mat-icon style="color: gainsboro;"> email</mat-icon>
+                &nbsp;&nbsp;
+                <div style="margin-top: 5px">europeanconsortium@gmail.com</div>
+              </div>
+            </div>
+           </div>
+         </div>
+            <!-- <div class="col-sm-3">
 
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.585300682196!2d26.11399211490973!3d44.4211548104509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff1e87f1a90d%3A0x31acf47240ac1c5b!2sStrada%20Nerva%20Traian%2012%2C%20Bucure%C8%99ti%20030167%2C%20Romania!5e0!3m2!1sen!2snl!4v1641130705312!5m2!1sen!2snl"
                 width="100%" height="350" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-            <div class="col-sm-5">
+            </div> -->
+            <div class="col-lg-6">
               
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.758428244807!2d14.463652664612095!3d35.90393172533468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e4f9209755c2b%3A0x12752272ce2e8bb7!2sFind%20a%20Job%20in%20Malta!5e0!3m2!1sen!2snl!4v1641229496689!5m2!1sen!2snl"
@@ -783,7 +826,7 @@
       </div>
       <div class="bootom-footer">
         <div class="container">
-          <div class="d-flex justify-content-between text-white">
+          <div class="d-flex justify-content-center text-white">
             <div> © 2022 European Consortium All Rights Reserved.</div>
             <!-- <div>Lor</div> -->
           </div>
