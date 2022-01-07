@@ -19,6 +19,26 @@
   background-repeat: round;
   padding: 10px;
 }
+
+.banner-area12 {
+  height: 550px;
+  background-color: transparent;
+  background-image:url('../../../../../assets/images/banner-images/banner-12.jpg');
+  background-position: 0px 0px, 50% 100%;
+  background-size: auto, cover;
+  background-repeat: round;
+  padding: 10px;
+}
+.banner-area13 {
+  height: 550px;
+  background-color: transparent;
+  background-image:url('../../../../../assets/images/banner-images/banner33.jpg');
+  background-position: 0px 0px, 50% 100%;
+  background-size: auto, cover;
+  background-repeat: round;
+  padding: 10px;
+}
+
 .banner-area2 {
   height: 550px;
   background-color: transparent;
@@ -57,13 +77,13 @@
 
 .banner-header {
   font-size: 48px;
-  color: #ffffff;
+  color: #000000;
   font-weight: bold;
   line-height: 40px;
 }
 
 .banner-large-p {
-    color: #fff;
+    color: #000000;
     font-size: 17px;
     line-height: 27px;
     font-weight: 400;
@@ -117,9 +137,22 @@
 
 }
 
-.business-area {
-  padding-top: 5.6rem;
+// .business-area {
+//   // padding-top: 5.6rem;
+// }
+
+.clients-header {
+  color: #31708e;
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3rem;
 }
+
 
 .business-header {
   color: #31708e;
@@ -379,7 +412,7 @@
   .footer-headline {
     margin: 0;
     color: white;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   .stuff-header {

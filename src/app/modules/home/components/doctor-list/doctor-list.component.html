@@ -2,7 +2,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <!-- <a href=""> -->
-        <img class="header-img" src="assets/images/logo9.png" alt="" />
+      <img class="header-img" src="assets/images/logo9.png" alt="" />
       <!-- </a> -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,6 +13,7 @@
           <a class="nav-item nav-link" href="#">Home</a>
           <a class="nav-item nav-link" (click)="gotToRedirect('about-id')">About Us</a>
           <a class="nav-item nav-link" (click)="gotToRedirect('teams-id')">Teams</a>
+          <a class="nav-item nav-link" (click)="gotToRedirect('clients-id')">Clients</a>
           <a class="nav-item nav-link" (click)="gotToRedirect('service-id')">Services</a>
           <a class="nav-item nav-link" (click)="gotToRedirect('gallery-id')">Gallery</a>
           <a class="nav-item nav-link contact-text" (click)="gotToRedirect('contact-id')">Contact</a>
@@ -22,13 +23,13 @@
   </header>
 
   <!-- <div class="container"> -->
-  <div id="carouselExampleControls" class="carousel slide orange-bg" data-ride="carousel">
+  <div id="carouselExampleControls" class="carousel slide orange-bg" data-interval="55555555" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="banner-area1" style="margin-top: 10px;">
           <div class="banner-image-background">
-            <h1 class="banner-header">Permanent &</h1>
-            <h1 class="banner-header">Recruitment</h1>
+            <h1 class="banner-header">Permanent </h1>
+            <h1 class="banner-header">Recruitment &</h1>
             <h1 class="banner-header">Trusted</h1>
             <h1 class="banner-header">Clients</h1>
             <p class="banner-large-p">
@@ -45,15 +46,57 @@
           </div>
         </div>
       </div>
+      <!-- <div class="carousel-item">
+        <div class="banner-area12" style="margin-top: 10px;">
+          <div class="banner-image-background">
+            <h1 class="banner-header">We Recruit</h1>
+            <h1 class="banner-header">Overseas Skilled</h1>
+            <h1 class="banner-header">Worker For</h1>
+            <h1 class="banner-header">Romanian companies.</h1>
+            <p class="banner-large-p">
+            India, Bhutan, Bangladesh, Nepal, Pakistan, Maldives, Srilanka, Afghanistan
+            </p>
+            <button class="btn btn-info" style="
+                    padding: 12px 25px;
+                    background: #ffffff;
+                    color: #31708e;
+                    text-transform: uppercase;
+                  ">
+              Get in touch with a recruiting expert
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="banner-area13" style="margin-top: 10px;">
+          <div class="banner-image-background">
+            <h1 class="banner-header">We Recruit</h1>
+            <h1 class="banner-header">Overseas Skilled</h1>
+            <h1 class="banner-header">Worker For</h1>
+            <h1 class="banner-header">Romanian companies.</h1>
+            <p class="banner-large-p">
+              Philippines, Vietnam
+            </p>
+            <button class="btn btn-info" style="
+                    padding: 12px 25px;
+                    background: #ffffff;
+                    color: #31708e;
+                    text-transform: uppercase;
+                  ">
+              Get in touch with a recruiting expert
+            </button>
+          </div>
+        </div>
+      </div> -->
       <div class="carousel-item">
         <div class="banner-area2" style="margin-top: 10px;">
           <div class="banner-image-background">
             <h1 class="banner-header">Permanent and</h1>
-            <h1 class="banner-header">skilled overseas</h1>
-            <h1 class="banner-header"> Construction worker</h1>
-            <h1 class="banner-header"> placement in Europe.</h1>
+            <h1 class="banner-header">Skilled Overseas</h1>
+            <h1 class="banner-header"> Construction Worker</h1>
+            <h1 class="banner-header"> Placement In Europe.</h1>
             <p class="banner-large-p">
-              Your reliable source of skilled staffs for  project.
+              Your reliable source of skilled staffs for project.
             </p>
             <button class="btn btn-info" style="
                     padding: 12px 25px;
@@ -70,7 +113,7 @@
         <div class="banner-area3" style="margin-top: 10px;">
           <div class="banner-image-background">
             <h1 class="banner-header">Permanent IT</h1>
-            <h1 class="banner-header"> staff placement</h1>
+            <h1 class="banner-header"> Staff Placement</h1>
             <!-- <h1 class="banner-header">Trusted</h1>
             <h1 class="banner-header">Clients</h1> -->
             <p class="banner-large-p">
@@ -90,12 +133,12 @@
       <div class="carousel-item">
         <div class="banner-area4" style="margin-top: 10px;">
           <div class="banner-image-background">
-            <h1 class="banner-header">Trusted and</h1> 
-            <h1 class="banner-header">verified employers </h1>
+            <h1 class="banner-header">Trusted And</h1>
+            <h1 class="banner-header">Verified Employers </h1>
             <!-- <h1 class="banner-header">Trusted</h1>
             <h1 class="banner-header">Clients</h1> -->
             <p class="banner-large-p">
-              For our selected  skilled workers for different sector.
+              For our selected skilled workers for different sector.
             </p>
             <button class="btn btn-info" style="
                     padding: 12px 25px;
@@ -118,7 +161,6 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-  <!-- </div> -->
 
 
 
@@ -172,43 +214,59 @@
   <div id="teams-id" class="stuff-area">
     <div class="container">
       <h1 class="stuff-header">
-         Teams
+        Teams
       </h1>
       <div class="row mb-2">
         <div class="col-sm-4 mb-2 text-center">
-          <img class="w-100"
-            src="../../../../../assets/images/stuff/img1.jpg" alt="">
-            <div class="stuff-name">Big Data Engineers</div>
+          <img class="w-100" src="../../../../../assets/images/stuff/img1.jpeg" alt="">
+          <div class="stuff-name">Senior HR specialist</div>
         </div>
         <div class="col-sm-4 mb-2 text-center">
-          <img class="w-100"
-            src="../../../../../assets/images/stuff/img2.jpg" alt="">
-            <div class="stuff-name">Business analysts</div>
+          <div style="border-radius: 50%;background: #FFFFFF;border: 1px solid #F4F4F4;">
+            <img class="w-100" src="../../../../../assets/images/stuff/img2.jpeg" alt="">
+          </div>
+          <div class="stuff-name">Senior Construction recruiter</div>
         </div>
         <div class="col-sm-4 mb-2 text-center">
-          <img class="w-100"
-            src="../../../../../assets/images/stuff/img3.jpg" alt="">
-            <div class="stuff-name">Cloud Architects </div>
+          <img class="w-100" src="../../../../../assets/images/stuff/img3.jpeg" alt="">
+          <div class="stuff-name"> Senior Hospitality sector recruiter</div>
         </div>
 
       </div>
       <div class="row mt-3">
         <div class="col-sm-4 mb-2 text-center">
-          <img class="w-100"
-            src="../../../../../assets/images/stuff/img4.jpg" alt="">
-            <div class="stuff-name">Data Scientists </div>
+          <img class="w-100" src="../../../../../assets/images/stuff/img4.jpeg" alt="">
+          <div class="stuff-name">Senior Factory worker specialist </div>
         </div>
         <div class="col-sm-4 mb-2 text-center">
-          <img class="w-100" 
-            src="../../../../../assets/images/stuff/img5.jpg" alt="">
-            <div class="stuff-name">Java Developer</div>
+          <img class="w-100" src="../../../../../assets/images/stuff/img5.jpeg" alt="">
+          <div class="stuff-name">Senior Engineering recruitment Manager</div>
         </div>
         <div class="col-sm-4 mb-2 text-center">
-          <img class="w-100"
-            src="../../../../../assets/images/stuff/img6.jpg" alt="">
-            <div class="stuff-name">.Net developer</div>
+          <img class="w-100" src="../../../../../assets/images/stuff/img6.jpeg" alt="">
+          <div class="stuff-name">IT recruitment manager</div>
         </div>
       </div>
+    </div>
+  </div>
+
+
+  <div class="clients-area" id="clients-id" style="margin-bottom: 5rem;">
+    <div class="container">
+      <h1 class="clients-header">OUR PERSONNEL & CLIENTS</h1>
+      <div class="row">
+            <div class="col-sm-6 pt-2">
+              <img class="w-100" height="300px"  src="../../../../../assets/images/clients/saarc-img.jpg" alt="">
+            </div>
+            <div class="col-sm-6 pt-2">
+              <img  class="w-100" height="300px"  src="../../../../../assets/images/clients/f-v.jpeg" alt="">
+            </div>
+            <div class="col-sm-12" style="margin-top: 1.8rem;">
+              <h3 style="font-size: 25px; font-weight: 600;">SKILLED WORKFORCE FOR ROMANIA.</h3>
+              <p class="pt-2" style="font-size: 20px;line-height: 1.4;">We are recruiting skilled staffs from Bangladesh, Nepal, India, Srilanka, Philippines, Vietnam  in Construction, hospitality, house maids,  care giver nurses.</p>
+            </div>
+      </div>
+
     </div>
   </div>
 
@@ -301,7 +359,8 @@
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-h3">
                       <p class="tab-p">
 
-                        Our insights are the foundation of our European Consortium reports. Our annual Salary Guide report provides a
+                        Our insights are the foundation of our European Consortium reports. Our annual Salary Guide
+                        report provides a
                         comprehensive list of salaries in top industries to help understand salary trends and determine
                         your hiring budget. Our recruiting experts use market mapping and salary benchmarking to provide
                         insights into the hot spot areas so that you can maintain a competitive position in your market.
@@ -370,7 +429,8 @@
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-mh2">
                       <p class="tab-p">
-                        At European Consortium, we replace “Advertise and Apply” with “Find and Engage” to expand our talent pool.
+                        At European Consortium, we replace “Advertise and Apply” with “Find and Engage” to expand our
+                        talent pool.
                         We’ve equipped our recruiting experts with leading tech and data science to reach both passive
                         and active candidates.
                         We provide comprehensive support to organizations looking to expand their contract workforce in
@@ -433,7 +493,8 @@
                     </div>
                     <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion-mh5">
                       <p class="tab-p">
-                        Our insights are the foundation of our European Consortium reports. Our annual Salary Guide report provides a
+                        Our insights are the foundation of our European Consortium reports. Our annual Salary Guide
+                        report provides a
                         comprehensive list of salaries in top industries to help understand salary trends and determine
                         your hiring budget. Our recruiters use market mapping and salary benchmarking to provide
                         insights into the hot spot areas so that you can maintain a competitive position in your market.
@@ -500,7 +561,9 @@
 
                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-mh1">
                       <p class="tab-p">
-                        It is the role of a big data engineer to build, maintain and ensure a production-ready big data environment. This environment this role works in will include architecture, technology standards, open source options, as well as data preparation and data management processes.
+                        It is the role of a big data engineer to build, maintain and ensure a production-ready big data
+                        environment. This environment this role works in will include architecture, technology
+                        standards, open source options, as well as data preparation and data management processes.
                       </p>
                     </div>
                   </div>
@@ -516,7 +579,9 @@
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-mh2">
                       <p class="tab-p">
-                        Business analysts work with organisations to help them improve their processes and systems. They conduct research and analysis in order to come up with solutions to business problems and help to introduce these systems to businesses and their clients.
+                        Business analysts work with organisations to help them improve their processes and systems. They
+                        conduct research and analysis in order to come up with solutions to business problems and help
+                        to introduce these systems to businesses and their clients.
                       </p>
                     </div>
                   </div>
@@ -534,7 +599,8 @@
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                       data-parent="#accordion-mh3">
                       <p class="tab-p">
-                        In today’s market there are no boundaries, and European Consortium is a trusted partner to organizations across
+                        In today’s market there are no boundaries, and European Consortium is a trusted partner
+                        to organizations across
                         the U.S. and around the world. Whether you need a professional or a whole new team, we’ll
                         provide you with quick access to tech talent who will make a difference from the moment they
                         join. 
@@ -553,7 +619,11 @@
                     </div>
                     <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion-mh4">
                       <p class="tab-p">
-                        Data scientists help companies interpret and manage data and solve complex problems using expertise in a variety of data niches. They generally have a foundation in computer science, modeling, statistics, analytics, and math - coupled with a strong business sense. It’s this merging of esoteric intelligence and practical knowledge that makes the data scientist so valuable to a company
+                        Data scientists help companies interpret and manage data and solve complex problems using
+                        expertise in a variety of data niches. They generally have a foundation in computer science,
+                        modeling, statistics, analytics, and math - coupled with a strong business sense. It’s this
+                        merging of esoteric intelligence and practical knowledge that makes the data scientist so
+                        valuable to a company
                       </p>
                     </div>
                   </div>
@@ -569,7 +639,10 @@
                     </div>
                     <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion-mh5">
                       <p class="tab-p">
-                        A Java developer is responsible for developing applications and software using the programming language Java. A Java developer is a specialized type of programmer who may collaborate with web developers and software engineers to integrate Java into business applications, software, and websites
+                        A Java developer is responsible for developing applications and software using the programming
+                        language Java. A Java developer is a specialized type of programmer who may collaborate with web
+                        developers and software engineers to integrate Java into business applications, software, and
+                        websites
                       </p>
                     </div>
                   </div>
@@ -585,7 +658,10 @@
                     </div>
                     <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion-mh6">
                       <p class="tab-p">
-                        A net developer is responsible for producing code using . net languages such as C# and VB. Net developers create applications from scratch, configure existing systems and provide user support. ... A net developer's overall goal is to work with internal teams to design, develop and maintain software.
+                        A net developer is responsible for producing code using . net languages such as C# and VB. Net
+                        developers create applications from scratch, configure existing systems and provide user
+                        support. ... A net developer's overall goal is to work with internal teams to design, develop
+                        and maintain software.
                       </p>
                     </div>
                   </div>
@@ -602,7 +678,9 @@
                     <div id="collapseseven" class="collapse" aria-labelledby="headingseven"
                       data-parent="#accordion-mh7">
                       <p class="tab-p">
-                        In the broadest sense, project managers (PMs) are responsible for planning, organizing, and directing the completion of specific projects for an organization while ensuring these projects are on time, on budget, and within scope.
+                        In the broadest sense, project managers (PMs) are responsible for planning, organizing, and
+                        directing the completion of specific projects for an organization while ensuring these projects
+                        are on time, on budget, and within scope.
                       </p>
                     </div>
                   </div>
@@ -619,7 +697,10 @@
                     <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
                       data-parent="#accordion-mh8">
                       <p class="tab-p">
-                        A quality assurance specialist ensures that the final product observes the company's quality standards. In general, these detail-oriented professionals are responsible for the development and implementation of inspection activities, the detection and resolution of problems, and the delivery of satisfactory outcomes.
+                        A quality assurance specialist ensures that the final product observes the company's quality
+                        standards. In general, these detail-oriented professionals are responsible for the development
+                        and implementation of inspection activities, the detection and resolution of problems, and the
+                        delivery of satisfactory outcomes.
                       </p>
                     </div>
                   </div>
@@ -716,26 +797,9 @@
       <div class="container">
         <div class="footer-bg">
           <div class="row">
-            <!-- <div class="col-sm-3">
-              <h1 class="footer-header text-white">
-                Loremn tpsum the askse seneedd
-              </h1>
-              <p class="footer-p text-white">
-                Diam quis enim lobortis scelerisque fermentum dui faucibus in. Fringilla ut morbi tincidunt augue interdum. Nam at lectus urna duis convallis convallis. Imperdiet nulla malesuada pellentesque elit eget.
-              </p>
-            </div> -->
-         <div class="col-lg-6">
-           <div class="row">
-            <div class="col-sm-6">
-              <!-- <h1 class="footer-header text-white" style="margin-left: 2px;">Lorem Ipsum</h1> -->
-              <h3 class="footer-headline">Address</h3>
+            <div class="col-sm-4">
+              <h3 class="footer-headline">Address In Romania</h3>
               <div class="d-flex mb-3 text-white">
-                <!-- <img
-                  class="footer-icon"
-                  src="assets/images/address-img.png"
-                  alt=""
-                /> -->
-
                 <mat-icon style="color: gainsboro;"> location_on</mat-icon>
                 &nbsp;&nbsp;
                 <div style="margin-top: 5px">
@@ -748,54 +812,44 @@
               </div>
               <h3 class="footer-headline">Call</h3>
               <div class="d-flex mb-3 text-white">
-                <!-- <img
-                  class="footer-icon"
-                  src="assets/images/phone-icon.png"
-                  alt=""
-                /> -->
                 <mat-icon style="color: gainsboro;"> phone</mat-icon>
                 &nbsp;&nbsp;
                 <div style="margin-top: 5px">+40 721 198 4590</div>
               </div>
               <h3 class="footer-headline">Email</h3>
               <div class="d-flex mb-3 text-white">
-                <!-- <img
-                  class="footer-icon"
-                  src="assets/images/email-send-icon.png"
-                  alt=""
-                /> -->
                 <mat-icon style="color: gainsboro;"> email</mat-icon>
                 &nbsp;&nbsp;
                 <div style="margin-top: 5px">europeanconsortium@gmail.com</div>
               </div>
             </div>
-            <div class="col-sm-6">
+
+            <div class="col-sm-8">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.585300682196!2d26.11399211490973!3d44.4211548104509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff1e87f1a90d%3A0x31acf47240ac1c5b!2sStrada%20Nerva%20Traian%2012%2C%20Bucure%C8%99ti%20030167%2C%20Romania!5e0!3m2!1sen!2sbd!4v1641537613313!5m2!1sen!2sbd"
+                width="100%" height="300" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-sm-4">
               <!-- <h1 class="footer-header text-white" style="margin-left: 2px;">Lorem Ipsum</h1> -->
-              <h3 class="footer-headline">Address</h3>
+              <h3 class="footer-headline">Address In Malta</h3>
               <div class="d-flex mb-3 text-white">
-                <!-- <img
-                  class="footer-icon"
-                  src="assets/images/address-img.png"
-                  alt=""
-                /> -->
 
                 <mat-icon style="color: gainsboro;"> location_on</mat-icon>
                 &nbsp;&nbsp;
                 <div style="margin-top: 5px">
-                  Suite 4 level 4 The Penthouse <br/> Ewropa Business Center <br/> Trip Dun Karm <br/> B'Kara BKR 9034 Malta - EU
+                  Suite 4 level 4 The Penthouse <br /> Ewropa Business Center <br /> Trip Dun Karm <br /> B'Kara BKR
+                  9034 Malta - EU
                   <!-- Suite 4, Level 4, THe Penthouse<br />
-                  Ewropa Business Center<br />
-                  Trip Dun Karm<br />
-                  B'Kara BKR 9034, Malta - EU -->
+                Ewropa Business Center<br />
+                Trip Dun Karm<br />
+                B'Kara BKR 9034, Malta - EU -->
                 </div>
               </div>
               <h3 class="footer-headline">Call</h3>
               <div class="d-flex mb-3 text-white">
-                <!-- <img
-                  class="footer-icon"
-                  src="assets/images/phone-icon.png"
-                  alt=""
-                /> -->
                 <mat-icon style="color: gainsboro;"> phone</mat-icon>
                 &nbsp;&nbsp;
                 <div style="margin-top: 5px">+356 2017 3007</div>
@@ -804,24 +858,16 @@
               <div class="d-flex mb-3 text-white">
                 <mat-icon style="color: gainsboro;"> email</mat-icon>
                 &nbsp;&nbsp;
-                <div style="margin-top: 5px">europeanconsortium@gmail.com</div>
+                <div style="margin-top: 5px">info@broadwing.jobs</div>
               </div>
             </div>
-           </div>
-         </div>
-            <!-- <div class="col-sm-3">
-
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.585300682196!2d26.11399211490973!3d44.4211548104509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff1e87f1a90d%3A0x31acf47240ac1c5b!2sStrada%20Nerva%20Traian%2012%2C%20Bucure%C8%99ti%20030167%2C%20Romania!5e0!3m2!1sen!2snl!4v1641130705312!5m2!1sen!2snl"
-                width="100%" height="350" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
-            </div> -->
-            <div class="col-lg-6">
-              
+            <div class="col-sm-8">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.758428244807!2d14.463652664612095!3d35.90393172533468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e4f9209755c2b%3A0x12752272ce2e8bb7!2sFind%20a%20Job%20in%20Malta!5e0!3m2!1sen!2snl!4v1641229496689!5m2!1sen!2snl"
-                width="100%" height="350" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+                width="100%" height="300" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
             </div>
           </div>
+
         </div>
       </div>
       <div class="bootom-footer">
