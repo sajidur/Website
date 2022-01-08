@@ -761,22 +761,22 @@
             <h1>Send us a message*</h1>
           </div>
           <div class="col-sm-6">
-            <input type="text" class="form-control input-text" placeholder="Your name*" />
+            <input 	[(ngModel)]="emailObj.name" type="text" class="form-control input-text" placeholder="Your name*" />
           </div>
           <div class="col-sm-6">
             <input type="text" class="form-control input-text" placeholder="Email-address*" />
           </div>
           <div class="col-sm-6">
-            <input type="text" class="form-control input-text" placeholder="Phone number*" />
+            <input [(ngModel)]="emailObj.phone" type="text" class="form-control input-text" placeholder="Phone number*" />
           </div>
           <div class="col-sm-6">
-            <input type="text" class="form-control input-text" placeholder="Object*" />
+            <input [(ngModel)]="emailObj.subject" type="text" class="form-control input-text" placeholder="Object*" />
           </div>
           <div class="col-sm-12">
-            <textarea placeholder="Address*" name="" id="" class="text-area-cls form-control"></textarea>
+            <textarea [(ngModel)]="emailObj.body" placeholder="Address*" name="" id="" class="text-area-cls form-control"></textarea>
           </div>
           <div class="col-sm-12">
-            <button class="btn btn-info" style="
+            <button (click)="submitInfo()" class="btn btn-info" style="
                 padding: 12px 25px;
                 background: #31708e;
                 color: white;
@@ -814,11 +814,11 @@
               <div class="d-flex mb-3 text-white">
                 <mat-icon style="color: gainsboro;"> phone</mat-icon>
                 &nbsp;&nbsp;
-                <div style="margin-top: 5px">+40 721 198 4590</div>
+                <div style="margin-top: 5px">+40729514484, +40 721 198 459</div>
               </div>
               <h3 style="margin-top: 20px;" class="footer-headline">Email</h3>
               <div class="d-flex mb-3 text-white">
-                <mat-icon style="color: gainsboro;"> email</mat-icon>
+                <mat-icon style="color: gainsboro;">email</mat-icon>
                 &nbsp;&nbsp;
                 <div style="margin-top: 5px">europeanconsortium@gmail.com</div>
               </div>
@@ -852,7 +852,7 @@
               <div class="d-flex mb-3 text-white">
                 <mat-icon style="color: gainsboro;"> phone</mat-icon>
                 &nbsp;&nbsp;
-                <div style="margin-top: 5px">+356 7798 8912</div>
+                <div style="margin-top: 5px">+356 7940 9359</div>
               </div>
               <h3 style="margin-top: 20px;" class="footer-headline">Email</h3>
               <div class="d-flex mb-3 text-white">

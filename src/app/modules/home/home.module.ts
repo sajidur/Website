@@ -6,6 +6,8 @@ import { DoctorListComponent } from './components/doctor-list/doctor-list.compon
 import { MaterialModule } from 'src/app/shared/material/material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DoctorDetailsComponent } from './components/doctor-details/doctor-details.component';
+import { ContactusService } from 'src/app/shared/services/contactus.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -20,7 +22,9 @@ import { DoctorDetailsComponent } from './components/doctor-details/doctor-detai
     FormsModule,
     ReactiveFormsModule,
     HomeRoutingModule,
-    MaterialModule
-  ]
+    MaterialModule,
+    HttpClientModule
+  ],
+  providers: [ContactusService],
 })
 export class HomeModule { }
