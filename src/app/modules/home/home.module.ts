@@ -8,6 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DoctorDetailsComponent } from './components/doctor-details/doctor-details.component';
 import { ContactusService } from 'src/app/shared/services/contactus.service';
 import { HttpClientModule } from '@angular/common/http';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 
 
@@ -23,7 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     HomeRoutingModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxSpinnerModule,
   ],
   providers: [ContactusService],
 })

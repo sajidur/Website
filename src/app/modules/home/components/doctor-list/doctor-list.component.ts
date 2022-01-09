@@ -6,6 +6,8 @@ import { MatTableDataSource } from '@angular/material/table';
 import { SelectionModel } from '@angular/cdk/collections';
 import { Router } from '@angular/router';
 import { ContactusService } from 'src/app/shared/services/contactus.service';
+import Swal from 'sweetalert2';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 
 
@@ -19,14 +21,14 @@ import { ContactusService } from 'src/app/shared/services/contactus.service';
 export class DoctorListComponent implements OnInit {
   imageLink: any;
   public emailObj = {
-	  toEmail: "sajid.ict@hotmail.com",
+	  toEmail: "",
     subject: "",
     body: "",
     phone:"",
     name:""
 	};
 
-  constructor(private contactusService: ContactusService) { 
+  constructor(private contactusService: ContactusService,private spinner: NgxSpinnerService) { 
     // this.dataSource.paginator = this.paginator
   }
 
@@ -91,11 +93,18 @@ export class DoctorListComponent implements OnInit {
 
   submitInfo(){
     console.log('edata',this.emailObj)
+    this.spinner.show()
     this.contactusService.sendEmail(this.emailObj).subscribe({
       next: (result) => {
+        this.spinner.hide()
         console.log("postEmailRes", result); 
+        Swal.fire({
+          icon: 'success',
+					title: 'Message sent successfully',
+					timer: 3000,
+				});
         this.emailObj = {
-          toEmail: "sajid.ict@hotmail.com",
+          toEmail: "",
           subject: "",
           body: "",
           phone:"",
@@ -103,9 +112,10 @@ export class DoctorListComponent implements OnInit {
         };
       },
       error: (err) => {
+        this.spinner.hide()
         console.log("postEmailErr", err);
         this.emailObj = {
-          toEmail: "sajid.ict@hotmail.com",
+          toEmail: "",
           subject: "",
           body: "",
           phone:"",
