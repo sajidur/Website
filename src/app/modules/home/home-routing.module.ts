@@ -4,13 +4,9 @@ import { DoctorDetailsComponent } from './components/doctor-details/doctor-detai
 import { DoctorListComponent } from './components/doctor-list/doctor-list.component';
 
 export const routes: Routes = [
+
   {
     path: '',
-    redirectTo: 'doctor-list',
-    pathMatch: 'full'
-  },
-  {
-    path: 'doctor-list',
     component: DoctorListComponent
   },
   { 
