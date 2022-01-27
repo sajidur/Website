@@ -1,37 +1,24 @@
-<div id="mainContianerId"
-  class="container-fluid"
-  style="background-image: linear-gradient(180deg, #fff, #ddd)"
->
+
+  <ngx-spinner color="#0074a7" type="ball-clip-rotate-pulse" size="medium" [fullScreen]="true"><p style="color: white">Plase wait..</p></ngx-spinner>
+
+  <div id="mainContianerId" class="container-fluid" style="background-image: linear-gradient(180deg, #fff, #ddd)">
   <header>
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-white"
-    >
-    <a href="">
-      <img style="width: 70%;"
-      src="assets/images/logo9.png"
-      alt=""
-    />
-    </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <!-- <a href=""> -->
+      <img class="header-img" src="assets/images/logo9.png" alt="" />
+      <!-- </a> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div
-        class="collapse navbar-collapse justify-content-end"
-        id="navbarNavAltMarkup"
-      >
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-item nav-link" href="#">Home</a>
-          <a class="nav-item nav-link" (click)="gotToRedirect('gallery-id')">Gallery</a>
-          <a class="nav-item nav-link"(click)="gotToRedirect('service-id')">Services</a>
           <a class="nav-item nav-link" (click)="gotToRedirect('about-id')">About Us</a>
+          <a class="nav-item nav-link" (click)="gotToRedirect('teams-id')">Teams</a>
+          <a class="nav-item nav-link" (click)="gotToRedirect('clients-id')">Clients</a>
+          <a class="nav-item nav-link" (click)="gotToRedirect('service-id')">Services</a>
+          <a class="nav-item nav-link" (click)="gotToRedirect('gallery-id')">Gallery</a>
           <a class="nav-item nav-link contact-text" (click)="gotToRedirect('contact-id')">Contact</a>
         </div>
       </div>
@@ -39,129 +26,173 @@
   </header>
 
   <!-- <div class="container"> -->
-    <div id="carouselExampleControls" class="carousel slide orange-bg" data-ride="carousel" >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="banner-area1" style="margin-top: 10px;">
-              <div class="banner-image-background">
-                <h1 class="banner-header">Banner &</h1>
-                <h1 class="banner-header">Lorem</h1>
-                <h1 class="banner-header">Area</h1>
-                <h1 class="banner-header">Ipsum</h1>
-                <p class="banner-large-p">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <button
-                  class="btn btn-info"
-                  style="
+  <div id="carouselExampleControls" class="carousel slide orange-bg" data-interval="55555555" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="banner-area1" style="margin-top: 10px;">
+          <div class="banner-image-background">
+            <h1 class="banner-header">Permanent </h1>
+            <h1 class="banner-header">Recruitment &</h1>
+            <h1 class="banner-header">Trusted</h1>
+            <h1 class="banner-header">Clients</h1>
+            <p class="banner-large-p">
+              we help clients gain a competitive edge in the race for talent.
+            </p>
+            <button class="btn btn-info" style="
                     padding: 12px 25px;
                     background: #ffffff;
                     color: #31708e;
                     text-transform: uppercase;
-                  "
-                >
-                  Excepteur sint occaecat cupidatat
-                </button>
-              </div>
-            </div>
-        </div>
-          <div class="carousel-item">
-            <div class="banner-area2" style="margin-top: 10px;">
-              <div class="banner-image-background">
-                <h1 class="banner-header">Banner &</h1>
-                <h1 class="banner-header">Lorem</h1>
-                <h1 class="banner-header">Area</h1>
-                <h1 class="banner-header">Ipsum</h1>
-                <p class="banner-large-p">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <button
-                  class="btn btn-info"
-                  style="
-                    padding: 12px 25px;
-                    background: #ffffff;
-                    color: #31708e;
-                    text-transform: uppercase;
-                  "
-                >
-                  Excepteur sint occaecat cupidatat
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="banner-area3" style="margin-top: 10px;">
-              <div class="banner-image-background">
-                <h1 class="banner-header">Banner &</h1>
-                <h1 class="banner-header">Lorem</h1>
-                <h1 class="banner-header">Area</h1>
-                <h1 class="banner-header">Ipsum</h1>
-                <p class="banner-large-p">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <button
-                  class="btn btn-info"
-                  style="
-                    padding: 12px 25px;
-                    background: #ffffff;
-                    color: #31708e;
-                    text-transform: uppercase;
-                  "
-                >
-                  Excepteur sint occaecat cupidatat
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="banner-area4" style="margin-top: 10px;">
-              <div class="banner-image-background">
-                <h1 class="banner-header">Banner &</h1>
-                <h1 class="banner-header">Lorem</h1>
-                <h1 class="banner-header">Area</h1>
-                <h1 class="banner-header">Ipsum</h1>
-                <p class="banner-large-p">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <button
-                  class="btn btn-info"
-                  style="
-                    padding: 12px 25px;
-                    background: #ffffff;
-                    color: #31708e;
-                    text-transform: uppercase;
-                  "
-                >
-                  Excepteur sint occaecat cupidatat
-                </button>
-              </div>
-            </div>
+                  ">
+              Get in touch with a recruiting expert
+            </button>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+      </div>
+      <!-- <div class="carousel-item">
+        <div class="banner-area12" style="margin-top: 10px;">
+          <div class="banner-image-background">
+            <h1 class="banner-header">We Recruit</h1>
+            <h1 class="banner-header">Overseas Skilled</h1>
+            <h1 class="banner-header">Worker For</h1>
+            <h1 class="banner-header">Romanian companies.</h1>
+            <p class="banner-large-p">
+            India, Bhutan, Bangladesh, Nepal, Pakistan, Maldives, Srilanka, Afghanistan
+            </p>
+            <button class="btn btn-info" style="
+                    padding: 12px 25px;
+                    background: #ffffff;
+                    color: #31708e;
+                    text-transform: uppercase;
+                  ">
+              Get in touch with a recruiting expert
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="banner-area13" style="margin-top: 10px;">
+          <div class="banner-image-background">
+            <h1 class="banner-header">We Recruit</h1>
+            <h1 class="banner-header">Overseas Skilled</h1>
+            <h1 class="banner-header">Worker For</h1>
+            <h1 class="banner-header">Romanian companies.</h1>
+            <p class="banner-large-p">
+              Philippines, Vietnam
+            </p>
+            <button class="btn btn-info" style="
+                    padding: 12px 25px;
+                    background: #ffffff;
+                    color: #31708e;
+                    text-transform: uppercase;
+                  ">
+              Get in touch with a recruiting expert
+            </button>
+          </div>
+        </div>
+      </div> -->
+      <div class="carousel-item">
+        <div class="banner-area2" style="margin-top: 10px;">
+          <div class="banner-image-background">
+            <h1 class="banner-header">Permanent and</h1>
+            <h1 class="banner-header">Skilled Overseas</h1>
+            <h1 class="banner-header"> Construction Worker</h1>
+            <h1 class="banner-header"> Placement In Europe.</h1>
+            <p class="banner-large-p">
+              Your reliable source of skilled staffs for project.
+            </p>
+            <button class="btn btn-info" style="
+                    padding: 12px 25px;
+                    background: #ffffff;
+                    color: #31708e;
+                    text-transform: uppercase;
+                  ">
+              Get in touch with a recruiting expert
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="banner-area3" style="margin-top: 10px;">
+          <div class="banner-image-background">
+            <h1 class="banner-header">Permanent IT</h1>
+            <h1 class="banner-header"> Staff Placement</h1>
+            <!-- <h1 class="banner-header">Trusted</h1>
+            <h1 class="banner-header">Clients</h1> -->
+            <p class="banner-large-p">
+              Your reliable source of employer in Europe.
+            </p>
+            <button class="btn btn-info" style="
+                    padding: 12px 25px;
+                    background: #ffffff;
+                    color: #31708e;
+                    text-transform: uppercase;
+                  ">
+              Get in touch with a recruiting expert
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="banner-area4" style="margin-top: 10px;">
+          <div class="banner-image-background">
+            <h1 class="banner-header">Trusted And</h1>
+            <h1 class="banner-header">Verified Employers </h1>
+            <!-- <h1 class="banner-header">Trusted</h1>
+            <h1 class="banner-header">Clients</h1> -->
+            <p class="banner-large-p">
+              For our selected skilled workers for different sector.
+            </p>
+            <button class="btn btn-info" style="
+                    padding: 12px 25px;
+                    background: #ffffff;
+                    color: #31708e;
+                    text-transform: uppercase;
+                  ">
+              Get in touch with a recruiting expert
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-<!-- </div> -->
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 
-  
+
 
   <div id="about-id" class="about-area">
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
-          <div class="about-header">Who we are?</div>
+          <div class="about-header">About US</div>
           <p class="about-p">
-            European consortium is a technology dedicated company. Using its experience of 20+ years in providing professional IT services, PGI can now deliver solutions for any challenge in Oil and Gas, Telecom, Banking or Governmental sector. 
+            From the point of Customer engagement, European consortium immediately assigns an Account Manager, a single
+            point of contact available through the duration of the partnership with European consortium.
+
           </p>
           <p class="about-p">
-            Client oriented, highly qualified and trained, internationally certified professional team, is "Creating value" every day, order to offer valuable services for the transformation of the client needs into success stories. With a lot of work behind, a combination of technologies and abstract thinking, experience, and know-how, we are ready for new opportunities, anywhere transformation is required.
+
+            In addition, European consortium assigns in-country Regional HR Specialists to support the legal and
+            regulatory HR activities in relation to onboarding and offboarding local Professionals hired on behalf of
+            our Customer.
+
+
           </p>
+          <p class="about-p">
+            For day-to-day, ongoing support, European consortium provides Customers & Professionals access to our Help
+            Center ticketing system, available via our proprietary, collaborative software Platform. The Help Center is
+            monitored round the clock by our in-country HR Specialists, Regional Accountants, IT Support, and Account
+            Management.
+
+          </p>
+
           <!-- <p class="about-p">
             Tellus cras adipiscing enim eu. Eros donec ac odio tempor. In egestas erat imperdiet sed euismod nisi porta lorem. Viverra aliquet eget sit amet tellus cras adipiscing. Nullam eget felis eget nunc. Vivamus at augue eget arcu dictum varius.
           </p>
@@ -182,62 +213,94 @@
     </div>
   </div>
 
+
+  <div id="teams-id" class="stuff-area">
+    <div class="container">
+      <h1 class="stuff-header">
+        Teams
+      </h1>
+      <div class="row mb-2">
+        <div class="col-sm-4 mb-2 text-center">
+          <img class="w-100" src="../../../../../assets/images/stuff/img1.jpeg" alt="">
+          <div class="stuff-name">Senior HR specialist</div>
+        </div>
+        <div class="col-sm-4 mb-2 text-center">
+          <div style="border-radius: 50%;background: #FFFFFF;border: 1px solid #F4F4F4;">
+            <img class="w-100" src="../../../../../assets/images/stuff/img2.jpeg" alt="">
+          </div>
+          <div class="stuff-name">Senior Construction recruiter</div>
+        </div>
+        <div class="col-sm-4 mb-2 text-center">
+          <img class="w-100" src="../../../../../assets/images/stuff/img3.jpeg" alt="">
+          <div class="stuff-name"> Senior Hospitality sector recruiter</div>
+        </div>
+
+      </div>
+      <div class="row mt-3">
+        <div class="col-sm-4 mb-2 text-center">
+          <img class="w-100" src="../../../../../assets/images/stuff/img4.jpeg" alt="">
+          <div class="stuff-name">Senior Factory worker specialist </div>
+        </div>
+        <div class="col-sm-4 mb-2 text-center">
+          <img class="w-100" src="../../../../../assets/images/stuff/img5.jpeg" alt="">
+          <div class="stuff-name">Senior Engineering recruitment Manager</div>
+        </div>
+        <div class="col-sm-4 mb-2 text-center">
+          <img class="w-100" src="../../../../../assets/images/stuff/img6.jpeg" alt="">
+          <div class="stuff-name">IT recruitment manager</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="clients-area" id="clients-id" style="margin-bottom: 5rem;">
+    <div class="container">
+      <h1 class="clients-header">OUR OVERSEAS SKILLED PERSONNEL SOURCE COUNTRIES</h1>
+      <div class="row">
+            <div class="col-sm-6 pt-2">
+              <img class="w-100" height="300px"  src="../../../../../assets/images/clients/saarc-img.jpg" alt="">
+            </div>
+            <div class="col-sm-6 pt-2">
+              <img  class="w-100" height="300px"  src="../../../../../assets/images/clients/f-v.jpeg" alt="">
+            </div>
+            <div class="col-sm-12" style="margin-top: 1.8rem;">
+              <h3 style="font-size: 25px; font-weight: 600;">SKILLED WORKFORCE FOR ROMANIA.</h3>
+              <p class="pt-2" style="font-size: 20px;line-height: 1.4;">We are recruiting skilled staffs from Bangladesh, Nepal, India, Srilanka, Philippines, Vietnam  in Construction, hospitality, house maids,  care giver nurses.</p>
+            </div>
+      </div>
+
+    </div>
+  </div>
+
+
   <div id="service-id" class="business-area">
     <div class="container">
-      <h1 class="business-header">Service</h1>
+      <h1 class="business-header">Service Area</h1>
 
-      <div
-        id="accordion1"
-        style="
+      <div id="accordion1" style="
           border-width: 1px;
           border-color: #e2e2e2;
           border-radius: 0px 0px 10px 10px;
           background-color: #ffffff;
           box-shadow: 7px 7px 10px 0 rgb(63 116 255 / 9%);
-        "
-      >
+        ">
         <div class="btn-header d-flex three-btn">
-          <a
-            (click)="updateSelectedDom($event)"
-            class="btn tab-link button-selected btn-first"
-            id="WhoWeAreLink"
-            data-toggle="collapse"
-            href="#WhoWeAre"
-            aria-expanded="true"
-            aria-controls="collapseOneA"
-          >
-          Energy and Engineering Solutions implementation
+          <a (click)="updateSelectedDom($event)" class="btn tab-link button-selected btn-first" id="WhoWeAreLink"
+            data-toggle="collapse" href="#WhoWeAre" aria-expanded="true" aria-controls="collapseOneA">
+            Permanent Staffing
           </a>
-          <a
-            (click)="updateSelectedDom($event)"
-            style="border-right: 1px solid #e2e2e2"
-            class="btn collapsed tab-link button-deselected btn-second"
-            id="DevelopmentServicesLink"
-            data-toggle="collapse"
-            href="#DevelopmentServices"
-            aria-expanded="false"
-            aria-controls="collapseTwoA"
-          >
-          Qualified Support Services
+          <a (click)="updateSelectedDom($event)" style="border-right: 1px solid #e2e2e2"
+            class="btn collapsed tab-link button-deselected btn-second" id="DevelopmentServicesLink"
+            data-toggle="collapse" href="#DevelopmentServices" aria-expanded="false" aria-controls="collapseTwoA">
+            Contract staffing
           </a>
-          <a
-            (click)="updateSelectedDom($event)"
-            class="btn collapsed tab-link button-deselected"
-            id="ContactUsLink"
-            data-toggle="collapse"
-            href="#ContactUs"
-            aria-expanded="false"
-            aria-controls="collapseTwoA"
-          >
-          Content Delivery Services
+          <a (click)="updateSelectedDom($event)" class="btn collapsed tab-link button-deselected" id="ContactUsLink"
+            data-toggle="collapse" href="#ContactUs" aria-expanded="false" aria-controls="collapseTwoA">
+            IT staffing
           </a>
         </div>
-        <div
-          id="WhoWeAre"
-          class="collapse show"
-          aria-labelledby="headingTwoAd"
-          data-parent="#accordion1"
-        >
+        <div id="WhoWeAre" class="collapse show" aria-labelledby="headingTwoAd" data-parent="#accordion1">
           <div class="page-content">
             <div class="row">
               <div class="col-sm-6" style="padding-right: 0">
@@ -247,27 +310,20 @@
                 <div id="accordion-h1">
                   <div class="border-list">
                     <div id="headingOne">
-                      <a
-                        class="btn collapse-title"
-                        data-toggle="collapse"
-                        data-target="#collapseOne"
-                        aria-expanded="true"
-                        aria-controls="collapseOne"
-                      >
+                      <a class="btn collapse-title" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
                         <h4 class="tab-header4">
-                         Lorem ipsum dolor sit, amet consectetur
+                          Targeted candidate sourcing
                         </h4>
                       </a>
                     </div>
 
-                    <div
-                      id="collapseOne"
-                      class="collapse"
-                      aria-labelledby="headingOne"
-                      data-parent="#accordion-h1"
-                    >
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-h1">
                       <p class="tab-p">
-                        Nibh tellus molestie nunc non blandit massa enim nec. Turpis egestas sed tempus urna et pharetra pharetra
+                        Our people have built an elite network by sourcing and engaging high quality candidates. Through
+                        our strong presence in local community groups, and industry partners, our team is able to deepen
+                        their expertise and continue to grow our vast talent network. With our recruiting expertise
+                        combined with deep industry knowledge, we deliver end-to-end support for our clients.
                       </p>
                     </div>
                   </div>
@@ -276,24 +332,18 @@
                 <div id="accordion-h2">
                   <div class="border-list">
                     <div id="headingTwo">
-                      <a
-                        class="btn collapsed collapse-title"
-                        data-toggle="collapse"
-                        data-target="#collapseTwo"
-                        aria-expanded="false"
-                        aria-controls="collapseTwo"
-                      >
-                        <h4 class="tab-header4">loem ewere sesdfd</h4>
+                      <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                        <h4 class="tab-header4">Candidate application screening</h4>
                       </a>
                     </div>
-                    <div
-                      id="collapseTwo"
-                      class="collapse"
-                      aria-labelledby="headingTwo"
-                      data-parent="#accordion-h2"
-                    >
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-h2">
                       <p class="tab-p">
-                        Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus.
+                        Our process increases speed to hire. We establish key timeframes to accelerate the hiring
+                        process, so that you can interview the top-tier candidates as quickly as possible. From initial
+                        point of contact to an accepted job offer, we will secure the right professionals in less than 3
+                        weeks. We offer a dedicated recruiting team experienced in volume hiring, to secure the best
+                        talent in the shortest amount of time.
                       </p>
                     </div>
                   </div>
@@ -302,26 +352,21 @@
                 <div id="accordion-h3">
                   <div class="border-list">
                     <div id="headingThree">
-                      <a
-                        class="btn collapsed collapse-title"
-                        data-toggle="collapse"
-                        data-target="#collapseThree"
-                        aria-expanded="false"
-                        aria-controls="collapseThree"
-                      >
+                      <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree">
                         <h4 class="tab-header4">
-                         Something goes here
+                          Assessment and management
                         </h4>
                       </a>
                     </div>
-                    <div
-                      id="collapseThree"
-                      class="collapse"
-                      aria-labelledby="headingThree"
-                      data-parent="#accordion-h3"
-                    >
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-h3">
                       <p class="tab-p">
-                        Turpis egestas sed tempus urna et pharetra pharetra. Tincidunt arcu non sodales neque sodales. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Ut aliquam purus sit amet luctus venenatis lectus
+
+                        Our insights are the foundation of our European Consortium reports. Our annual Salary Guide
+                        report provides a
+                        comprehensive list of salaries in top industries to help understand salary trends and determine
+                        your hiring budget. Our recruiting experts use market mapping and salary benchmarking to provide
+                        insights into the hot spot areas so that you can maintain a competitive position in your market.
                       </p>
                     </div>
                   </div>
@@ -330,26 +375,18 @@
                 <div id="accordion-h4">
                   <div class="border-list">
                     <div id="headingFour">
-                      <a
-                        class="btn collapsed collapse-title"
-                        data-toggle="collapse"
-                        data-target="#collapseFour"
-                        aria-expanded="false"
-                        aria-controls="collapseFour"
-                      >
+                      <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseFour"
+                        aria-expanded="false" aria-controls="collapseFour">
                         <h4 class="tab-header4">
-                          Varius morbi enim nunc faucibus a pellentesque sit. 
+                          Ongoing candidate engagement
                         </h4>
                       </a>
                     </div>
-                    <div
-                      id="collapseFour"
-                      class="collapse"
-                      aria-labelledby="headingFour"
-                      data-parent="#accordion-h4"
-                    >
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion-h4">
                       <p class="tab-p">
-                        Quam lacus suspendisse faucibus interdum posuere. Feugiat pretium nibh ipsum consequat
+                        Our brand opens doors for our clients to attract the best talent and reach the widest potential
+                        audience of relevant high quality candidates. Through our digital recruitment solutions, we
+                        receive 4X the views for online job ads and have a 95% job fill rate.
                       </p>
                     </div>
                   </div>
@@ -359,12 +396,7 @@
           </div>
         </div>
 
-        <div
-          id="DevelopmentServices"
-          class="collapse"
-          aria-labelledby="headingTwoAd"
-          data-parent="#accordion1"
-        >
+        <div id="DevelopmentServices" class="collapse" aria-labelledby="headingTwoAd" data-parent="#accordion1">
           <div class="page-content">
             <div class="row">
               <div class="col-sm-6" style="padding-right: 0">
@@ -374,26 +406,17 @@
                 <div id="accordion-mh1">
                   <div class="border-list">
                     <div id="headingOne">
-                      <a
-                        class="btn collapse-title"
-                        data-toggle="collapse"
-                        data-target="#collapseOne"
-                        aria-expanded="true"
-                        aria-controls="collapseOne"
-                      >
-                        <h4 class="tab-header4">Lorem ipsum:</h4>
+                      <a class="btn collapse-title" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        <h4 class="tab-header4">Instant impact</h4>
                       </a>
                     </div>
 
-                    <div
-                      id="collapseOne"
-                      class="collapse"
-                      aria-labelledby="headingOne"
-                      data-parent="#accordion-mh1"
-                    >
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-mh1">
                       <p class="tab-p">
-                        Diam quis enim lobortis scelerisque fermentum dui faucibus in. Fringilla ut morbi tincidunt augue interdum. Nam at lectus urna duis convallis convallis. Imperdiet nulla malesuada pellentesque elit eget
-                        Diam quis enim lobortis scelerisque fermentum dui faucibus in. Fringilla ut morbi tincidunt augue interdum. Nam at lectus urna duis convallis convallis. Imperdiet nulla malesuada pellentesque elit eget
+                        Whether you’re facing unexpected demands, need to cover an absence or are implementing
+                        transformative change, we have the expertise to supply contract workers with the skills you
+                        need.
                       </p>
                     </div>
                   </div>
@@ -402,44 +425,113 @@
                 <div id="accordion-mh2">
                   <div class="border-list">
                     <div id="headingTwo">
-                      <a
-                        class="btn collapsed collapse-title"
-                        data-toggle="collapse"
-                        data-target="#collapseTwo"
-                        aria-expanded="false"
-                        aria-controls="collapseTwo"
-                      >
-                        <h4 class="tab-header4">Loremiaja</h4>
+                      <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                        <h4 class="tab-header4">Shorter hiring process</h4>
                       </a>
                     </div>
-                    <div
-                      id="collapseTwo"
-                      class="collapse"
-                      aria-labelledby="headingTwo"
-                      data-parent="#accordion-mh2"
-                    >
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-mh2">
                       <p class="tab-p">
-                        Foloreme sdfsf flori: 8<br />
-                         name in fkew: 143<br />
-                        Loren<br />
-                        Diam quis enim lobortis scelerisque fermentum dui faucibus in. Fringilla ut morbi tincidunt augue interdum. Nam at lectus urna duis convallis convallis. Imperdiet nulla malesuada pellentesque elit eget
+                        At European Consortium, we replace “Advertise and Apply” with “Find and Engage” to expand our
+                        talent pool.
+                        We’ve equipped our recruiting experts with leading tech and data science to reach both passive
+                        and active candidates.
+                        We provide comprehensive support to organizations looking to expand their contract workforce in
+                        accounting and finance, architecture, construction, engineering, information technology, life
+                        sciences and property and facilities management.
+
                       </p>
                     </div>
                   </div>
                 </div>
+
+
+                <div id="accordion-mh3">
+                  <div class="border-list">
+                    <div id="headingThree">
+                      <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree">
+                        <h4 class="tab-header4">Fresh perspectives</h4>
+                      </a>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                      data-parent="#accordion-mh3">
+                      <p class="tab-p">
+                        Our people have built an elite network by sourcing and engaging high quality candidates. Through
+                        our strong presence in local community groups, and industry partners, our team is able to deepen
+                        their expertise and continue to grow our vast talent network. With our recruiting expertise
+                        combined with deep industry knowledge, we deliver end-to-end support for our clients.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="accordion-mh4">
+                  <div class="border-list">
+                    <div id="headingFour">
+                      <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseFour"
+                        aria-expanded="false" aria-controls="collapseFour">
+                        <h4 class="tab-header4">Highly skilled workers with focused experience</h4>
+                      </a>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion-mh4">
+                      <p class="tab-p">
+                        Our process increases speed to hire. We establish key timeframes to accelerate the hiring
+                        process, so that you can interview the top-tier candidates as quickly as possible. From initial
+                        point of contact to an accepted job offer, we will secure the right contract professionals in
+                        less than 48 hours. We offer a dedicated recruiting team experienced in volume hiring, to secure
+                        the best talent in the shortest amount of time.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="accordion-mh5">
+                  <div class="border-list">
+                    <div id="headingFive">
+                      <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseFive"
+                        aria-expanded="false" aria-controls="collapseFive">
+                        <h4 class="tab-header4">Cost effectiveness</h4>
+                      </a>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion-mh5">
+                      <p class="tab-p">
+                        Our insights are the foundation of our European Consortium reports. Our annual Salary Guide
+                        report provides a
+                        comprehensive list of salaries in top industries to help understand salary trends and determine
+                        your hiring budget. Our recruiters use market mapping and salary benchmarking to provide
+                        insights into the hot spot areas so that you can maintain a competitive position in your market.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="accordion-mh6">
+                  <div class="border-list">
+                    <div id="headingSix">
+                      <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseSix"
+                        aria-expanded="false" aria-controls="collapseSix">
+                        <h4 class="tab-header4">Flexibility and responsiveness</h4>
+                      </a>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion-mh6">
+                      <p class="tab-p">
+                        Our brand opens doors for our clients to attract the best talent and reach the widest potential
+                        audience of relevant high quality candidates. Through our digital recruitment solutions, we
+                        receive 4X the views for online job ads and have a 95% job fill rate.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
         </div>
 
-        <div
-          id="ContactUs"
-          class="collapse"
-          aria-labelledby="headingTwoAd"
-          data-parent="#accordion1"
-        >
+        <div id="ContactUs" class="collapse" aria-labelledby="headingTwoAd" data-parent="#accordion1">
           <div class="page-content">
-            <div class="text-center" style="padding: 2rem">
+            <!-- <div class="text-center" style="padding: 2rem">
               <button
                 class="btn btn-info"
                 style="
@@ -455,7 +547,171 @@
               >
                 Download now
               </button>
+            </div> -->
+            <div class="row">
+              <div class="col-sm-6" style="padding-right: 0">
+                <div class="tab-img3"></div>
+              </div>
+              <div class="col-sm-6" style="padding-left: 0">
+                <div id="accordion-mh1">
+                  <div class="border-list">
+                    <div id="headingOne">
+                      <a class="btn collapse-title" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        <h4 class="tab-header4">Big data engineers</h4>
+                      </a>
+                    </div>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-mh1">
+                      <p class="tab-p">
+                        It is the role of a big data engineer to build, maintain and ensure a production-ready big data
+                        environment. This environment this role works in will include architecture, technology
+                        standards, open source options, as well as data preparation and data management processes.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="accordion-mh2">
+                  <div class="border-list">
+                    <div id="headingTwo">
+                      <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                        <h4 class="tab-header4">Business analysts </h4>
+                      </a>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-mh2">
+                      <p class="tab-p">
+                        Business analysts work with organisations to help them improve their processes and systems. They
+                        conduct research and analysis in order to come up with solutions to business problems and help
+                        to introduce these systems to businesses and their clients.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div id="accordion-mh3">
+                  <div class="border-list">
+                    <div id="headingThree">
+                      <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree">
+                        <h4 class="tab-header4">Cloud architects </h4>
+                      </a>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                      data-parent="#accordion-mh3">
+                      <p class="tab-p">
+                        In today’s market there are no boundaries, and European Consortium is a trusted partner
+                        to organizations across
+                        the U.S. and around the world. Whether you need a professional or a whole new team, we’ll
+                        provide you with quick access to tech talent who will make a difference from the moment they
+                        join. 
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="accordion-mh4">
+                  <div class="border-list">
+                    <div id="headingFour">
+                      <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseFour"
+                        aria-expanded="false" aria-controls="collapseFour">
+                        <h4 class="tab-header4">Data scientists </h4>
+                      </a>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion-mh4">
+                      <p class="tab-p">
+                        Data scientists help companies interpret and manage data and solve complex problems using
+                        expertise in a variety of data niches. They generally have a foundation in computer science,
+                        modeling, statistics, analytics, and math - coupled with a strong business sense. It’s this
+                        merging of esoteric intelligence and practical knowledge that makes the data scientist so
+                        valuable to a company
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="accordion-mh5">
+                  <div class="border-list">
+                    <div id="headingFive">
+                      <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseFive"
+                        aria-expanded="false" aria-controls="collapseFive">
+                        <h4 class="tab-header4">Java developers </h4>
+                      </a>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion-mh5">
+                      <p class="tab-p">
+                        A Java developer is responsible for developing applications and software using the programming
+                        language Java. A Java developer is a specialized type of programmer who may collaborate with web
+                        developers and software engineers to integrate Java into business applications, software, and
+                        websites
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="accordion-mh6">
+                  <div class="border-list">
+                    <div id="headingSix">
+                      <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseSix"
+                        aria-expanded="false" aria-controls="collapseSix">
+                        <h4 class="tab-header4">.Net Developers </h4>
+                      </a>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion-mh6">
+                      <p class="tab-p">
+                        A net developer is responsible for producing code using . net languages such as C# and VB. Net
+                        developers create applications from scratch, configure existing systems and provide user
+                        support. ... A net developer's overall goal is to work with internal teams to design, develop
+                        and maintain software.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="accordion-mh7">
+                  <div class="border-list">
+                    <div id="headingseven">
+                      <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseseven"
+                        aria-expanded="false" aria-controls="collapseseven">
+                        <h4 class="tab-header4">Project managers </h4>
+                      </a>
+                    </div>
+                    <div id="collapseseven" class="collapse" aria-labelledby="headingseven"
+                      data-parent="#accordion-mh7">
+                      <p class="tab-p">
+                        In the broadest sense, project managers (PMs) are responsible for planning, organizing, and
+                        directing the completion of specific projects for an organization while ensuring these projects
+                        are on time, on budget, and within scope.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="accordion-mh8">
+                  <div class="border-list">
+                    <div id="headingEight">
+                      <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseEight"
+                        aria-expanded="false" aria-controls="collapseEight">
+                        <h4 class="tab-header4">QA </h4>
+                      </a>
+                    </div>
+                    <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                      data-parent="#accordion-mh8">
+                      <p class="tab-p">
+                        A quality assurance specialist ensures that the final product observes the company's quality
+                        standards. In general, these detail-oriented professionals are responsible for the development
+                        and implementation of inspection activities, the detection and resolution of problems, and the
+                        delivery of satisfactory outcomes.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -470,31 +726,38 @@
       </h1>
       <div class="row">
         <div class="col-sm-4">
-          <img class="w-100" (click)="imageViewer('../../../../../assets/images/gallery/img1.jpg')"  src="../../../../../assets/images/gallery/img1.jpg" alt="">
+          <img class="w-100" (click)="imageViewer('../../../../../assets/images/gallery/img1.jpg')"
+            src="../../../../../assets/images/gallery/img1.jpg" alt="">
         </div>
         <div class="col-sm-4">
-          <img class="w-100" (click)="imageViewer('../../../../../assets/images/gallery/img2.jpg')"  src="../../../../../assets/images/gallery/img2.jpg" alt="">
+          <img class="w-100" (click)="imageViewer('../../../../../assets/images/gallery/img2.jpg')"
+            src="../../../../../assets/images/gallery/img2.jpg" alt="">
         </div>
         <div class="col-sm-4">
-          <img class="w-100" (click)="imageViewer('../../../../../assets/images/gallery/img3.jpg')"  src="../../../../../assets/images/gallery/img3.jpg" alt="">
+          <img class="w-100" (click)="imageViewer('../../../../../assets/images/gallery/img3.jpg')"
+            src="../../../../../assets/images/gallery/img3.jpg" alt="">
         </div>
-        
+
       </div>
-      <div class="row mt-2">
+      <div class="row" style="padding-top: 28px;">
         <div class="col-sm-4">
-          <img class="w-100" (click)="imageViewer('../../../../../assets/images/gallery/img4.jpg')"  src="../../../../../assets/images/gallery/img4.jpg" alt="">
+          <img class="w-100" (click)="imageViewer('../../../../../assets/images/gallery/img4.jpg')"
+            src="../../../../../assets/images/gallery/img4.jpg" alt="">
         </div>
         <div class="col-sm-4">
-          <img class="w-100" (click)="imageViewer('../../../../../assets/images/gallery/img5.jpg')"  src="../../../../../assets/images/gallery/img5.jpg" alt="">
+          <img class="w-100" (click)="imageViewer('../../../../../assets/images/gallery/img5.jpg')"
+            src="../../../../../assets/images/gallery/img5.jpg" alt="">
         </div>
         <div class="col-sm-4">
-          <img class="w-100" (click)="imageViewer('../../../../../assets/images/gallery/img6.jpg')"  src="../../../../../assets/images/gallery/img6.jpg" alt="">
+          <img class="w-100" (click)="imageViewer('../../../../../assets/images/gallery/img6.jpg')"
+            src="../../../../../assets/images/gallery/img6.jpg" alt="">
         </div>
       </div>
     </div>
   </div>
 
   <div id="contact-id" class="contact-area">
+  
     <div class="container">
       <div class="form-shadow">
         <div class="row">
@@ -502,53 +765,29 @@
             <h1>Send us a message*</h1>
           </div>
           <div class="col-sm-6">
-            <input
-              type="text"
-              class="form-control input-text"
-              placeholder="Your name*"
-            />
+            <input 	[(ngModel)]="emailObj.name" type="text" class="form-control input-text" placeholder="Your name*" />
           </div>
           <div class="col-sm-6">
-            <input
-              type="text"
-              class="form-control input-text"
-              placeholder="Email-address*"
-            />
+            <input [(ngModel)]="emailObj.toEmail" type="text" class="form-control input-text" placeholder="Email-address*" />
           </div>
           <div class="col-sm-6">
-            <input
-              type="text"
-              class="form-control input-text"
-              placeholder="Phone number*"
-            />
+            <input [(ngModel)]="emailObj.phone" type="text" class="form-control input-text" placeholder="Phone number*" />
           </div>
           <div class="col-sm-6">
-            <input
-              type="text"
-              class="form-control input-text"
-              placeholder="Object*"
-            />
+            <input [(ngModel)]="emailObj.subject" type="text" class="form-control input-text" placeholder="Object*" />
           </div>
           <div class="col-sm-12">
-            <textarea
-              placeholder="Address*"
-              name=""
-              id=""
-              class="text-area-cls form-control"
-            ></textarea>
+            <textarea [(ngModel)]="emailObj.body" placeholder="Address*" name="" id="" class="text-area-cls form-control"></textarea>
           </div>
           <div class="col-sm-12">
-            <button
-              class="btn btn-info"
-              style="
+            <button (click)="submitInfo()" class="btn btn-info" style="
                 padding: 12px 25px;
                 background: #31708e;
                 color: white;
                 font-size: 12px;
                 border-radius: 0;
                 margin-top: 20px;
-              "
-            >
+              ">
               SUBMIT NOW
             </button>
           </div>
@@ -562,68 +801,84 @@
       <div class="container">
         <div class="footer-bg">
           <div class="row">
-            <div class="col-sm-3">
-              <h1 class="footer-header text-white">
-                Loremn tpsum the askse seneedd
-              </h1>
-              <p class="footer-p text-white">
-                Diam quis enim lobortis scelerisque fermentum dui faucibus in. Fringilla ut morbi tincidunt augue interdum. Nam at lectus urna duis convallis convallis. Imperdiet nulla malesuada pellentesque elit eget.
-              </p>
-            </div>
-            <div class="col-sm-3">
-              <h1 class="footer-header text-white" style="margin-left: 2px;">Lorem Ipsum</h1>
-              <div class="d-flex mb-2 text-white">
-                <!-- <img
-                  class="footer-icon"
-                  src="assets/images/address-img.png"
-                  alt=""
-                /> -->
+            <div class="col-sm-4">
+              <h3 class="footer-headline">Address In Romania</h3>
+              <div class="d-flex mb-3 text-white">
                 <mat-icon style="color: gainsboro;"> location_on</mat-icon>
                 &nbsp;&nbsp;
                 <div style="margin-top: 5px">
-                  12 Nerva Traian Street, building M37, entry 4, apt. 105, sector 3, Bucharest, Romani
+                  12 Nerva Traian Street, building M37, entry 4, apt. 105, sector 3, Bucharest, Romania
+                  <!-- Suite 4, Level 4, THe Penthouse<br />
+                  Ewropa Business Center<br />
+                  Trip Dun Karm<br />
+                  B'Kara BKR 9034, Malta - EU -->
                 </div>
               </div>
-              <div class="d-flex mb-2 text-white">
-                <!-- <img
-                  class="footer-icon"
-                  src="assets/images/phone-icon.png"
-                  alt=""
-                /> -->
-                <mat-icon  style="color: gainsboro;"> phone</mat-icon>
+              <h3 style="margin-top: 20px;" class="footer-headline">Call</h3>
+              <div class="d-flex mb-3 text-white">
+                <mat-icon style="color: gainsboro;"> phone</mat-icon>
                 &nbsp;&nbsp;
-                <div style="margin-top: 5px">+40 721 198 4590</div>
+                <div style="margin-top: 5px">+40729514484, +40 721 198 459</div>
               </div>
-              <div class="d-flex mb-2 text-white">
-                <!-- <img
-                  class="footer-icon"
-                  src="assets/images/email-send-icon.png"
-                  alt=""
-                /> -->
+              <h3 style="margin-top: 20px;" class="footer-headline">Email</h3>
+              <div class="d-flex mb-3 text-white">
+                <mat-icon style="color: gainsboro;">email</mat-icon>
+                &nbsp;&nbsp;
+                <div style="margin-top: 5px">europeanconsortium@gmail.com</div>
+              </div>
+            </div>
+
+            <div class="col-sm-8">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.585300682196!2d26.11399211490973!3d44.4211548104509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff1e87f1a90d%3A0x31acf47240ac1c5b!2sStrada%20Nerva%20Traian%2012%2C%20Bucure%C8%99ti%20030167%2C%20Romania!5e0!3m2!1sen!2sbd!4v1641537613313!5m2!1sen!2sbd"
+                width="100%" height="300" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-sm-4">
+              <!-- <h1 class="footer-header text-white" style="margin-left: 2px;">Lorem Ipsum</h1> -->
+              <h3 class="footer-headline">Address In Malta</h3>
+              <div class="d-flex mb-3 text-white">
+
+                <mat-icon style="color: gainsboro;"> location_on</mat-icon>
+                &nbsp;&nbsp;
+                <div style="margin-top: 5px">
+                  Suite 4 level 4 The Penthouse <br /> Ewropa Business Center <br /> Trip Dun Karm <br /> B'Kara BKR
+                  9034 Malta - EU
+                  <!-- Suite 4, Level 4, THe Penthouse<br />
+                Ewropa Business Center<br />
+                Trip Dun Karm<br />
+                B'Kara BKR 9034, Malta - EU -->
+                </div>
+              </div>
+              <h3 style="margin-top: 20px;" class="footer-headline">Call</h3>
+              <div class="d-flex mb-3 text-white">
+                <mat-icon style="color: gainsboro;"> phone</mat-icon>
+                &nbsp;&nbsp;
+                <div style="margin-top: 5px">+356 7940 9359</div>
+              </div>
+              <h3 style="margin-top: 20px;" class="footer-headline">Email</h3>
+              <div class="d-flex mb-3 text-white">
                 <mat-icon style="color: gainsboro;"> email</mat-icon>
                 &nbsp;&nbsp;
                 <div style="margin-top: 5px">europeanconsortium@gmail.com</div>
               </div>
             </div>
-            <div class="col-sm-6">
-          
+            <div class="col-sm-8">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.585300682196!2d26.11399211490973!3d44.4211548104509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff1e87f1a90d%3A0x31acf47240ac1c5b!2sStrada%20Nerva%20Traian%2012%2C%20Bucure%C8%99ti%20030167%2C%20Romania!5e0!3m2!1sen!2sbd!4v1640926867122!5m2!1sen!2sbd"
-                width="100%"
-                height="350"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-              ></iframe>
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.758428244807!2d14.463652664612095!3d35.90393172533468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e4f9209755c2b%3A0x12752272ce2e8bb7!2sFind%20a%20Job%20in%20Malta!5e0!3m2!1sen!2snl!4v1641229496689!5m2!1sen!2snl"
+                width="100%" height="300" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
             </div>
           </div>
+
         </div>
       </div>
       <div class="bootom-footer">
         <div class="container">
-          <div class="d-flex justify-content-between text-white">
-            <div>Copy right all right reserved 2021</div>
-            <div>Loreme</div>
+          <div class="d-flex justify-content-center text-white">
+            <div> © 2022 European Consortium All Rights Reserved.</div>
+            <!-- <div>Lor</div> -->
           </div>
         </div>
       </div>
@@ -635,3 +890,4 @@
   <div class="closeBtn" (click)="closeImage()">&times;</div>
   <img class="img-responsive modal-content " src="{{imageLink}}">
 </div>
+

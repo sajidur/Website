@@ -1,10 +1,10 @@
 {
-  "name": "den-angular",
+  "name": "european-constrorium",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod",
+    "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -22,8 +22,10 @@
     "@angular/router": "~13.0.0",
     "bootstrap": "^4.5.2",
     "jquery": "3.5.0",
+    "ngx-spinner": "^13.0.0",
     "npm": "^8.2.0",
     "rxjs": "~7.4.0",
+    "sweetalert2": "^11.3.4",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
