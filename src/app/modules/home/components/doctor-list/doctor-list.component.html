@@ -31,10 +31,10 @@
       <div class="carousel-item active">
         <div class="banner-area1" style="margin-top: 10px;">
           <div class="banner-image-background">
-            <h1 class="banner-header">Permanent </h1>
-            <h1 class="banner-header">Recruitment &</h1>
-            <h1 class="banner-header">Trusted</h1>
-            <h1 class="banner-header">Clients</h1>
+            <h1 class="banner-header">DEMOLITION</h1>
+            <h1 class="banner-header">CONCRETE WORK</h1>
+            <h1 class="banner-header">CEMENT RENDERING</h1>
+            <!-- <h1 class="banner-header">Clients</h1> -->
             <p class="banner-large-p">
               we help clients gain a competitive edge in the race for talent.
             </p>
@@ -94,10 +94,10 @@
       <div class="carousel-item">
         <div class="banner-area2" style="margin-top: 10px;">
           <div class="banner-image-background">
-            <h1 class="banner-header">Permanent and</h1>
-            <h1 class="banner-header">Skilled Overseas</h1>
-            <h1 class="banner-header"> Construction Worker</h1>
-            <h1 class="banner-header"> Placement In Europe.</h1>
+            <h1 class="banner-header">PLASTER BOARD WORK</h1>
+            <h1 class="banner-header">BRICKWORK</h1>
+            <h1 class="banner-header"> PAINTING</h1>
+            <!-- <h1 class="banner-header"> Placement In Europe.</h1> -->
             <p class="banner-large-p">
               Your reliable source of skilled staffs for project.
             </p>
@@ -115,8 +115,8 @@
       <div class="carousel-item">
         <div class="banner-area3" style="margin-top: 10px;">
           <div class="banner-image-background">
-            <h1 class="banner-header">Permanent IT</h1>
-            <h1 class="banner-header"> Staff Placement</h1>
+            <h1 class="banner-header">PLUMBING</h1>
+            <h1 class="banner-header">ELECTRICAL WORK</h1>
             <!-- <h1 class="banner-header">Trusted</h1>
             <h1 class="banner-header">Clients</h1> -->
             <p class="banner-large-p">
@@ -136,10 +136,10 @@
       <div class="carousel-item">
         <div class="banner-area4" style="margin-top: 10px;">
           <div class="banner-image-background">
-            <h1 class="banner-header">Trusted And</h1>
-            <h1 class="banner-header">Verified Employers </h1>
-            <!-- <h1 class="banner-header">Trusted</h1>
-            <h1 class="banner-header">Clients</h1> -->
+            <h1 class="banner-header">WELDING WORK</h1>
+            <h1 class="banner-header"> DRIVERS</h1>
+             <h1 class="banner-header">LABOURS/</h1>
+        
             <p class="banner-large-p">
               For our selected skilled workers for different sector.
             </p>
@@ -261,7 +261,9 @@
             </div>
             <div class="col-sm-12" style="margin-top: 1.8rem;">
               <h3 style="font-size: 25px; font-weight: 600;">SKILLED WORKFORCE FOR ROMANIA.</h3>
-              <p class="pt-2" style="font-size: 20px;line-height: 1.4;">We are recruiting skilled staffs from Bangladesh, Nepal, India, Srilanka, Philippines, Vietnam  in Construction, hospitality, house maids,  care giver nurses.</p>
+              <p class="pt-2" style="font-size: 20px;line-height: 1.4;">We are recruiting skilled staffs from Bangladesh, Nepal, India, Srilanka, Philippines, Vietnam  in Construction. 
+                <!-- hospitality, house maids,  care giver nurses. -->
+              </p>
             </div>
       </div>
 
@@ -756,36 +758,41 @@
     <div class="container">
       <div class="form-shadow">
         <div class="row">
-          <div class="col-sm-12">
-            <h1>Send us a message*</h1>
-          </div>
-          <div class="col-sm-6">
-            <input 	[(ngModel)]="emailObj.name" type="text" class="form-control input-text" placeholder="Your name*" />
-          </div>
-          <div class="col-sm-6">
-            <input [(ngModel)]="emailObj.toEmail" type="text" class="form-control input-text" placeholder="Email-address*" />
-          </div>
-          <div class="col-sm-6">
-            <input [(ngModel)]="emailObj.phone" type="text" class="form-control input-text" placeholder="Phone number*" />
-          </div>
-          <div class="col-sm-6">
-            <input [(ngModel)]="emailObj.subject" type="text" class="form-control input-text" placeholder="Object*" />
-          </div>
-          <div class="col-sm-12">
-            <textarea [(ngModel)]="emailObj.body" placeholder="Address*" name="" id="" class="text-area-cls form-control"></textarea>
-          </div>
-          <div class="col-sm-12">
-            <button (click)="submitInfo()" class="btn btn-info" style="
-                padding: 12px 25px;
-                background: #31708e;
-                color: white;
-                font-size: 12px;
-                border-radius: 0;
-                margin-top: 20px;
-              ">
-              SUBMIT NOW
-            </button>
-          </div>
+            <div class="col-sm-8">
+              <div class="col-sm-12">
+                <h1>Send us a message*</h1>
+              </div>
+              <div class="col-sm-12">
+                <input 	[(ngModel)]="emailObj.name" type="text" class="form-control input-text" placeholder="Your name*" />
+              </div>
+              <div class="col-sm-12">
+                <input [(ngModel)]="emailObj.toEmail" type="text" class="form-control input-text" placeholder="Email-address*" />
+              </div>
+              <div class="col-sm-12">
+                <input [(ngModel)]="emailObj.phone" type="text" class="form-control input-text" placeholder="Phone number*" />
+              </div>
+              <div class="col-sm-12">
+                <input [(ngModel)]="emailObj.subject" type="text" class="form-control input-text" placeholder="Object*" />
+              </div>
+              <div class="col-sm-12">
+                <textarea [(ngModel)]="emailObj.body" placeholder="Address*" name="" id="" class="text-area-cls form-control"></textarea>
+              </div>
+              <div class="col-sm-12">
+                <button (click)="submitInfo()" class="btn btn-info" style="
+                    padding: 12px 25px;
+                    background: #31708e;
+                    color: white;
+                    font-size: 12px;
+                    border-radius: 0;
+                    margin-top: 20px;
+                  ">
+                  SUBMIT NOW
+                </button>
+              </div>
+            </div>
+            <div class="col-sm-4 text-center">
+              <img style="width: 200px;margin-top: 25px;" src="../../../../../assets/images/qrcode.jpg" alt="">
+            </div>
         </div>
       </div>
     </div>
@@ -813,7 +820,9 @@
               <div class="d-flex mb-3 text-white">
                 <mat-icon style="color: gainsboro;"> phone</mat-icon>
                 &nbsp;&nbsp;
-                <div style="margin-top: 5px">+40729514484, +40 721 198 459</div>
+                <div style="margin-top: 5px">+40729514484         
+                 <!-- , +40 721 198 459 -->
+                </div>
               </div>
               <h3 style="margin-top: 20px;" class="footer-headline">Email</h3>
               <div class="d-flex mb-3 text-white">
