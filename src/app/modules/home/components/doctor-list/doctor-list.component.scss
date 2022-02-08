@@ -118,7 +118,7 @@
 }
 
 .parent-son-img {
-   height: 500px;
+    height: 340px;
     border-bottom: 3px solid #e0e4f0;
     background-image: url('../../../../../assets/images/parent_and_son.jpg');
     opacity: 1;
@@ -168,7 +168,8 @@
 
 .tab-link {
   display: block;
-  width: 33.33%;
+  // width: 33.33%;
+  width: 50%;
   padding: 35px;
   -ms-flex-align: center;
   align-items: center;
