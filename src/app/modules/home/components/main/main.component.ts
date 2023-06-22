@@ -9,16 +9,12 @@ import { ContactusService } from 'src/app/shared/services/contactus.service';
 import Swal from 'sweetalert2';
 import { NgxSpinnerService } from 'ngx-spinner';
 
-
-
-
-
 @Component({
-  selector: 'app-doctor-list',
-  templateUrl: './doctor-list.component.html',
-  styleUrls: ['./doctor-list.component.scss']
+  selector: 'home',
+  templateUrl: './main.component.html',
+  styleUrls: ['./main.component.scss']
 })
-export class DoctorListComponent implements OnInit {
+export class MainComponent implements OnInit {
   imageLink: any;
   public emailObj = {
 	  toEmail: "",

@@ -1,17 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DoctorDetailsComponent } from './components/doctor-details/doctor-details.component';
-import { DoctorListComponent } from './components/doctor-list/doctor-list.component';
+import { MainComponent } from './components/main/main.component';
 
 export const routes: Routes = [
 
   {
     path: '',
-    component: DoctorListComponent
+    component: MainComponent
   },
   { 
-    path: 'doctor-list/details', 
-    component: DoctorDetailsComponent 
+    path: 'main/details', 
+     
   }
 
 ]
