@@ -1,24 +1,31 @@
-
+<div class="" style="  overflow-y: hidden;">
+  
   <ngx-spinner color="#0074a7" type="ball-clip-rotate-pulse" size="medium" [fullScreen]="true"><p style="color: white">Plase wait..</p></ngx-spinner>
 
-  <div id="mainContianerId" class="container-fluid" style="background-image: linear-gradient(180deg, #fff, #ddd)">
-  <header>
-    <div>
-      <div class="d-flex mb-3 text-transform;">
-        <mat-icon style="color: rgb(58, 29, 29);"> phone</mat-icon>
+  <header class="bg-white">
+    <div class="top-nav">
+      <div class="d-flex text-transform;">
+        <!-- Phone Icon and Link -->
+        <mat-icon style="color: rgb(255, 255, 255);">phone</mat-icon>
         &nbsp;&nbsp;
-        <div style="margin-top: 5px;margin-left: 5px;margin-right: 10px;">+8801685747910         
-         <!-- , +40 721 198 459 -->
-        </div>
-        <mat-icon style="color: rgb(14, 17, 58);">email</mat-icon>
+        <a href="tel:+8801685747910" style="color: white; margin-top: 5px;margin-left: 5px;margin-right: 10px;">
+          +8801685747910
+        </a>
+    
+        <!-- Email Icon and Link -->
+        <mat-icon style="color: rgb(255, 255, 255);">email</mat-icon>
         &nbsp;&nbsp;
-        <div style="margin-top: 5px;margin-left: 5px;">info@rexsystemsbd.com</div>
+        <a href="mailto:info@rexsystemsbd.com" style="color: white; margin-top: 5px;margin-left: 5px;">
+          info@rexsystemsbd.com
+        </a>
       </div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <!-- <a href=""> -->
-      <img onclick="" class="header-img" src="assets/images/logo.png" alt="" />
-      <!-- </a> -->
+    
+
+    <hr/>
+
+    <nav class="navbar p-0 navbar-expand-lg navbar-light d-flex justify-content-between" data-aos="fade-top">
+      <img onclick="" class="header-img ml-2" src="assets/images/logo.png" alt="" />
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -30,785 +37,722 @@
           <a class="nav-item nav-link" (click)="gotToRedirect('clients-id')">Clients</a>
           <a class="nav-item nav-link" (click)="gotToRedirect('service-id')">Services</a>
           <a class="nav-item nav-link" (click)="gotToRedirect('gallery-id')">Gallery</a>
-          <button class="nav-item nav-link contact-text" (click)="gotToRedirect('teams-id')">Hire a Developer</button>
+          <button class="nav-item nav-link hire-developer text-light" (click)="gotToRedirect('teams-id')">Hire a Developer</button>
           <a class="nav-item nav-link contact-text" (click)="gotToRedirect('contact-id')">Contact</a>
         </div>
       </div>
     </nav>
   </header>
 
-  <!-- <div class="container"> -->
-  <div id="carouselExampleControls" class="carousel slide orange-bg" data-interval="55555555" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="banner-area1" style="margin-top: 10px;">
-          <div class="banner-image-background">
-            <h1 class="banner-header">Hire the Top</h1>
-            <h1 class="banner-header">Programmers,</h1>
-            <h1 class="banner-header">Coders & Architects</h1>
-            <!-- <h1 class="banner-header">Clients</h1> -->
-            <p class="banner-large-p">
-              we help clients gain a competitive edge in the race for talent.
-            </p>
-            <button class="btn btn-info" style="
-                    padding: 12px 25px;
-                    background: #ffffff;
-                    color: #31708e;
-                    text-transform: uppercase;
-                  ">
-              Get in touch with a recruiting expert
-            </button>
+  <div id="mainContianerId" class=" m-0 p-0">
+
+    <!-- <div class="container"> -->
+    <div id="carouselExampleControls" class="carousel slide orange-bg" data-interval="55555555" data-ride="carousel" data-aos="fade-top">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="banner-area1">
+            <div class="banner-image-background">
+              <h1 class="banner-header">Hire the Top</h1>
+              <h1 class="banner-header">Programmers,</h1>
+              <h1 class="banner-header">Coders & Architects</h1>
+              <!-- <h1 class="banner-header">Clients</h1> -->
+              <p class="banner-large-p">
+                we help clients gain a competitive edge in the race for talent.
+              </p>
+              <button class="btn bnnr-btn">
+                Get in touch with a recruiting expert
+              </button>
+            </div>
+          </div>
+        </div>
+      
+        <div class="carousel-item">
+          <div class="banner-area2">
+            <div class="banner-image-background">
+              <h1 class="banner-header">Financial Services</h1>
+              <h1 class="banner-header">Accounting</h1>
+              <h1 class="banner-header">POS</h1>
+              <!-- <h1 class="banner-header"> Placement In Europe.</h1> -->
+              <p class="banner-large-p">
+                Your reliable source of skilled staffs for project.
+              </p>
+              <button class="btn bnnr-btn">
+                Get in touch with a recruiting expert
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="banner-area3">
+            <div class="banner-image-background">
+              <h1 class="banner-header">.Net</h1>
+              <h1 class="banner-header">Python, PHP</h1>
+              <!-- <h1 class="banner-header">Trusted</h1>
+              <h1 class="banner-header">Clients</h1> -->
+              <p class="banner-large-p">
+                Your reliable source of employer in Europe.
+              </p>
+              <button class="btn bnnr-btn">
+                Get in touch with a recruiting expert
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="banner-area4">
+            <div class="banner-image-background">
+              <h1 class="banner-header">Best WORK</h1>
+              <h1 class="banner-header"> UI/UX</h1>
+              <h1 class="banner-header">Website/</h1>
+          
+              <p class="banner-large-p">
+                For our selected skilled workers for different sector.
+              </p>
+              <button class="btn bnnr-btn">
+                Get in touch with a recruiting expert
+              </button>
+            </div>
           </div>
         </div>
       </div>
-      <!-- <div class="carousel-item">
-        <div class="banner-area12" style="margin-top: 10px;">
-          <div class="banner-image-background">
-            <h1 class="banner-header">We Recruit</h1>
-            <h1 class="banner-header">Overseas Skilled</h1>
-            <h1 class="banner-header">Worker For</h1>
-            <h1 class="banner-header">Romanian companies.</h1>
-            <p class="banner-large-p">
-            India, Bhutan, Bangladesh, Nepal, Pakistan, Maldives, Srilanka, Afghanistan
-            </p>
-            <button class="btn btn-info" style="
-                    padding: 12px 25px;
-                    background: #ffffff;
-                    color: #31708e;
-                    text-transform: uppercase;
-                  ">
-              Get in touch with a recruiting expert
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="banner-area13" style="margin-top: 10px;">
-          <div class="banner-image-background">
-            <h1 class="banner-header">We Recruit</h1>
-            <h1 class="banner-header">Overseas Skilled</h1>
-            <h1 class="banner-header">Worker For</h1>
-            <h1 class="banner-header">Romanian companies.</h1>
-            <p class="banner-large-p">
-              Philippines, Vietnam
-            </p>
-            <button class="btn btn-info" style="
-                    padding: 12px 25px;
-                    background: #ffffff;
-                    color: #31708e;
-                    text-transform: uppercase;
-                  ">
-              Get in touch with a recruiting expert
-            </button>
-          </div>
-        </div>
-      </div> -->
-      <div class="carousel-item">
-        <div class="banner-area2" style="margin-top: 10px;">
-          <div class="banner-image-background">
-            <h1 class="banner-header">Financial Services</h1>
-            <h1 class="banner-header">Accounting</h1>
-            <h1 class="banner-header">POS</h1>
-            <!-- <h1 class="banner-header"> Placement In Europe.</h1> -->
-            <p class="banner-large-p">
-              Your reliable source of skilled staffs for project.
-            </p>
-            <button class="btn btn-info" style="
-                    padding: 12px 25px;
-                    background: #ffffff;
-                    color: #31708e;
-                    text-transform: uppercase;
-                  ">
-              Get in touch with a recruiting expert
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="banner-area3" style="margin-top: 10px;">
-          <div class="banner-image-background">
-            <h1 class="banner-header">.Net</h1>
-            <h1 class="banner-header">Python, PHP</h1>
-            <!-- <h1 class="banner-header">Trusted</h1>
-            <h1 class="banner-header">Clients</h1> -->
-            <p class="banner-large-p">
-              Your reliable source of employer in Europe.
-            </p>
-            <button class="btn btn-info" style="
-                    padding: 12px 25px;
-                    background: #ffffff;
-                    color: #31708e;
-                    text-transform: uppercase;
-                  ">
-              Get in touch with a recruiting expert
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="banner-area4" style="margin-top: 10px;">
-          <div class="banner-image-background">
-            <h1 class="banner-header">Best WORK</h1>
-            <h1 class="banner-header"> UI/UX</h1>
-             <h1 class="banner-header">Website/</h1>
-        
-            <p class="banner-large-p">
-              For our selected skilled workers for different sector.
-            </p>
-            <button class="btn btn-info" style="
-                    padding: 12px 25px;
-                    background: #ffffff;
-                    color: #31708e;
-                    text-transform: uppercase;
-                  ">
-              Get in touch with a recruiting expert
-            </button>
-          </div>
-        </div>
-      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
 
 
-
-  <div id="about-id" class="about-area">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="about-header">About US</div>
-          <p class="about-p">
-            Rex System Bangladesh is a leading software development company based in Bangladesh. With a strong focus on delivering innovative solutions, we specialize in creating custom software applications to meet the unique needs of our clients.
-            At Rex System Bangladesh, we believe that technology has the power to transform businesses and drive growth. Our team of skilled software engineers, designers, and project managers work collaboratively to develop cutting-edge software solutions that streamline processes, enhance productivity, and enable businesses to stay ahead in today's competitive landscape.
-          </p>
-          <!-- <p class="about-p">
-            In addition, European consortium assigns in-country Regional HR Specialists to support the legal and
-            regulatory HR activities in relation to onboarding and offboarding local Professionals hired on behalf of
-            our Customer.
-          </p>
-          <p class="about-p">
-            For day-to-day, ongoing support, European consortium provides Customers & Professionals access to our Help
-            Center ticketing system, available via our proprietary, collaborative software Platform. The Help Center is
-            monitored round the clock by our in-country HR Specialists, Regional Accountants, IT Support, and Account
-            Management.
-
-          </p> -->
-
-          <!-- <p class="about-p">
-            Tellus cras adipiscing enim eu. Eros donec ac odio tempor. In egestas erat imperdiet sed euismod nisi porta lorem. Viverra aliquet eget sit amet tellus cras adipiscing. Nullam eget felis eget nunc. Vivamus at augue eget arcu dictum varius.
-          </p>
-          <p class="about-p">
-            Varius morbi enim nunc faucibus a pellentesque sit. Placerat duis ultricies lacus sed turpis tincidunt id aliquet. Diam sit amet nisl suscipit adipiscing. Venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus.
-          </p>
-          <p class="about-p">
-            Sagittis aliquam malesuada bibendum arcu vitae elementum. Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum. Id aliquet lectus proin nibh nisl condimentum id.
-          </p>
-          <p class="about-p">
-            Diam quis enim lobortis scelerisque fermentum dui faucibus in. Fringilla ut morbi tincidunt augue interdum. Nam at lectus urna duis convallis convallis
-          </p> -->
-        </div>
-        <div class="col-sm-6">
-          <div class="parent-son-img"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div id="teams-id" class="stuff-area">
-    <div class="container">
-      <h1 class="stuff-header">
-        Hire a Developer
-      </h1>
-      <div class="row mb-2">
-        <div class="col-sm-4 mb-2 text-center">
-          <img class="w-100" src="../../../../../assets/images/stuff/img1.jpeg" alt="">
-          <div class="stuff-name">.Net Developers</div>
-        </div>
-        <div class="col-sm-4 mb-2 text-center">
-          <div style="border-radius: 50%;background: #FFFFFF;border: 1px solid #F4F4F4;">
-            <img class="w-100" src="../../../../../assets/images/stuff/img2.jpeg" alt="">
-          </div>
-          <div class="stuff-name">Python Developers </div>
-        </div>
-        <div class="col-sm-4 mb-2 text-center">
-          <img class="w-100" src="../../../../../assets/images/stuff/img3.jpeg" alt="">
-          <div class="stuff-name">Wordpress Developers</div>
-        </div>
-
-      </div>
-      <div class="row mt-3">
-        <div class="col-sm-4 mb-2 text-center">
-          <img class="w-100" src="../../../../../assets/images/stuff/img4.jpeg" alt="">
-          <div class="stuff-name">Shopify Developers</div>
-        </div>
-        <div class="col-sm-4 mb-2 text-center">
-          <img class="w-100" src="../../../../../assets/images/stuff/img5.jpeg" alt="">
-          <div class="stuff-name">Android Developers</div>
-        </div>
-        <div class="col-sm-4 mb-2 text-center">
-          <img class="w-100" src="../../../../../assets/images/stuff/img6.jpg" alt="">
-          <!-- <div class="stuff-name">IT recruitment manager</div> -->
-          <div class="stuff-name">Best UI/UX Developers</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="clients-area" id="clients-id" style="margin-bottom: 5rem;">
-    <div class="container">
-      <h1 class="clients-header">Our  Client</h1>
-      <div class="row">
-            <div class="col-sm-4 pt-2">
-              <h2>Dhaka Handicrafts Limited.</h2>
-              <a href="https://dhakahandicrafts.com/" target="_blank">                           
-                <img width="50%" height="40%"  src="../../../../../assets/images/clients/dhaka_handicraft_logo.jpg" alt="">
-              </a>
-            </div>
-            <div class="col-sm-4 pt-2">
-              <h2>Chittagong University Public Administration Ex-Student Forum, Dhaka</h2>
-              <a href="https://cupaesfd.org/" target="_blank">  
-              <img  width="50%" height="40%"  src="../../../../../assets/images/clients/cupaLogo.gif" alt="">
-             </a>
-            </div>
-            <div class="col-sm-4 pt-2">
-              <h2>Excellence Shoes</h2>
-              <img  width="50%" height="40%"  src="../../../../../assets/images/clients/excellenceshoe.jpg" alt="">
-            </div>
-            <div class="col-sm-12" style="margin-top: 1.8rem;">
-              <h3 style="font-size: 25px; font-weight: 600;">Skilled workforce in several countries.</h3>
-              <p class="pt-2" style="font-size: 20px;line-height: 1.4;">We are serving in USA, Canada and Nigeria from Bangladesh.</p>
-            </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <div id="service-id" class="business-area">
-    <div class="container">
-      <h1 class="business-header">Service Area</h1>
-
-      <div id="accordion1" style="
-          border-width: 1px;
-          border-color: #e2e2e2;
-          border-radius: 0px 0px 10px 10px;
-          background-color: #ffffff;
-          box-shadow: 7px 7px 10px 0 rgb(63 116 255 / 9%);
-        ">
-        <div class="btn-header d-flex three-btn">
-          <a (click)="updateSelectedDom($event)" class="btn tab-link button-selected btn-first" id="WhoWeAreLink"
-            data-toggle="collapse" href="#WhoWeAre" aria-expanded="true" aria-controls="collapseOneA">
-            Hire a Developer
-          </a>
-          <a (click)="updateSelectedDom($event)" style="border-right: 1px solid #e2e2e2"
-            class="btn collapsed tab-link button-deselected btn-second" id="DevelopmentServicesLink"
-            data-toggle="collapse" href="#DevelopmentServices" aria-expanded="false" aria-controls="collapseTwoA">
-            End-to-End Solutions
-          </a>
-          <!-- <a (click)="updateSelectedDom($event)" class="btn collapsed tab-link button-deselected" id="ContactUsLink"
-            data-toggle="collapse" href="#ContactUs" aria-expanded="false" aria-controls="collapseTwoA">
-            IT staffing
-          </a> -->
-        </div>
-        <div id="WhoWeAre" class="collapse show" aria-labelledby="headingTwoAd" data-parent="#accordion1">
-          <div class="page-content">
-            <div class="row">
-              <div class="col-sm-6" style="padding-right: 0">
-                <div class="tab-img1"></div>
-              </div>
-              <div class="col-sm-6" style="padding-left: 0">
-                <div id="accordion-h1">
-                  <div class="border-list">
-                    <div id="headingOne">
-                      <a class="btn collapse-title" data-toggle="collapse" data-target="#collapseOne"
-                        aria-expanded="true" aria-controls="collapseOne">
-                        <h4 class="tab-header4">
-                          Targeted candidate sourcing
-                        </h4>
-                      </a>
-                    </div>
-
-                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-h1">
-                      <p class="tab-p">
-                        Our people have built an elite network by sourcing and engaging high quality candidates. Through
-                        our strong presence in local community groups, and industry partners, our team is able to deepen
-                        their expertise and continue to grow our vast talent network. With our recruiting expertise
-                        combined with deep industry knowledge, we deliver end-to-end support for our clients.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div id="accordion-h2">
-                  <div class="border-list">
-                    <div id="headingTwo">
-                      <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseTwo"
-                        aria-expanded="false" aria-controls="collapseTwo">
-                        <h4 class="tab-header4">Candidate application screening</h4>
-                      </a>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-h2">
-                      <p class="tab-p">
-                        Our process increases speed to hire. We establish key timeframes to accelerate the hiring
-                        process, so that you can interview the top-tier candidates as quickly as possible. From initial
-                        point of contact to an accepted job offer, we will secure the right professionals in less than 3
-                        weeks. We offer a dedicated recruiting team experienced in volume hiring, to secure the best
-                        talent in the shortest amount of time.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div id="accordion-h3">
-                  <div class="border-list">
-                    <div id="headingThree">
-                      <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseThree"
-                        aria-expanded="false" aria-controls="collapseThree">
-                        <h4 class="tab-header4">
-                          Assessment and management
-                        </h4>
-                      </a>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-h3">
-                      <p class="tab-p">
-
-                        Our insights are the foundation of our European Consortium reports. Our annual Salary Guide
-                        report provides a
-                        comprehensive list of salaries in top industries to help understand salary trends and determine
-                        your hiring budget. Our recruiting experts use market mapping and salary benchmarking to provide
-                        insights into the hot spot areas so that you can maintain a competitive position in your market.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div id="accordion-h4">
-                  <div class="border-list">
-                    <div id="headingFour">
-                      <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseFour"
-                        aria-expanded="false" aria-controls="collapseFour">
-                        <h4 class="tab-header4">
-                          Ongoing candidate engagement
-                        </h4>
-                      </a>
-                    </div>
-                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion-h4">
-                      <p class="tab-p">
-                        Our brand opens doors for our clients to attract the best talent and reach the widest potential
-                        audience of relevant high quality candidates. Through our digital recruitment solutions, we
-                        receive 4X the views for online job ads and have a 95% job fill rate.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="DevelopmentServices" class="collapse" aria-labelledby="headingTwoAd" data-parent="#accordion1">
-          <div class="page-content">
-            <div class="row">
-              <div class="col-sm-6" style="padding-right: 0">
-                <div class="tab-img2"></div>
-              </div>
-              <div class="col-sm-6" style="padding-left: 0">
-                <div id="accordion-mh1">
-                  <div class="border-list">
-                    <div id="headingOne">
-                      <a class="btn collapse-title" data-toggle="collapse" data-target="#collapseOne"
-                        aria-expanded="true" aria-controls="collapseOne">
-                        <h4 class="tab-header4">Point of Sale</h4>
-                      </a>
-                    </div>
-
-                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-mh1">
-                      <p class="tab-p">
-                        Whether you’re facing unexpected demands, need to cover an absence or are implementing
-                        transformative change, we have the expertise to supply contract workers with the skills you
-                        need.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div id="accordion-mh2">
-                  <div class="border-list">
-                    <div id="headingTwo">
-                      <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseTwo"
-                        aria-expanded="false" aria-controls="collapseTwo">
-                        <h4 class="tab-header4">Small to Large Scale Ecommerce</h4>
-                      </a>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-mh2">
-                      <p class="tab-p">
-                        At European Consortium, we replace “Advertise and Apply” with “Find and Engage” to expand our
-                        talent pool.
-                        We’ve equipped our recruiting experts with leading tech and data science to reach both passive
-                        and active candidates.
-                        We provide comprehensive support to organizations looking to expand their contract workforce in
-                        accounting and finance, architecture, construction, engineering, information technology, life
-                        sciences and property and facilities management.
-
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div id="accordion-mh3">
-                  <div class="border-list">
-                    <div id="headingThree">
-                      <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseThree"
-                        aria-expanded="false" aria-controls="collapseThree">
-                        <h4 class="tab-header4">Inventory & Accounting Solutions</h4>
-                      </a>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                      data-parent="#accordion-mh3">
-                      <p class="tab-p">
-                        Our people have built an elite network by sourcing and engaging high quality candidates. Through
-                        our strong presence in local community groups, and industry partners, our team is able to deepen
-                        their expertise and continue to grow our vast talent network. With our recruiting expertise
-                        combined with deep industry knowledge, we deliver end-to-end support for our clients.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div id="accordion-mh4">
-                  <div class="border-list">
-                    <div id="headingFour">
-                      <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseFour"
-                        aria-expanded="false" aria-controls="collapseFour">
-                        <h4 class="tab-header4">Performance analysis and System design</h4>
-                      </a>
-                    </div>
-                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion-mh4">
-                      <p class="tab-p">
-                        Our process increases speed to hire. We establish key timeframes to accelerate the hiring
-                        process, so that you can interview the top-tier candidates as quickly as possible. From initial
-                        point of contact to an accepted job offer, we will secure the right contract professionals in
-                        less than 48 hours. We offer a dedicated recruiting team experienced in volume hiring, to secure
-                        the best talent in the shortest amount of time.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div id="accordion-mh5">
-                  <div class="border-list">
-                    <div id="headingFive">
-                      <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseFive"
-                        aria-expanded="false" aria-controls="collapseFive">
-                        <h4 class="tab-header4">ERP Solutions</h4>
-                      </a>
-                    </div>
-                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion-mh5">
-                      <p class="tab-p">
-                        Our insights are the foundation of our European Consortium reports. Our annual Salary Guide
-                        report provides a
-                        comprehensive list of salaries in top industries to help understand salary trends and determine
-                        your hiring budget. Our recruiters use market mapping and salary benchmarking to provide
-                        insights into the hot spot areas so that you can maintain a competitive position in your market.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div id="accordion-mh6">
-                  <div class="border-list">
-                    <div id="headingSix">
-                      <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseSix"
-                        aria-expanded="false" aria-controls="collapseSix">
-                        <h4 class="tab-header4">Android apps</h4>
-                      </a>
-                    </div>
-                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion-mh6">
-                      <p class="tab-p">
-                        Our brand opens doors for our clients to attract the best talent and reach the widest potential
-                        audience of relevant high quality candidates. Through our digital recruitment solutions, we
-                        receive 4X the views for online job ads and have a 95% job fill rate.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="ContactUs" class="collapse" aria-labelledby="headingTwoAd" data-parent="#accordion1">
-          <div class="page-content">
-            <div class="row">
-              <div class="col-sm-6" style="padding-right: 0">
-                <div class="tab-img3"></div>
-              </div>
-              <div class="col-sm-6" style="padding-left: 0">
-                <div id="accordion-mh1">
-                  <div class="border-list">
-                    <div id="headingOne">
-                      <a class="btn collapse-title" data-toggle="collapse" data-target="#collapseOne"
-                        aria-expanded="true" aria-controls="collapseOne">
-                        <h4 class="tab-header4">Big data engineers</h4>
-                      </a>
-                    </div>
-
-                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-mh1">
-                      <p class="tab-p">
-                        It is the role of a big data engineer to build, maintain and ensure a production-ready big data
-                        environment. This environment this role works in will include architecture, technology
-                        standards, open source options, as well as data preparation and data management processes.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div id="accordion-mh2">
-                  <div class="border-list">
-                    <div id="headingTwo">
-                      <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseTwo"
-                        aria-expanded="false" aria-controls="collapseTwo">
-                        <h4 class="tab-header4">Business analysts </h4>
-                      </a>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-mh2">
-                      <p class="tab-p">
-                        Business analysts work with organisations to help them improve their processes and systems. They
-                        conduct research and analysis in order to come up with solutions to business problems and help
-                        to introduce these systems to businesses and their clients.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div id="accordion-mh3">
-                  <div class="border-list">
-                    <div id="headingThree">
-                      <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseThree"
-                        aria-expanded="false" aria-controls="collapseThree">
-                        <h4 class="tab-header4">Cloud architects </h4>
-                      </a>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                      data-parent="#accordion-mh3">
-                      <p class="tab-p">
-                        In today’s market there are no boundaries, and European Consortium is a trusted partner
-                        to organizations across
-                        the U.S. and around the world. Whether you need a professional or a whole new team, we’ll
-                        provide you with quick access to tech talent who will make a difference from the moment they
-                        join. 
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div id="accordion-mh4">
-                  <div class="border-list">
-                    <div id="headingFour">
-                      <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseFour"
-                        aria-expanded="false" aria-controls="collapseFour">
-                        <h4 class="tab-header4">Data scientists </h4>
-                      </a>
-                    </div>
-                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion-mh4">
-                      <p class="tab-p">
-                        Data scientists help companies interpret and manage data and solve complex problems using
-                        expertise in a variety of data niches. They generally have a foundation in computer science,
-                        modeling, statistics, analytics, and math - coupled with a strong business sense. It’s this
-                        merging of esoteric intelligence and practical knowledge that makes the data scientist so
-                        valuable to a company
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div id="accordion-mh5">
-                  <div class="border-list">
-                    <div id="headingFive">
-                      <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseFive"
-                        aria-expanded="false" aria-controls="collapseFive">
-                        <h4 class="tab-header4">Java developers </h4>
-                      </a>
-                    </div>
-                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion-mh5">
-                      <p class="tab-p">
-                        A Java developer is responsible for developing applications and software using the programming
-                        language Java. A Java developer is a specialized type of programmer who may collaborate with web
-                        developers and software engineers to integrate Java into business applications, software, and
-                        websites
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div id="accordion-mh6">
-                  <div class="border-list">
-                    <div id="headingSix">
-                      <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseSix"
-                        aria-expanded="false" aria-controls="collapseSix">
-                        <h4 class="tab-header4">.Net Developers </h4>
-                      </a>
-                    </div>
-                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion-mh6">
-                      <p class="tab-p">
-                        A net developer is responsible for producing code using . net languages such as C# and VB. Net
-                        developers create applications from scratch, configure existing systems and provide user
-                        support. ... A net developer's overall goal is to work with internal teams to design, develop
-                        and maintain software.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div id="accordion-mh7">
-                  <div class="border-list">
-                    <div id="headingseven">
-                      <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseseven"
-                        aria-expanded="false" aria-controls="collapseseven">
-                        <h4 class="tab-header4">Project managers </h4>
-                      </a>
-                    </div>
-                    <div id="collapseseven" class="collapse" aria-labelledby="headingseven"
-                      data-parent="#accordion-mh7">
-                      <p class="tab-p">
-                        In the broadest sense, project managers (PMs) are responsible for planning, organizing, and
-                        directing the completion of specific projects for an organization while ensuring these projects
-                        are on time, on budget, and within scope.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div id="accordion-mh8">
-                  <div class="border-list">
-                    <div id="headingEight">
-                      <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseEight"
-                        aria-expanded="false" aria-controls="collapseEight">
-                        <h4 class="tab-header4">QA </h4>
-                      </a>
-                    </div>
-                    <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
-                      data-parent="#accordion-mh8">
-                      <p class="tab-p">
-                        A quality assurance specialist ensures that the final product observes the company's quality
-                        standards. In general, these detail-oriented professionals are responsible for the development
-                        and implementation of inspection activities, the detection and resolution of problems, and the
-                        delivery of satisfactory outcomes.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="gallery-id" class="img-area">
-    <div class="container">
-      <h1>
-        <!-- This is gallery area -->
-
-      </h1>
-      <div class="row">
-        <div class="col-sm-4">
-          <img class="w-100" (click)="imageViewer('../../../../../assets/images/gallery/img1.jpeg')"
-            src="../../../../../assets/images/gallery/img1.jpeg" alt="">
-        </div>
-        <div class="col-sm-4">
-          <img class="w-100" (click)="imageViewer('../../../../../assets/images/gallery/img2.jpg')"
-            src="../../../../../assets/images/gallery/img2.jpg" alt="">
-        </div>
-        <div class="col-sm-4">
-          <img class="w-100" (click)="imageViewer('../../../../../assets/images/gallery/img3.jpeg')"
-            src="../../../../../assets/images/gallery/img3.jpeg" alt="">
-        </div>
-
-      </div>
-      <div class="row" style="padding-top: 28px;">
-        <div class="col-sm-4">
-          <img class="w-100" (click)="imageViewer('../../../../../assets/images/gallery/img4.jpg')"
-            src="../../../../../assets/images/gallery/img4.jpg" alt="">
-        </div>
-        <div class="col-sm-4">
-          <img class="w-100" (click)="imageViewer('../../../../../assets/images/gallery/img5.jpg')"
-            src="../../../../../assets/images/gallery/img5.jpg" alt="">
-        </div>
-        <div class="col-sm-4">
-          <img class="w-100" (click)="imageViewer('../../../../../assets/images/gallery/img6.jpg')"
-            src="../../../../../assets/images/gallery/img6.jpg" alt="">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="contact-id" class="contact-area">
-  
-    <div class="container">
-      <div class="form-shadow">
-        <div class="row">
-            <div class="col-sm-8">
-              <div class="col-sm-12">
-                <h1>Send us a message*</h1>
-              </div>
-              <div class="col-sm-12">
-                <input 	[(ngModel)]="emailObj.name" type="text" class="form-control input-text" placeholder="Your name*" />
-              </div>
-              <div class="col-sm-12">
-                <input [(ngModel)]="emailObj.toEmail" type="text" class="form-control input-text" placeholder="Email-address*" />
-              </div>
-              <div class="col-sm-12">
-                <input [(ngModel)]="emailObj.phone" type="text" class="form-control input-text" placeholder="Phone number*" />
-              </div>
-              <div class="col-sm-12">
-                <input [(ngModel)]="emailObj.subject" type="text" class="form-control input-text" placeholder="Object*" />
-              </div>
-              <div class="col-sm-12">
-                <textarea [(ngModel)]="emailObj.body" placeholder="Address*" name="" id="" class="text-area-cls form-control"></textarea>
-              </div>
-              <div class="col-sm-12">
-                <button (click)="submitInfo()" class="btn btn-info" style="
-                    padding: 12px 25px;
-                    background: #31708e;
-                    color: white;
-                    font-size: 12px;
-                    border-radius: 0;
-                    margin-top: 20px;
-                  ">
-                  SUBMIT NOW
-                </button>
-              </div>
-            </div>
-            <div class="col-sm-4 text-center">
-              <img style="width: 200px;margin-top: 25px;" src="../../../../../assets/images/qr-code.png" alt="">
-              <a aria-label="Chat on WhatsApp" href="https://wa.me/+8801719304970"> <img  style="width: 100px;margin-top: 25px;" alt="Chat on WhatsApp" src="../../../../../assets/images/WhatsApp.svg.webp" />
-              </a>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <footer class="footer-area" id="resource-id">
-    <div class="footer-bg-img">
+    <div id="about-id " class="about-area">
       <div class="container">
-        <div class="footer-bg">
+        <div class="row">
+          <div class="col-sm-6 text-secondary" data-aos="fade-right">
+            <div class="header">About US</div>
+            <p class="about-p">
+              Rex System Bangladesh is a leading software development company based in Bangladesh. With a strong focus on delivering innovative solutions, we specialize in creating custom software applications to meet the unique needs of our clients.
+              At Rex System Bangladesh, we believe that technology has the power to transform businesses and drive growth. Our team of skilled software engineers, designers, and project managers work collaboratively to develop cutting-edge software solutions that streamline processes, enhance productivity, and enable businesses to stay ahead in today's competitive landscape.
+            </p>
+            <p class="about-p">
+              In addition, European consortium assigns in-country Regional HR Specialists to support the legal and
+              regulatory HR activities in relation to onboarding and offboarding local Professionals hired on behalf of
+              our Customer.
+            </p>
+            <!-- <p class="about-p">
+              For day-to-day, ongoing support, European consortium provides Customers & Professionals access to our Help
+              Center ticketing system, available via our proprietary, collaborative software Platform. The Help Center is
+              monitored round the clock by our in-country HR Specialists, Regional Accountants, IT Support, and Account
+              Management.
+
+            </p> -->
+
+            <!-- <p class="about-p">
+              Tellus cras adipiscing enim eu. Eros donec ac odio tempor. In egestas erat imperdiet sed euismod nisi porta lorem. Viverra aliquet eget sit amet tellus cras adipiscing. Nullam eget felis eget nunc. Vivamus at augue eget arcu dictum varius.
+            </p>
+            <p class="about-p">
+              Varius morbi enim nunc faucibus a pellentesque sit. Placerat duis ultricies lacus sed turpis tincidunt id aliquet. Diam sit amet nisl suscipit adipiscing. Venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus.
+            </p>
+            <p class="about-p">
+              Sagittis aliquam malesuada bibendum arcu vitae elementum. Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum. Id aliquet lectus proin nibh nisl condimentum id.
+            </p>
+            <p class="about-p">
+              Diam quis enim lobortis scelerisque fermentum dui faucibus in. Fringilla ut morbi tincidunt augue interdum. Nam at lectus urna duis convallis convallis
+            </p> -->
+          </div>
+          <div class="col-sm-6" data-aos="fade-left">
+            <div class="parent-son-img"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="teams-id" class="stuff-area">
+      <div class="container">
+        <h1 class="header">
+          Hire a Developer
+        </h1>
+        <div class="row mb-2" data-aos="fade-right">
+          <div class="col-sm-4 mb-2 text-center">
+            <img class="w-100" src="../../../../../assets/images/stuff/img1.jpeg" alt="">
+            <div class="stuff-name">.Net Developers</div>
+          </div>
+          <div class="col-sm-4 mb-2 text-center">
+            <div style="border-radius: 50%;background: #FFFFFF;border: 1px solid #F4F4F4;">
+              <img class="w-100" src="../../../../../assets/images/stuff/img2.jpeg" alt="">
+            </div>
+            <div class="stuff-name">Python Developers </div>
+          </div>
+          <div class="col-sm-4 mb-2 text-center">
+            <img class="w-100" src="../../../../../assets/images/stuff/img3.jpeg" alt="">
+            <div class="stuff-name">Wordpress Developers</div>
+          </div>
+
+        </div>
+        <div class="row mt-3" data-aos="fade-left">
+          <div class="col-sm-4 mb-2 text-center">
+            <img class="w-100" src="../../../../../assets/images/stuff/img4.jpeg" alt="">
+            <div class="stuff-name">Shopify Developers</div>
+          </div>
+          <div class="col-sm-4 mb-2 text-center">
+            <img class="w-100" src="../../../../../assets/images/stuff/img5.jpeg" alt="">
+            <div class="stuff-name">Android Developers</div>
+          </div>
+          <!-- <div class="col-sm-4 mb-2 text-center">
+            <img class="w-100" src="../../../../../assets/images/stuff/img6.jpg" alt="">
+            <div class="stuff-name">Best UI/UX Developers</div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+
+    <div class="clients-area" id="clients-id" style="margin-bottom: 5rem;" data-aos="fade-left">
+      <div class="container">
+        <h1 class="header text-center">Our Client</h1> <!-- Center the heading -->
+        <div class="row justify-content-center">
+          <div class="col-sm-4 client-info d-flex flex-column align-items-center pt-2 mb-4" data-aos="fade-right">
+            <h2 class="client-name">Dhaka Handicrafts Limited.</h2>
+            <a href="https://dhakahandicrafts.com/" target="_blank">
+              <img width="100%"  src="../../../../../assets/images/clients/dhaka_handicraft_logo.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-4 client-info d-flex flex-column align-items-center pt-2 mb-4" data-aos="fade-top">
+            <h2 class="client-name">Chittagong University Public Administration Ex-Student Forum, Dhaka</h2>
+            <a href="https://cupaesfd.org/" target="_blank">
+              <img width="30%" style="margin: 0 130px;" src="../../../../../assets/images/clients/cupaLogo.gif" alt="">
+            </a>
+          </div>
+          <div class="col-sm-4 client-info d-flex flex-column align-items-center pt-2" data-aos="fade-left">
+            <h2 class="client-name">Excellence Shoes</h2>
+            <img width="50%" height="40%" src="../../../../../assets/images/clients/excellenceshoe.jpg" alt="">
+          </div>
+          <div class="col-sm-12 text-center mt-4">
+            <h3 style="font-size: 25px; font-weight: 600;">Skilled workforce in several countries.</h3>
+            <p class="pt-2" style="font-size: 20px; line-height: 1.4;">We are serving in USA, Canada and Nigeria from Bangladesh.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+    <div id="service-id" class="business-area" data-aos="fade-right">
+      <div class="container">
+        <h1 class="header">Service Area</h1>
+
+        <div id="accordion1" style="
+            border-width: 1px;
+            border-color: #e2e2e2;
+            border-radius: 0px 0px 10px 10px;
+            background-color: #ffffff;
+            box-shadow: 7px 7px 10px 0 rgb(63 116 255 / 9%);
+          ">
+          <div class="btn-header d-flex three-btn">
+            <a (click)="updateSelectedDom($event)" class="btn tab-link button-selected btn-first" id="WhoWeAreLink"
+              data-toggle="collapse" href="#WhoWeAre" aria-expanded="true" aria-controls="collapseOneA">
+              Hire a Developer
+            </a>
+            <a (click)="updateSelectedDom($event)" style="border-right: 1px solid #e2e2e2"
+              class="btn collapsed tab-link button-deselected btn-second" id="DevelopmentServicesLink"
+              data-toggle="collapse" href="#DevelopmentServices" aria-expanded="false" aria-controls="collapseTwoA">
+              End-to-End Solutions
+            </a>
+            <!-- <a (click)="updateSelectedDom($event)" class="btn collapsed tab-link button-deselected" id="ContactUsLink"
+              data-toggle="collapse" href="#ContactUs" aria-expanded="false" aria-controls="collapseTwoA">
+              IT staffing
+            </a> -->
+          </div>
+          <div id="WhoWeAre" class="collapse show" aria-labelledby="headingTwoAd" data-parent="#accordion1">
+            <div class="page-content">
+              <div class="row">
+                <div class="col-sm-6" style="padding-right: 0">
+                  <div class="tab-img1"></div>
+                </div>
+                <div class="col-sm-6" style="padding-left: 0">
+                  <div id="accordion-h1">
+                    <div class="border-list">
+                      <div id="headingOne">
+                        <a class="btn collapse-title" data-toggle="collapse" data-target="#collapseOne"
+                          aria-expanded="true" aria-controls="collapseOne">
+                          <h4 class="tab-header4">
+                            Targeted candidate sourcing
+                          </h4>
+                        </a>
+                      </div>
+
+                      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-h1">
+                        <p class="tab-p">
+                          Our people have built an elite network by sourcing and engaging high quality candidates. Through
+                          our strong presence in local community groups, and industry partners, our team is able to deepen
+                          their expertise and continue to grow our vast talent network. With our recruiting expertise
+                          combined with deep industry knowledge, we deliver end-to-end support for our clients.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="accordion-h2">
+                    <div class="border-list">
+                      <div id="headingTwo">
+                        <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseTwo"
+                          aria-expanded="false" aria-controls="collapseTwo">
+                          <h4 class="tab-header4">Candidate application screening</h4>
+                        </a>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-h2">
+                        <p class="tab-p">
+                          Our process increases speed to hire. We establish key timeframes to accelerate the hiring
+                          process, so that you can interview the top-tier candidates as quickly as possible. From initial
+                          point of contact to an accepted job offer, we will secure the right professionals in less than 3
+                          weeks. We offer a dedicated recruiting team experienced in volume hiring, to secure the best
+                          talent in the shortest amount of time.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="accordion-h3">
+                    <div class="border-list">
+                      <div id="headingThree">
+                        <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseThree"
+                          aria-expanded="false" aria-controls="collapseThree">
+                          <h4 class="tab-header4">
+                            Assessment and management
+                          </h4>
+                        </a>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-h3">
+                        <p class="tab-p">
+
+                          Our insights are the foundation of our European Consortium reports. Our annual Salary Guide
+                          report provides a
+                          comprehensive list of salaries in top industries to help understand salary trends and determine
+                          your hiring budget. Our recruiting experts use market mapping and salary benchmarking to provide
+                          insights into the hot spot areas so that you can maintain a competitive position in your market.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="accordion-h4">
+                    <div class="border-list">
+                      <div id="headingFour">
+                        <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseFour"
+                          aria-expanded="false" aria-controls="collapseFour">
+                          <h4 class="tab-header4">
+                            Ongoing candidate engagement
+                          </h4>
+                        </a>
+                      </div>
+                      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion-h4">
+                        <p class="tab-p">
+                          Our brand opens doors for our clients to attract the best talent and reach the widest potential
+                          audience of relevant high quality candidates. Through our digital recruitment solutions, we
+                          receive 4X the views for online job ads and have a 95% job fill rate.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="DevelopmentServices" class="collapse" aria-labelledby="headingTwoAd" data-parent="#accordion1">
+            <div class="page-content">
+              <div class="row">
+                <div class="col-sm-6" style="padding-right: 0">
+                  <div class="tab-img2"></div>
+                </div>
+                <div class="col-sm-6" style="padding-left: 0">
+                  <div id="accordion-mh1">
+                    <div class="border-list">
+                      <div id="headingOne">
+                        <a class="btn collapse-title" data-toggle="collapse" data-target="#collapseOne"
+                          aria-expanded="true" aria-controls="collapseOne">
+                          <h4 class="tab-header4">Point of Sale</h4>
+                        </a>
+                      </div>
+
+                      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-mh1">
+                        <p class="tab-p">
+                          Whether you’re facing unexpected demands, need to cover an absence or are implementing
+                          transformative change, we have the expertise to supply contract workers with the skills you
+                          need.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="accordion-mh2">
+                    <div class="border-list">
+                      <div id="headingTwo">
+                        <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseTwo"
+                          aria-expanded="false" aria-controls="collapseTwo">
+                          <h4 class="tab-header4">Small to Large Scale Ecommerce</h4>
+                        </a>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-mh2">
+                        <p class="tab-p">
+                          At European Consortium, we replace “Advertise and Apply” with “Find and Engage” to expand our
+                          talent pool.
+                          We’ve equipped our recruiting experts with leading tech and data science to reach both passive
+                          and active candidates.
+                          We provide comprehensive support to organizations looking to expand their contract workforce in
+                          accounting and finance, architecture, construction, engineering, information technology, life
+                          sciences and property and facilities management.
+
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div id="accordion-mh3">
+                    <div class="border-list">
+                      <div id="headingThree">
+                        <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseThree"
+                          aria-expanded="false" aria-controls="collapseThree">
+                          <h4 class="tab-header4">Inventory & Accounting Solutions</h4>
+                        </a>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#accordion-mh3">
+                        <p class="tab-p">
+                          Our people have built an elite network by sourcing and engaging high quality candidates. Through
+                          our strong presence in local community groups, and industry partners, our team is able to deepen
+                          their expertise and continue to grow our vast talent network. With our recruiting expertise
+                          combined with deep industry knowledge, we deliver end-to-end support for our clients.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="accordion-mh4">
+                    <div class="border-list">
+                      <div id="headingFour">
+                        <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseFour"
+                          aria-expanded="false" aria-controls="collapseFour">
+                          <h4 class="tab-header4">Performance analysis and System design</h4>
+                        </a>
+                      </div>
+                      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion-mh4">
+                        <p class="tab-p">
+                          Our process increases speed to hire. We establish key timeframes to accelerate the hiring
+                          process, so that you can interview the top-tier candidates as quickly as possible. From initial
+                          point of contact to an accepted job offer, we will secure the right contract professionals in
+                          less than 48 hours. We offer a dedicated recruiting team experienced in volume hiring, to secure
+                          the best talent in the shortest amount of time.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="accordion-mh5">
+                    <div class="border-list">
+                      <div id="headingFive">
+                        <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseFive"
+                          aria-expanded="false" aria-controls="collapseFive">
+                          <h4 class="tab-header4">ERP Solutions</h4>
+                        </a>
+                      </div>
+                      <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion-mh5">
+                        <p class="tab-p">
+                          Our insights are the foundation of our European Consortium reports. Our annual Salary Guide
+                          report provides a
+                          comprehensive list of salaries in top industries to help understand salary trends and determine
+                          your hiring budget. Our recruiters use market mapping and salary benchmarking to provide
+                          insights into the hot spot areas so that you can maintain a competitive position in your market.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="accordion-mh6">
+                    <div class="border-list">
+                      <div id="headingSix">
+                        <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseSix"
+                          aria-expanded="false" aria-controls="collapseSix">
+                          <h4 class="tab-header4">Android apps</h4>
+                        </a>
+                      </div>
+                      <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion-mh6">
+                        <p class="tab-p">
+                          Our brand opens doors for our clients to attract the best talent and reach the widest potential
+                          audience of relevant high quality candidates. Through our digital recruitment solutions, we
+                          receive 4X the views for online job ads and have a 95% job fill rate.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="ContactUs" class="collapse" aria-labelledby="headingTwoAd" data-parent="#accordion1">
+            <div class="page-content">
+              <div class="row">
+                <div class="col-sm-6" style="padding-right: 0">
+                  <div class="tab-img3"></div>
+                </div>
+                <div class="col-sm-6" style="padding-left: 0">
+                  <div id="accordion-mh1">
+                    <div class="border-list">
+                      <div id="headingOne">
+                        <a class="btn collapse-title" data-toggle="collapse" data-target="#collapseOne"
+                          aria-expanded="true" aria-controls="collapseOne">
+                          <h4 class="tab-header4">Big data engineers</h4>
+                        </a>
+                      </div>
+
+                      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-mh1">
+                        <p class="tab-p">
+                          It is the role of a big data engineer to build, maintain and ensure a production-ready big data
+                          environment. This environment this role works in will include architecture, technology
+                          standards, open source options, as well as data preparation and data management processes.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="accordion-mh2">
+                    <div class="border-list">
+                      <div id="headingTwo">
+                        <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseTwo"
+                          aria-expanded="false" aria-controls="collapseTwo">
+                          <h4 class="tab-header4">Business analysts </h4>
+                        </a>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-mh2">
+                        <p class="tab-p">
+                          Business analysts work with organisations to help them improve their processes and systems. They
+                          conduct research and analysis in order to come up with solutions to business problems and help
+                          to introduce these systems to businesses and their clients.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div id="accordion-mh3">
+                    <div class="border-list">
+                      <div id="headingThree">
+                        <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseThree"
+                          aria-expanded="false" aria-controls="collapseThree">
+                          <h4 class="tab-header4">Cloud architects </h4>
+                        </a>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#accordion-mh3">
+                        <p class="tab-p">
+                          In today’s market there are no boundaries, and European Consortium is a trusted partner
+                          to organizations across
+                          the U.S. and around the world. Whether you need a professional or a whole new team, we’ll
+                          provide you with quick access to tech talent who will make a difference from the moment they
+                          join. 
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="accordion-mh4">
+                    <div class="border-list">
+                      <div id="headingFour">
+                        <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseFour"
+                          aria-expanded="false" aria-controls="collapseFour">
+                          <h4 class="tab-header4">Data scientists </h4>
+                        </a>
+                      </div>
+                      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion-mh4">
+                        <p class="tab-p">
+                          Data scientists help companies interpret and manage data and solve complex problems using
+                          expertise in a variety of data niches. They generally have a foundation in computer science,
+                          modeling, statistics, analytics, and math - coupled with a strong business sense. It’s this
+                          merging of esoteric intelligence and practical knowledge that makes the data scientist so
+                          valuable to a company
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="accordion-mh5">
+                    <div class="border-list">
+                      <div id="headingFive">
+                        <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseFive"
+                          aria-expanded="false" aria-controls="collapseFive">
+                          <h4 class="tab-header4">Java developers </h4>
+                        </a>
+                      </div>
+                      <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion-mh5">
+                        <p class="tab-p">
+                          A Java developer is responsible for developing applications and software using the programming
+                          language Java. A Java developer is a specialized type of programmer who may collaborate with web
+                          developers and software engineers to integrate Java into business applications, software, and
+                          websites
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="accordion-mh6">
+                    <div class="border-list">
+                      <div id="headingSix">
+                        <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseSix"
+                          aria-expanded="false" aria-controls="collapseSix">
+                          <h4 class="tab-header4">.Net Developers </h4>
+                        </a>
+                      </div>
+                      <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion-mh6">
+                        <p class="tab-p">
+                          A net developer is responsible for producing code using . net languages such as C# and VB. Net
+                          developers create applications from scratch, configure existing systems and provide user
+                          support. ... A net developer's overall goal is to work with internal teams to design, develop
+                          and maintain software.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="accordion-mh7">
+                    <div class="border-list">
+                      <div id="headingseven">
+                        <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseseven"
+                          aria-expanded="false" aria-controls="collapseseven">
+                          <h4 class="tab-header4">Project managers </h4>
+                        </a>
+                      </div>
+                      <div id="collapseseven" class="collapse" aria-labelledby="headingseven"
+                        data-parent="#accordion-mh7">
+                        <p class="tab-p">
+                          In the broadest sense, project managers (PMs) are responsible for planning, organizing, and
+                          directing the completion of specific projects for an organization while ensuring these projects
+                          are on time, on budget, and within scope.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="accordion-mh8">
+                    <div class="border-list">
+                      <div id="headingEight">
+                        <a class="btn collapsed collapse-title" data-toggle="collapse" data-target="#collapseEight"
+                          aria-expanded="false" aria-controls="collapseEight">
+                          <h4 class="tab-header4">QA </h4>
+                        </a>
+                      </div>
+                      <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                        data-parent="#accordion-mh8">
+                        <p class="tab-p">
+                          A quality assurance specialist ensures that the final product observes the company's quality
+                          standards. In general, these detail-oriented professionals are responsible for the development
+                          and implementation of inspection activities, the detection and resolution of problems, and the
+                          delivery of satisfactory outcomes.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="gallery-id" class="img-area" data-aos="fade-left">
+      <div class="container">
+        <h1 class="header">Gallery</h1>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <img class="w-100" (click)="imageViewer('../../../../../assets/images/gallery/img1.jpeg')"
+              src="../../../../../assets/images/gallery/img1.jpeg" alt="">
+          </div>
+          <div class="col-md-4 mb-4">
+            <img class="w-100" (click)="imageViewer('../../../../../assets/images/gallery/img2.jpg')"
+              src="../../../../../assets/images/gallery/img2.jpg" alt="">
+          </div>
+          <div class="col-md-4 mb-4">
+            <img class="w-100" (click)="imageViewer('../../../../../assets/images/gallery/img3.jpeg')"
+              src="../../../../../assets/images/gallery/img3.jpeg" alt="">
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <img class="w-100" (click)="imageViewer('../../../../../assets/images/gallery/img4.jpg')"
+              src="../../../../../assets/images/gallery/img4.jpg" alt="">
+          </div>
+          <div class="col-md-4 mb-4">
+            <img class="w-100" (click)="imageViewer('../../../../../assets/images/gallery/img5.jpg')"
+              src="../../../../../assets/images/gallery/img5.jpg" alt="">
+          </div>
+          <div class="col-md-4 mb-4">
+            <img class="w-100" (click)="imageViewer('../../../../../assets/images/gallery/img6.jpg')"
+              src="../../../../../assets/images/gallery/img6.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact-id" class="contact-area" data-aos="fade-right">
+    
+      <div class="container">
+        <h1 class="header">Contact us</h1>
+
+        <div class="form-shadow">
+          <div class="row">
+              <div class="col-sm-8">
+                <div class="col-sm-12">
+                  <h1>Send us a message*</h1>
+                </div>
+                <div class="col-sm-12">
+                  <input 	[(ngModel)]="emailObj.name" type="text" class="form-control input-text" placeholder="Your name*" />
+                </div>
+                <div class="col-sm-12">
+                  <input [(ngModel)]="emailObj.toEmail" type="text" class="form-control input-text" placeholder="Email-address*" />
+                </div>
+                <div class="col-sm-12">
+                  <input [(ngModel)]="emailObj.phone" type="text" class="form-control input-text" placeholder="Phone number*" />
+                </div>
+                <div class="col-sm-12">
+                  <input [(ngModel)]="emailObj.subject" type="text" class="form-control input-text" placeholder="Object*" />
+                </div>
+                <div class="col-sm-12">
+                  <textarea [(ngModel)]="emailObj.body" placeholder="Address*" name="" id="" class="text-area-cls form-control"></textarea>
+                </div>
+                <div class="col-sm-12">
+                  <button (click)="submitInfo()" class="btn " style="
+                      padding: 12px 25px;
+                      background: #0058AA;
+                      color: white;
+                      font-size: 12px;
+                      border-radius: 0;
+                      margin-top: 20px;
+                    ">
+                    SUBMIT NOW
+                  </button>
+                </div>
+              </div>
+              <div class="col-sm-4 text-center">
+                <img style="width: 200px;margin-top: 25px;" src="../../../../../assets/images/qr-code.png" alt="">
+                <a aria-label="Chat on WhatsApp" href="https://wa.me/+8801719304970"> <img  style="width: 100px;margin-top: 25px;" title="Chat on WhatsApp" alt="Chat on WhatsApp" src="../../../../../assets/images/WhatsApp.svg.webp" />
+                </a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer-area" id="resource-id">
+      <div class="footer-bg-img">
+        <div class="container my-3">
           <div class="row">
             <div class="col-sm-4">
               <h3 class="footer-headline">Address In Bangladesh</h3>
@@ -828,7 +772,7 @@
                 <mat-icon style="color: gainsboro;"> phone</mat-icon>
                 &nbsp;&nbsp;
                 <div style="margin-top: 5px">+8801685747910         
-                 <!-- , +40 721 198 459 -->
+                  <!-- , +40 721 198 459 -->
                 </div>
               </div>
               <h3 style="margin-top: 20px;" class="footer-headline">Email</h3>
@@ -839,29 +783,28 @@
               </div>
             </div>
 
-            <div class="col-sm-8">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.0204954220044!2d90.35694737419072!3d23.78228448755374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0c9b27d077b%3A0x54fdf14bcbcc0a56!2sRex%20System%20Bangladesh!5e0!3m2!1sen!2sbd!4v1687318374147!5m2!1sen!2sbd"
-                width="100%" height="300" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+              <div class="col-sm-8">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.0204954220044!2d90.35694737419072!3d23.78228448755374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0c9b27d077b%3A0x54fdf14bcbcc0a56!2sRex%20System%20Bangladesh!5e0!3m2!1sen!2sbd!4v1687318374147!5m2!1sen!2sbd"
+                  width="100%" height="300" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+            </div>
+        </div>
+        <div class="bootom-footer">
+          <div class="container">
+            <div class="d-flex justify-content-center text-white mt-5">
+              <div> © 2022 Rex system Bangladesh All Rights Reserved.</div>
+              <!-- <div>Lor</div> -->
             </div>
           </div>
-
         </div>
       </div>
-      <div class="bootom-footer">
-        <div class="container">
-          <div class="d-flex justify-content-center text-white">
-            <div> © 2022 Rex system Bangladesh All Rights Reserved.</div>
-            <!-- <div>Lor</div> -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
+
+  </div>
+  <div id="imageViewModal" class="popUpImageModal">
+    <div class="closeBtn" (click)="closeImage()">&times;</div>
+    <img class="img-responsive modal-content " src="{{imageLink}}">
+  </div>
 
 </div>
-<div id="imageViewModal" class="popUpImageModal">
-  <div class="closeBtn" (click)="closeImage()">&times;</div>
-  <img class="img-responsive modal-content " src="{{imageLink}}">
-</div>
-
