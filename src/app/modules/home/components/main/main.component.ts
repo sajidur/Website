@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 import { ContactusService } from 'src/app/shared/services/contactus.service';
 import Swal from 'sweetalert2';
 import { NgxSpinnerService } from 'ngx-spinner';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'home',
@@ -28,11 +29,15 @@ export class MainComponent implements OnInit {
     // this.dataSource.paginator = this.paginator
   }
 
+
   ngOnInit(): void {
     // $(document).ready(function () {
     //   $('#dtBasicExample').DataTable();
     //   $('.dataTables_length').addClass('bs-select');
       // });
+      AOS.init({
+        duration: 2000, // Animation duration in milliseconds
+      });
   }
   ngAfterViewInit() {
 
