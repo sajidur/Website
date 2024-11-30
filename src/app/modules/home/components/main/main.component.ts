@@ -16,6 +16,36 @@ import * as AOS from 'aos';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
+
+  clients = [
+    {
+      name: 'BDDOT',
+      link: 'https://bddot.com/',
+      image: 'assets/images/clients/bddots.png'
+    },
+    {
+      name: 'Tlece',
+      link: 'https://www.tlece.com/',
+      image: 'assets/images/clients/tlece.png'
+    },
+    {
+      name: 'Dhaka Handicrafts Limited.',
+      link: 'https://dhakahandicrafts.com/',
+      image: 'assets/images/clients/dhaka_handicraft_logo.jpg'
+    },
+    {
+      name: 'Chittagong University Public Administration Ex-Student Forum, Dhaka',
+      link: 'https://cupaesfd.org/',
+      image: 'assets/images/clients/cupaLogo.gif'
+    },
+    {
+      name: 'Excellence Shoes',
+      link: '',
+      image: 'assets/images/clients/excellenceshoe.jpg'
+    }
+  ];
+  groupedClients: any[] = [];
+
   imageLink: any;
   public emailObj = {
 	  toEmail: "",
@@ -38,6 +68,16 @@ export class MainComponent implements OnInit {
       AOS.init({
         duration: 2000, // Animation duration in milliseconds
       });
+
+      this.groupedClients = this.chunkArray(this.clients, 3);
+  }
+
+  chunkArray(arr: any[], chunkSize: number): any[] {
+    const chunks = [];
+    for (let i = 0; i < arr.length; i += chunkSize) {
+      chunks.push(arr.slice(i, i + chunkSize));
+    }
+    return chunks;
   }
   ngAfterViewInit() {
 

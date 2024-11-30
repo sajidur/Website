@@ -209,33 +209,42 @@
     </div>
 
 
-    <div class="clients-area" id="clients-id" style="margin-bottom: 5rem;" data-aos="fade-left">
-      <div class="container">
-        <h1 class="header text-center">Our Client</h1> <!-- Center the heading -->
+    <div class="clients-area" id="clients-id"  data-aos="fade-left">
+      <div class="">
+        <h1 class="header text-center my-5">Our Clients</h1>
         <div class="row justify-content-center">
-          <div class="col-sm-4 client-info d-flex flex-column align-items-center pt-2 mb-4" data-aos="fade-right">
-            <h2 class="client-name">Dhaka Handicrafts Limited.</h2>
-            <a href="https://dhakahandicrafts.com/" target="_blank">
-              <img width="100%"  src="../../../../../assets/images/clients/dhaka_handicraft_logo.jpg" alt="">
-            </a>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div *ngFor="let chunk of groupedClients; let i = index" class="carousel-item" [class.active]="i === 0">
+                <div class="row">
+                  <div class="col-md-4 text-center" *ngFor="let client of chunk">
+                    <img [src]="client.image" class="d-block w-100" [alt]="client.name">
+                    <h2 class="text-center mt-5">{{ client.name }}</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="col-sm-4 client-info d-flex flex-column align-items-center pt-2 mb-4" data-aos="fade-top">
-            <h2 class="client-name">Chittagong University Public Administration Ex-Student Forum, Dhaka</h2>
-            <a href="https://cupaesfd.org/" target="_blank">
-              <img width="30%" style="margin: 0 130px;" src="../../../../../assets/images/clients/cupaLogo.gif" alt="">
-            </a>
-          </div>
-          <div class="col-sm-4 client-info d-flex flex-column align-items-center pt-2" data-aos="fade-left">
-            <h2 class="client-name">Excellence Shoes</h2>
-            <img width="50%" height="40%" src="../../../../../assets/images/clients/excellenceshoe.jpg" alt="">
-          </div>
-          <div class="col-sm-12 text-center mt-4">
-            <h3 style="font-size: 25px; font-weight: 600;">Skilled workforce in several countries.</h3>
-            <p class="pt-2" style="font-size: 20px; line-height: 1.4;">We are serving in USA, Canada and Nigeria from Bangladesh.</p>
-          </div>
+        </div>
+        <div class="col-sm-12 text-center my-5">
+          <h3 style="font-size: 25px; font-weight: 600;">Skilled workforce in several countries.</h3>
+          <p class="pt-2" style="font-size: 20px; line-height: 1.4;">We are serving in USA, Canada and Nigeria from Bangladesh.</p>
         </div>
       </div>
     </div>
+    
+    
+      
+
+      
     
 
 
@@ -741,7 +750,7 @@
                 </div>
               </div>
               <div class="col-sm-4 text-center">
-                <img style="width: 200px;margin-top: 25px;" src="../../../../../assets/images/qr-code.png" alt="">
+                <img style="width: 150px;margin-top: 25px;" src="../../../../../assets/images/qr-code-whatsapp.png" alt="">
                 <a aria-label="Chat on WhatsApp" href="https://wa.me/+8801719304970"> <img  style="width: 100px;margin-top: 25px;" title="Chat on WhatsApp" alt="Chat on WhatsApp" src="../../../../../assets/images/WhatsApp.svg.webp" />
                 </a>
               </div>

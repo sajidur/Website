@@ -227,10 +227,54 @@ hr{
 //   text-align: center;
 //   margin-bottom: 3rem;
 // }
-
+.clients-area{
+  margin: 30px auto;
+}
 .client-name{
   color: #555555;
 }
+
+/* Fix logo size */
+.carousel-item img {
+  height: 150px; /* Fixed height */
+  object-fit: contain; /* Preserve aspect ratio */
+}
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute; /* Ensure absolute positioning */
+  top: 50%; /* Vertically center the buttons */
+  transform: translateY(-50%); /* Centering adjustment */
+  width: auto; /* Allow resizing */
+  height: auto; /* Allow resizing */
+  z-index: 5; /* Ensure buttons are on top of other elements */
+}
+
+.carousel-control-prev {
+  left: 40px; /* Align to the far left */
+}
+
+.carousel-control-next {
+  right: 40px; /* Align to the far right */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Visible background for icons */
+  border-radius: 50%; /* Optional: make icons circular */
+  padding: 15px; /* Adjust padding for larger icons */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+}
+
+/* Prevent clipping */
+.carousel {
+  overflow: visible;
+}
+
+
 
 // .business-header {
 //   color: #0058AA;
