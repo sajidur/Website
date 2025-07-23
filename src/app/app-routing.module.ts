@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContentLayoutComponent } from './layout/content-layout/content-layout.component';
+import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,7 @@ const routes: Routes = [
         loadChildren: () => import('src/app/modules/home/home.module').then((m) => m.HomeModule)
           // import('./home/home.module').then(m => m.HomeModule)
       },
+        { path: 'privacy-policy', component: PrivacyPolicyComponent },
     ]
   },
   // Fallback when no prior routes is matched
