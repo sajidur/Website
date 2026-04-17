@@ -82,9 +82,9 @@ export class MainComponent implements OnInit {
       description: 'Our  expertise in MIS solutions provide real-time insights into key operational metrics, helping you manage resources effectively and enhance productivity',
       image: 'assets/images/services-img/config, settings, web app.png',
     },
-    
+
   ];
-  
+
 
 
 
@@ -117,24 +117,59 @@ export class MainComponent implements OnInit {
       image: 'assets/images/clients/excellenceshoe.png'
     },
     {
-      name: 'Exness',
-      link: '',
-      image: 'assets/images/clients/exness.png'
+      name: 'Fair Pattern',
+      link: 'https://www.fairpattern.com/',
+      image: 'assets/images/clients/fairpattern.png'
     },
     {
-      name: 'ROI',
-      link: '',
-      image: 'assets/images/clients/roi.png'
+      name: 'Opsio Cloud',
+      link: 'https://opsiocloud.com/',
+      image: 'assets/images/clients/opsio.png'
     },
     {
-      name: 'Sagecity',
-      link: '',
-      image: 'assets/images/clients/sagecity.png'
+      name: 'AFS Energy',
+      link: 'https://afsenergy.ae/',
+      image: 'assets/images/clients/afs.png'
+    },
+    {
+      name: 'Metlinx LLC',
+      link: 'https://metlinx.com/',
+      image: 'assets/images/clients/metlinx.png'
+    },
+    {
+      name: 'Home Expro Solutions',
+      link: 'https://www.homexprosolutions.com/',
+      image: 'assets/images/clients/homeexpro.png'
+    },
+    {
+      name: 'Look space Solutions',
+      link: 'https://lookspaces.com/',
+      image: 'assets/images/clients/lookspace.png'
+    },
+    {
+      name: 'Lakeland Home Management LLC',
+      link: 'https://lakelandhomemgt.com/',
+      image: 'assets/images/clients/lakeland.png'
     },
     {
       name: 'CCDB',
       link: 'https://ccdbbd.org/',
       image: 'assets/images/clients/ccdb.png'
+    },
+    {
+      name: 'tlce',
+      link: 'https://www.tlece.com/',
+      image: 'assets/images/clients/tlece.png'
+    },
+    {
+      name: 'inteamhealth',
+      link: 'https://www.inteamhealth.com/',
+      image: 'assets/images/clients/inteamhealth.png'
+    },
+    {
+      name: 'bonik',
+      link: 'https://www.bonik.online/',
+      image: 'assets/images/clients/bonik.png'
     }
   ];
   groupedClients: any[] = [];
@@ -143,9 +178,12 @@ export class MainComponent implements OnInit {
   public emailObj = {
     name: "",
     toEmail: "",
+    phoneNumber: "",
+    company: "",
+    subject: "",
     message: ""
   };
-  
+
 
   constructor(private contactusService: ContactusService, private spinner: NgxSpinnerService) {
     // this.dataSource.paginator = this.paginator
@@ -227,7 +265,17 @@ export class MainComponent implements OnInit {
   submitInfo() {
     console.log('edata', this.emailObj)
     this.spinner.show()
-    this.contactusService.sendEmail(this.emailObj).subscribe({
+
+    const requestData = {
+      name: this.emailObj.name,
+      email: this.emailObj.toEmail,
+      phoneNumber: this.emailObj.phoneNumber,
+      company: this.emailObj.company,
+      subject: this.emailObj.subject,
+      body: this.emailObj.message,
+    };
+
+    this.contactusService.sendEmail(requestData).subscribe({
       next: (result) => {
         this.spinner.hide()
         console.log("postEmailRes", result);
@@ -237,18 +285,27 @@ export class MainComponent implements OnInit {
           timer: 3000,
         });
         this.emailObj = {
+          name: "",
           toEmail: "",
-          message: "",
-          name: ""
+          phoneNumber: "",
+          company: "",
+          subject: "",
+          message: ""
         };
       },
       error: (err) => {
         this.spinner.hide()
         console.log("postEmailErr", err);
+        // We might want to keep the data if it errored, but the original code cleared it partially.
+        // Let's keep the form data for easier retry if it fails, or clear if the user prefers.
+        // Original code cleared it.
         this.emailObj = {
+          name: "",
           toEmail: "",
-          message: "",
-          name: ""
+          phoneNumber: "",
+          company: "",
+          subject: "",
+          message: ""
         };
       },
     });
