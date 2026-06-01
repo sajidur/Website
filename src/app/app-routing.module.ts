@@ -18,6 +18,10 @@ const routes: Routes = [
         loadChildren: () => import('src/app/modules/home/home.module').then((m) => m.HomeModule)
           // import('./home/home.module').then(m => m.HomeModule)
       },
+      {
+        path: 'services',
+        loadChildren: () => import('src/app/modules/services/services.module').then((m) => m.ServicesModule)
+      },
         { path: 'privacy-policy', component: PrivacyPolicyComponent },
     ]
   },

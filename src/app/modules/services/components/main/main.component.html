@@ -1,0 +1,63 @@
+<div class="" style="overflow-y: hidden">
+  <ngx-spinner
+    color="#0074a7"
+    type="ball-clip-rotate-pulse"
+    size="medium"
+    [fullScreen]="true"
+    ><p style="color: white">Please wait..</p></ngx-spinner
+  >
+
+  <header class="">
+    <nav
+      class="container mx-auto bg-white navbar p-3 navbar-expand-lg navbar-light d-flex justify-content-between"
+      style="border-radius: 6px"
+    >
+      <img
+        class="header-img ml-2"
+        src="assets/images/logo.png"
+        alt="Logo"
+      />
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarNavAltMarkup"
+      >
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="/">Home</a>
+          <a class="nav-item nav-link" href="/#about-id"
+            >Solution</a
+          >
+          <a class="nav-item nav-link" href="/#clients-id"
+            >Clients</a
+          >
+          <a class="nav-item nav-link" href="/#service-id"
+            >Services</a
+          >
+          <a class="nav-item nav-link active" routerLink="/services"
+            >Maintenance Packages</a
+          >
+          <button
+            class="nav-item nav-link hire-developer text-light"
+            (click)="navigateToContact()"
+          >
+            Hire a Developer
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="services-wrapper">
+    <app-packages></app-packages>
+  </div>
+</div>

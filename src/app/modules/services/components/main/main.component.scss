@@ -1,0 +1,70 @@
+.services-container {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.services-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 60px;
+
+  h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 18px;
+    opacity: 0.9;
+  }
+}
+
+// Professional Services Page Styles
+header {
+  width: 100%;
+  z-index: 10000;
+  position: fixed;
+  top: 20px;
+}
+
+.nav-link {
+  padding: 12px 25px !important;
+  border-radius: 0px;
+  font-family: "Lato", sans-serif;
+  color: #555555;
+  font-size: 16px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: #0157a8;
+  }
+
+  &.active {
+    color: #0157a8;
+    font-weight: 600;
+  }
+}
+
+.hire-developer {
+  background: #0157a8;
+  color: #fff !important;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: #0157a8e1;
+  }
+}
+
+.header-img {
+  width: 65px;
+  height: 42px;
+  cursor: pointer;
+}
+
+.services-wrapper {
+  padding-top: 120px;
+  min-height: 100vh;
+}

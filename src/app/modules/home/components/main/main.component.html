@@ -73,6 +73,9 @@
           <a class="nav-item nav-link" (click)="gotToRedirect('service-id')"
             >Services</a
           >
+          <a class="nav-item nav-link" routerLink="/services"
+            >Maintenance Packages</a
+          >
           <!-- <a class="nav-item nav-link" (click)="gotToRedirect('gallery-id')"
             >Gallery</a
           > -->
@@ -1103,6 +1106,61 @@
           </div>
         </div>
       </div> -->
+    </div>
+
+    <!-- Maintenance Packages Section -->
+    <div class="maintenance-packages-section py-5">
+      <div class="container">
+        <div class="section-title text-center mb-5">
+          <h2>Website Maintenance Packages</h2>
+          <p>Keep your website running smoothly with our comprehensive maintenance plans</p>
+        </div>
+
+        <div class="packages-grid">
+          <div *ngFor="let pkg of maintenancePackages" 
+               class="package-card"
+               [class.highlighted]="pkg.highlighted">
+            
+            <div class="package-header">
+              <h3>{{ pkg.name }}</h3>
+              <p class="package-description">{{ pkg.description }}</p>
+              <div class="price-section">
+                <span class="currency">{{ pkg.currency }}</span>
+                <span class="price">{{ pkg.price | number }}</span>
+                <span class="period">{{ pkg.period }}</span>
+              </div>
+            </div>
+
+            <div class="package-content">
+              <div class="service-section">
+                <h5>Included Services:</h5>
+                <ul class="services-list">
+                  <li *ngFor="let service of pkg.services | slice:0:8">
+                    <i class="fas fa-check-circle"></i>
+                    {{ service }}
+                  </li>
+                  <li *ngIf="pkg.services.length > 8" class="more-items">
+                    <i class="fas fa-check-circle"></i>
+                    + {{ pkg.services.length - 8 }} more services
+                  </li>
+                </ul>
+              </div>
+
+              <div class="support-section">
+                <h5>Support:</h5>
+                <ul class="support-list">
+                  <li *ngFor="let support of pkg.support">
+                    <i class="fas fa-star"></i>
+                    {{ support }}
+                  </li>
+                </ul>
+              </div>
+
+              <a routerLink="/services" class="select-btn">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="contact-id" class="contact-area" >

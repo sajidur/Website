@@ -20,7 +20,8 @@ export class ContactusService {
       headers: new HttpHeaders({
         'Content-Type': 'application/json',
         'AppKey': '8a181fbe-7fa7-43fe-84de-dc4a9a749e9c'
-      })
+      }),
+      responseType: 'text' as const
     };
 
     return this.http

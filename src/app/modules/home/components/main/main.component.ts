@@ -85,6 +85,67 @@ export class MainComponent implements OnInit {
 
   ];
 
+  maintenancePackages = [
+    {
+      id: 'package1',
+      name: 'Standard Plan',
+      price: 5000,
+      period: '/year',
+      currency: 'BDT',
+      description: 'Perfect for small websites',
+      services: [
+        'Regular Backup Management (Daily/Weekly)',
+        'Backup Restoration Support (on demand)',
+        'Server Log Monitoring & Cleaning',
+        'Scheduled Server Restart & Health Check',
+        'Uptime Monitoring & Basic Alerting',
+        'Security Patch Updates (OS & Server Software)',
+        'Website/Application Availability Check',
+        'Disk Space Monitoring & Optimization',
+        'Basic Performance Monitoring (CPU, RAM, Disk)',
+        'Database Health Check & Basic Optimization',
+        'Email/Notification Service Check (if applicable)',
+        'Error Log Review & Basic Issue Fixing'
+      ],
+      support: [
+        'Remote Support (Business Hours)',
+        'Response Time: Within 24 Hours'
+      ],
+      highlighted: false
+    },
+    {
+      id: 'package2',
+      name: 'Premium Plan',
+      price: 10000,
+      period: '/year',
+      currency: 'BDT',
+      description: 'Best for growing websites',
+      services: [
+        'Regular Backup Management (Daily/Weekly)',
+        'Backup Restoration Support (on demand)',
+        'Server Log Monitoring & Cleaning',
+        'Scheduled Server Restart & Health Check',
+        'Uptime Monitoring & Basic Alerting',
+        'Security Patch Updates (OS & Server Software)',
+        'Website/Application Availability Check',
+        'Disk Space Monitoring & Optimization',
+        'Basic Performance Monitoring (CPU, RAM, Disk)',
+        'SSL Certificate Monitoring & Renewal Reminder',
+        'Database Health Check & Basic Optimization',
+        'Email/Notification Service Check (if applicable)',
+        'Error Log Review & Basic Issue Fixing',
+        'Monthly Maintenance Report'
+      ],
+      support: [
+        'Remote Support (Business Hours)',
+        'Response Time: Within 24 Hours',
+        'Emergency Support (Critical Downtime): Priority Handling',
+        'Infrastructure Migration'
+      ],
+      highlighted: true
+    }
+  ];
+
 
 
 
@@ -170,6 +231,11 @@ export class MainComponent implements OnInit {
       name: 'bonik',
       link: 'https://www.bonik.online/',
       image: 'assets/images/clients/bonik.png'
+    },
+    {
+      name: 'Grameen Distribution',
+      link: 'https://grameendistribution.com/',
+      image: 'assets/images/clients/gdl-logo.png'
     }
   ];
   groupedClients: any[] = [];
