@@ -101,13 +101,51 @@
       <div class="banner-area1">
         <div class="container">
           <div class="banner-image-background">
-            <h1 class="banner-header">Your reliable hub of</h1>
-            <h1 class="banner-header">reliable developers</h1>
-            <h1 class="banner-header">and designers</h1>
+            <h1 class="banner-header">Enterprise Software Solutions</h1>
+            <h1 class="banner-header">That Drive Business Growth</h1>
 
             <button class="btn bnnr-btn" (click)="gotToRedirect('contact-id')">
-              Lets discuss your project Requirement
+              Get a Free Consultation
             </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats-area">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-6 col-md-3" *ngFor="let stat of stats">
+            <div class="stat-tile">
+              <div class="stat-value">{{ stat.value }}</div>
+              <div class="stat-label">{{ stat.label }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="about-us-id" class="about-us-area">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <h1 class="header">About Rex Systems Bangladesh</h1>
+          </div>
+          <div class="col-md-8">
+            <p class="about-p mb-3">
+              Founded in 2018, Rex Systems Bangladesh has grown from a small
+              development team into a technology partner trusted by 20+
+              businesses across retail, healthcare, recruitment, and
+              professional services. Over 8+ years and 50+ delivered
+              projects, we've stayed focused on one thing: building software
+              that holds up under real business use, not just demos.
+            </p>
+            <p class="about-p mb-0">
+              Our 15+ person team works across the full stack — from
+              point-of-sale and e-commerce to ERP and hospital information
+              systems — so you get a single accountable partner instead of
+              juggling multiple vendors.
+            </p>
           </div>
         </div>
       </div>
@@ -124,8 +162,10 @@
               <h1>Customized Software Development</h1>
               <p>
                 We craft tailored software solutions designed to meet your
-                unique business requirements, ensuring efficiency, and
-                scalability
+                unique business requirements — not off-the-shelf templates
+                stretched to fit. Every build is scoped around how your
+                team actually works, so it improves efficiency instead of
+                adding friction, and scales as your business grows.
               </p>
             </div>
           </div>
@@ -133,8 +173,11 @@
             <div class="solution-div">
               <h1>Web and Mobile App Development</h1>
               <p>
-                Our team builds high-performance web and mobile applications
-                with a focus on seamless functionality
+                Our team builds high-performance web and mobile
+                applications with a focus on seamless functionality, from
+                customer-facing storefronts to internal operational tools.
+                We handle the full lifecycle — architecture, development,
+                testing, and deployment — under one roof.
               </p>
             </div>
           </div>
@@ -143,7 +186,10 @@
               <h1>User Centric Design to Development</h1>
               <p>
                 We prioritize user experience in every project, ensuring
-                intuitive design and smooth interaction to deliver solutions
+                intuitive design and smooth interaction. That means fewer
+                support tickets, faster staff onboarding, and higher
+                adoption once the system goes live — for your team and
+                your customers alike.
               </p>
             </div>
           </div>
@@ -151,7 +197,30 @@
       </div>
     </div>
 
+    <div class="why-choose-area">
+      <div class="container">
+        <h1 class="header">Why Businesses Choose Us</h1>
+        <p class="about-p">A partner invested in your outcomes, not just your project</p>
+
+        <div class="row mt-4">
+          <div class="col-md-3 col-sm-6" *ngFor="let item of whyChooseUs">
+            <div class="why-choose-card">
+              <span class="why-choose-icon" [ngSwitch]="item.icon">
+                <svg *ngSwitchCase="'groups'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="8" r="2.5"/><path d="M15.5 14.2c2.6.4 4.5 2.6 4.5 5.3"/></svg>
+                <svg *ngSwitchCase="'forum'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v10H9l-4 4v-4H4z"/></svg>
+                <svg *ngSwitchCase="'schedule'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+                <svg *ngSwitchCase="'support_agent'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13a8 8 0 0 1 16 0"/><rect x="3" y="13" width="4" height="6" rx="1.5"/><rect x="17" y="13" width="4" height="6" rx="1.5"/><path d="M19 19v1a3 3 0 0 1-3 3h-2"/></svg>
+              </span>
+              <h3>{{ item.title }}</h3>
+              <p>{{ item.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div
+      id="tech-stack-id"
       class=""
       style="background-color: #0157a814; margin-top: 5rem; padding: 5rem 0"
     >
@@ -162,114 +231,29 @@
           </div>
           <div class="col-md-1"></div>
           <div class="col-md-9 hire-div-p">
-            Get expert developers to bring your ideas to life. From building new
-            apps to enhancing existing systems, we provide the talent you need
-            to achieve your goals. Let’s create something amazing together!
+            Extend your team with vetted, dedicated developers across
+            enterprise frameworks, modern JavaScript stacks, and production
+            databases — engaged on your timeline, managed for quality, and
+            integrated with the way your business already works.
           </div>
         </div>
 
-        <div class="row bg-white mt-5">
-          <div class="col-md-1 p-5">
-            <img
-              width="80px"
-              src="https://s3-alpha-sig.figma.com/img/680c/c9e7/e2e9be625f0657e971bd044ee7df0cc7?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FWc97F9c1RhdQafEqvGOsp54qUHttUV7ZE7fgzqP5U84LbiQL9HKkosDC3fcjvNpzH5IopNzlPpalPxOD3CknZPCu63Hmot0JreFjTTEHIocpXKNg2Ja93v6pYHG0QJg7Rew4h5-QHfGl2VmWmTyFVVM-x6hzHrj23Hp01ABxkapzwWYdEdTT596-z-cO7-VXCp4gfOQQssuQJLPRNNRxIG1YqlVt8XiaUAcxgGJJ8SizOvKWLKDuHOXyZYy1ZVkJC4UKwgi5DPoHqzFKZdjzOfanFiQ1neVVm94cndanGUcM6F43ZDh~zIUjbS~ipNcvSACxaT1TDW-Q1REl7CmGA__"
-              alt=""
-            />
-          </div>
-
-          <div class="col-md-11 language-section">
-            <h1>.Net Developers</h1>
-            <p>
-              Our team of highly skilled engineers specializes in .NET
-              development, delivering robust, scalable, and high-performing
-              applications tailored to your business needs. Whether you're
-              building web, desktop, or cloud-based solutions, our experts bring
-              years of hands-on experience and industry best practices to ensure
-              seamless development and outstanding results.
-            </p>
-          </div>
-        </div>
-
-        <div class="row bg-white mt-5">
-          <div class="col-md-1 p-5">
-            <img width="80px" src="assets/images/python.png" alt="" />
-          </div>
-
-          <div class="col-md-11 language-section">
-            <h1>Python Developers</h1>
-            <p>
-              From data-driven applications to scalable web solutions, our
-              engineers excel at delivering high-quality, efficient, and secure
-              Python-based solutions tailored to your business goals. With deep
-              expertise in frameworks like Django, Flask, and FastAPI, we ensure
-              rapid development, seamless integration, and outstanding
-              performance.
-            </p>
-          </div>
-        </div>
-
-        <div class="row bg-white mt-5">
-          <div class="col-md-1 p-5">
-            <img
-              width="80px"
-              src="https://s3-alpha-sig.figma.com/img/c718/3c1b/09add3b755526ab25ff28b2f20cedbf6?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aOjQwXI92EcQBjuOTshRdsu52TIhLbjYSdey1QRdM1fiFqjPDZeuToHf33-E5kSsoMGIPzJb9m1pINboaq0KmyuNtpKLMufeYmESOoLfPgb~SGXa26xfphn6QI62xulcjF1CGoJJHW-Q6Y3j7722DYK7udBLDQU1G4bgxmhvJrftQc85I2Hl5piI5qBySRdugQJElj5-RVstrKvteePXZbh-3TJk95bqGDs1NeCo0wPg4ifiOfrDcGUY5PDBDYGhmkfncIOuchc9SWK1enuvVC7iSn95dWb6vb1MPPUKqVjQ-nqSFGQyAWHtm-eV-NHE~ls-qSq8ruhccVLZxcM6vA__"
-              alt=""
-            />
-          </div>
-
-          <div class="col-md-11 language-section">
-            <h1>Wordpress Developers</h1>
-            <p>
-              From design to deployment, we handle every aspect of your
-              WordPress project. Our skilled WordPress developers specialize in
-              creating custom themes, plugins, and fully optimized websites
-              tailored to your unique brand identity. Whether it’s a personal
-              blog, business website, or e-commerce platform, we ensure seamless
-              functionality, responsive design, and a user-friendly experience.
-            </p>
-          </div>
-        </div>
-
-        <div class="row bg-white mt-5">
-          <div class="col-md-1 p-5">
-            <img
-              width="80px"
-              src="https://s3-alpha-sig.figma.com/img/579a/6086/79b63efd8ea87b5595505f2eed503e83?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KrsoCb-~Ec8a6N7NdklTWJD4ER0T4v9~PNJyLegiuwobWxHB7en0MXMcZpjE9glgS2CcL3T~2S~Kv~o4XSupAhJlog~ew~BQCPaDtUPIVQmj5tcPRLsv6RLyTYao3WBSwdws5VF24jvXI-jmDJTxGq-lpejzXYOxSQg4MxulyJ-ooIDrx1Yq08vkUUOH3JnNEE5pIWXQpxg9yn1m30c7e4KBBpUR5X7K3OmG2UjuJsQbH9AjbswGHgYxPx27nQ8JboUROF79KHLAOmb68CISjf5R2bE-if3LHZDokTxnDfuiCLzpcX2PaVzUKlk-eldDnsus2KCPNHo8e8VocWwb6g__"
-              alt=""
-            />
-          </div>
-
-          <div class="col-md-11 language-section">
-            <h1>Shopify Developers</h1>
-            <p>
-              Empower your e-commerce business with our expert Shopify
-              developers. We help to build fully customized, conversion-driven
-              online stores tailored to your brand, offering seamless
-              integrations, engaging user interfaces, and optimized performance
-              to help you scale your business effortlessly. Also if you are
-              facing any customization issue, we are here to help.
-            </p>
-          </div>
-        </div>
-
-        <div class="row bg-white mt-5">
-          <div class="col-md-1 p-5">
-            <img
-              width="80px"
-              src="https://s3-alpha-sig.figma.com/img/a9dd/901c/1ba553f84e820f2a2be1e687cb6aa359?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Wvhxvhlzdxv3YCv6U~YkcFA244f6k9C5QB39gja48pXe~juT4Gi-j5am27o-Z6qj007Fw-pFs1UOuFEexkhcELeIzu2xVlBQPSzlpaPaWWnyVsmPQ9cFHrjm71gkpS0VCO7rQlqfHRdxlAJTCk86lPdBI6sXuQksgkUtBScx71L1nX3nB4kUvkE335bMSzhjWcFT3iUPcSt8ItayBIctBwKMGusDFyV221tI4Bci7cqFeTliKiDh2KfQQOf8DEvp02h3pRCDovvhMWFsV5FlQkoYf5q~G8NVIWr5mXzmRa0i1sprn5dL46B90LqwShyzYgqnMVPVVT0wof6nEPJmXQ__"
-              alt=""
-            />
-          </div>
-
-          <div class="col-md-11 language-section">
-            <h1>Android Developers</h1>
-            <p>
-              Our skilled Android developers craft high-quality mobile
-              applications designed for performance, usability, and scalability.
-              Whether it's a business solution, a consumer app, or a game, we
-              deliver innovative Android apps that offer a seamless user
-              experience across devices.
-            </p>
+        <div class="row mt-5">
+          <div class="col-md-3 col-sm-6" *ngFor="let tech of techStack">
+            <div class="why-choose-card">
+              <span class="why-choose-icon" [ngSwitch]="tech.icon">
+                <svg *ngSwitchCase="'code'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 3 12 9 18"/><polyline points="15 6 21 12 15 18"/></svg>
+                <svg *ngSwitchCase="'language'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg>
+                <svg *ngSwitchCase="'shopping_cart'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.2a2 2 0 0 0 2-1.6L20 8H6"/><circle cx="9" cy="20" r="1.4" fill="currentColor" stroke="none"/><circle cx="17" cy="20" r="1.4" fill="currentColor" stroke="none"/></svg>
+                <svg *ngSwitchCase="'android'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 10v6a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-6"/><path d="M4 10a8 8 0 0 1 16 0"/><path d="M9 18v3"/><path d="M15 18v3"/><path d="M2 11v4"/><path d="M22 11v4"/><path d="M8 4l1.5 2"/><path d="M16 4l-1.5 2"/></svg>
+                <svg *ngSwitchCase="'server'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01"/><path d="M7 17h.01"/></svg>
+                <svg *ngSwitchCase="'layers'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 9l10 6 10-6-10-6z"/><path d="M2 15l10 6 10-6"/></svg>
+                <svg *ngSwitchCase="'bolt'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3 4 14h6l-1 7 9-11h-6l1-7z"/></svg>
+                <svg *ngSwitchCase="'database'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg>
+              </span>
+              <h3>{{ tech.name }}</h3>
+              <p>{{ tech.description }}</p>
+            </div>
           </div>
         </div>
       </div>
@@ -280,7 +264,7 @@
         <div class="row">
           <div class="col-md-6">
             <h1 class="header my-5">
-              Companies and brands that our developers have worked with
+              Trusted by 20+ Businesses Across Industries
             </h1>
           </div>
         </div>
@@ -318,9 +302,10 @@
           </div>
           <div class="col-md-1"></div>
           <div class="col-md-9 services-div-p">
-            Get expert developers to bring your ideas to life. From building new
-            apps to enhancing existing systems, we provide the talent you need
-            to achieve your goals. Let’s create something amazing together!
+            From point-of-sale and e-commerce to ERP and hospital information
+            systems, we build the business-critical software that keeps your
+            operations running — reliable, scalable, and built around how your
+            organization actually works.
           </div>
         </div>
 
@@ -1163,6 +1148,44 @@
       </div>
     </div>
 
+    <div id="faq-id" class="faq-area">
+      <div class="container">
+        <h1 class="header text-center">Frequently Asked Questions</h1>
+        <p class="about-p text-center mb-5">Answers to what businesses usually ask before starting a project</p>
+
+        <div class="faq-list">
+          <div class="faq-item" *ngFor="let faq of faqs; let i = index" [class.open]="faq.open">
+            <button class="faq-question" (click)="toggleFaq(i)">
+              <span>{{ faq.question }}</span>
+              <span class="faq-toggle-icon">{{ faq.open ? '−' : '+' }}</span>
+            </button>
+            <div class="faq-answer" *ngIf="faq.open">
+              <p>{{ faq.answer }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-banner">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <h2 class="cta-banner-text">Ready to start your project?</h2>
+        <div class="cta-banner-actions">
+          <button class="btn cta-primary-btn" (click)="gotToRedirect('contact-id')">
+            Get a Free Consultation
+          </button>
+          <a
+            class="btn cta-secondary-btn"
+            href="https://wa.me/+8801518932851"
+            target="_blank"
+            aria-label="Chat on WhatsApp"
+          >
+            Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+
     <div id="contact-id" class="contact-area" >
       <div class="container">
         <div class="row">
@@ -1242,22 +1265,7 @@
           </div>
 
           <div class="col-md-5 row">
-            <div
-              class="col-md-6 d-flex justify-content-center align-items-center"
-            >
-              <h1
-                style="
-                  color: #0157a8;
-                  font-size: 32px;
-                  font-weight: 500;
-                  line-height: 40px;
-                "
-              >
-                Or,
-              </h1>
-            </div>
-
-            <div class="col-sm-6 d-flex justify-content-end align-items-center">
+            <div class="col-12 d-flex justify-content-center align-items-center">
               <div class="text-center">
                 <img
                   style="width: 300px; padding: 50px; background: white"
@@ -1327,7 +1335,7 @@
         <div class="bootom-footer">
   <div class="container">
     <div class="d-flex flex-column flex-md-row justify-content-center align-items-center text-white mt-5 gap-2">
-      <div>© 2022 Rex Systems Bangladesh. All Rights Reserved.</div>
+      <div>© {{ currentYear }} Rex Systems Bangladesh. All Rights Reserved.</div>
       <div>
         | <a routerLink="/privacy-policy" class="text-white text-decoration-underline">Privacy Policy</a>
       </div>

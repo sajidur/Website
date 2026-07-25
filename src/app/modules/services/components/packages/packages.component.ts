@@ -20,8 +20,8 @@ export class PackagesComponent implements OnInit {
     {
       id: 'package1',
       name: 'Standard Plan',
-      price: 5000,
-      period: '/year',
+      price: 1500,
+      period: '/month',
       currency: 'BDT',
       description: 'Perfect for small websites',
       services: [
@@ -54,8 +54,8 @@ export class PackagesComponent implements OnInit {
     {
       id: 'package2',
       name: 'Premium Plan',
-      price: 10000,
-      period: '/year',
+      price: 2000,
+      period: '/month',
       currency: 'BDT',
       description: 'Best for growing websites',
       services: [
@@ -129,7 +129,7 @@ export class PackagesComponent implements OnInit {
     this.serverError = '';
 
     const selectedPkg = this.packages.find(p => p.id === this.selectedPackage);
-    const messageBody = `I am interested in the ${selectedPkg?.name} (BDT ${selectedPkg?.price}/year). ${this.contactForm.value.message || ''}`;
+    const messageBody = `I am interested in the ${selectedPkg?.name} (BDT ${selectedPkg?.price}${selectedPkg?.period}). ${this.contactForm.value.message || ''}`;
     
     const emailBody = {
       Name: this.contactForm.value.name,
