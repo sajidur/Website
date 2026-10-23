@@ -189,6 +189,11 @@ export class MainComponent implements OnInit {
       description: 'Our  expertise in MIS solutions provide real-time insights into key operational metrics, helping you manage resources effectively and enhance productivity',
       image: 'assets/images/services-img/config, settings, web app.png',
     },
+    {
+      title: 'Application Security Assessment',
+      description: 'Structured vulnerability scanning and manual security checks across your web and mobile applications, with a prioritized report so you know exactly what to fix before it becomes an incident.',
+      image: '',
+    },
 
   ];
 
