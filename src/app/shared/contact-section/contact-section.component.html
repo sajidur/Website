@@ -1,0 +1,49 @@
+<section id="contact-id" class="section soft contact">
+  <div class="container contact-grid">
+    <div class="contact-info">
+      <span class="eyebrow">Contact us</span>
+      <h2>Talk to an expert</h2>
+      <p>
+        Book a free, no-obligation consultation. Tell us about your systems and
+        goals, and we will recommend a practical next step.
+      </p>
+      <ul class="contact-list">
+        <li><mat-icon>phone</mat-icon><a href="tel:+8801518932851">+8801518932851</a></li>
+        <li><mat-icon>email</mat-icon><a href="mailto:info@rexsystemsbd.com">info@rexsystemsbd.com</a></li>
+        <li><mat-icon>location_on</mat-icon><span>H-39, R-11, Kallaynpur, Mirpur, Dhaka-1207, Bangladesh</span></li>
+      </ul>
+      <a class="btn-outline-brand" href="https://wa.me/+8801518932851" target="_blank" rel="noopener noreferrer">
+        Chat on WhatsApp
+      </a>
+    </div>
+
+    <form class="card-box contact-form" (ngSubmit)="submitInfo()" #contactForm="ngForm">
+      <div class="field-row">
+        <label>Name
+          <input name="name" [(ngModel)]="emailObj.name" type="text" placeholder="Your name" required />
+        </label>
+        <label>Email
+          <input name="email" [(ngModel)]="emailObj.toEmail" type="email" placeholder="you@company.com" required />
+        </label>
+      </div>
+      <div class="field-row">
+        <label>Phone
+          <input name="phone" [(ngModel)]="emailObj.phoneNumber" type="text" placeholder="Phone number" />
+        </label>
+        <label>Company
+          <input name="company" [(ngModel)]="emailObj.company" type="text" placeholder="Company" />
+        </label>
+      </div>
+      <label>I'm interested in
+        <select name="interest" [(ngModel)]="emailObj.interest">
+          <option value="">Select a service</option>
+          <option *ngFor="let i of interests" [value]="i">{{ i }}</option>
+        </select>
+      </label>
+      <label>Message
+        <textarea name="message" [(ngModel)]="emailObj.message" rows="5" placeholder="Tell us about your project or concern" required></textarea>
+      </label>
+      <button type="submit" class="btn-brand btn-block" [disabled]="contactForm.invalid">Send message</button>
+    </form>
+  </div>
+</section>

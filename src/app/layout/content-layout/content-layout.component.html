@@ -1,9 +1,8 @@
-<!-- <div class="mat-app-background">
-    <app-header></app-header> -->
-
-      <!-- <div class="container"> -->
-        <router-outlet></router-outlet>
-      <!-- </div> -->
-
-    <!-- <app-footer></app-footer>
-  </div> -->
+<ngx-spinner color="#0058aa" type="ball-clip-rotate-pulse" size="medium" [fullScreen]="true">
+  <p style="color: white">Please wait..</p>
+</ngx-spinner>
+<app-header></app-header>
+<main>
+  <router-outlet></router-outlet>
+</main>
+<app-footer></app-footer>

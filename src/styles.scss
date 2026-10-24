@@ -1,10 +1,249 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global design system. Brand blue is taken from the Rex System logo (#0058AA). */
 
-
-html, body { 
-    height: 100%; 
+:root {
+  --brand: #0058aa;
+  --brand-dark: #00407d;
+  --brand-deep: #0b2545;
+  --brand-tint: #e8f1fa;
+  --ink: #14213d;
+  --muted: #5b6b82;
+  --line: #dbe4ef;
+  --bg: #ffffff;
+  --bg-soft: #f4f7fb;
+  --ok: #0a7d52;
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(11, 37, 69, 0.08);
 }
-body { 
-    margin: 0; 
-    font-family: Roboto, "Helvetica Neue", sans-serif; 
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.65;
+}
+
+h1, h2, h3, h4 {
+  color: var(--brand-deep);
+  line-height: 1.25;
+  margin: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+/* ---------- layout helpers ---------- */
+.section {
+  padding: 88px 0;
+}
+
+.section.soft {
+  background: var(--bg-soft);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.section-head {
+  max-width: 720px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.section-head h2 {
+  font-size: clamp(26px, 3.4vw, 38px);
+  font-weight: 700;
+}
+
+.section-head p {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 17px;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brand);
+}
+
+/* ---------- page hero (every inner page) ---------- */
+.page-hero {
+  padding: 72px 0 64px;
+  color: #fff;
+  background:
+    radial-gradient(circle at 85% 0%, rgba(255, 255, 255, 0.14), transparent 45%),
+    linear-gradient(135deg, var(--brand-deep), var(--brand));
+}
+
+.page-hero h1 {
+  color: #fff;
+  font-size: clamp(30px, 4.4vw, 46px);
+  font-weight: 700;
+  
+  max-width: 820px;
+}
+
+.page-hero p {
+  margin: 16px 0 0;
+  max-width: 680px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.page-hero .eyebrow {
+  color: #9fd0ff;
+}
+
+.breadcrumb-lite {
+  margin-bottom: 18px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.breadcrumb-lite a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.breadcrumb-lite a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- buttons ---------- */
+.btn-brand,
+.btn-outline-brand,
+.btn-light-brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s, color 0.2s;
+}
+
+.btn-brand {
+  background: var(--brand);
+  color: #fff;
+}
+
+.btn-brand:hover:not(:disabled) {
+  background: var(--brand-dark);
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(0, 88, 170, 0.28);
+}
+
+.btn-brand:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.btn-outline-brand {
+  background: transparent;
+  color: var(--brand);
+  border-color: var(--brand);
+}
+
+.btn-outline-brand:hover {
+  background: var(--brand-tint);
+  color: var(--brand-dark);
+}
+
+.btn-light-brand {
+  background: #fff;
+  color: var(--brand);
+}
+
+.btn-light-brand:hover {
+  background: var(--brand-tint);
+  color: var(--brand-dark);
+}
+
+.btn-block {
+  display: flex;
+  width: 100%;
+}
+
+/* ---------- reusable content bits ---------- */
+.card-box {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 5px 0;
+  font-size: 15px;
+}
+
+.checklist .mat-icon {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  font-size: 18px;
+  margin-top: 3px;
+  color: var(--brand);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chips span {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #fff;
+  font-size: 14px;
+  color: var(--ink);
+}
+
+.chips.tint span {
+  background: var(--brand-tint);
+  border-color: transparent;
+  color: var(--brand-dark);
+}
+
+.icon-tile {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: var(--brand-tint);
+  color: var(--brand);
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 60px 0;
+  }
 }

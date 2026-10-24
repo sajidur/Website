@@ -1,14 +1,15 @@
 <div class="packages-wrapper">
-  <!-- Hero Section -->
-  <div class="packages-hero">
-    <div class="container mx-auto px-4">
-      <h1 class="hero-title">Website Maintenance & Support</h1>
-      <p class="hero-subtitle">Professional maintenance plans to keep your website secure, fast, and reliable</p>
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb-lite"><a routerLink="/home">Home</a> / Maintenance Packages</div>
+      <span class="eyebrow">Managed website care</span>
+      <h1>Website Maintenance &amp; Support</h1>
+      <p>Fixed monthly plans that keep your website secure, backed up, monitored and fast.</p>
     </div>
-  </div>
+  </section>
 
   <!-- Packages Section -->
-  <div class="packages-section">
+  <div class="section soft packages-section">
     <div class="container mx-auto px-4">
       <div class="packages-grid">
         <!-- Package Cards -->
@@ -56,6 +57,13 @@
               </ul>
             </div>
 
+            <div class="exclusion-section" *ngIf="package.exclusions?.length">
+              <h4 class="section-title">Not included</h4>
+              <ul class="exclusion-list">
+                <li *ngFor="let ex of package.exclusions">{{ ex }}</li>
+              </ul>
+            </div>
+
             <button class="select-btn"
                     [class.selected]="selectedPackage === package.id"
                     (click)="selectPackage(package.id)">
@@ -68,7 +76,7 @@
   </div>
 
   <!-- Contact Form Section -->
-  <div class="contact-form-section" *ngIf="selectedPackage" #contactFormSection>
+  <div class="section contact-form-section" *ngIf="selectedPackage" #contactFormSection>
     <div class="container mx-auto px-4">
       <div class="form-container">
         <div class="form-header">
@@ -152,7 +160,7 @@
   </div>
 
   <!-- CTA Section -->
-  <div class="cta-section" *ngIf="!selectedPackage">
+  <div class="section cta-section" *ngIf="!selectedPackage">
     <div class="container mx-auto px-4">
       <h3>Not sure which plan is right for you?</h3>
       <p>Our team is here to help you choose the perfect maintenance plan for your needs.</p>

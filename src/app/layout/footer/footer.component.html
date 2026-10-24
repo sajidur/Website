@@ -1,8 +1,33 @@
-<!-- <footer class="footer-area">
-    <div class="container">
-        <div class="d-flex justify-content-between">
-            <div>Schröder & Sohn Construction GmbH 2021</div>
-            <div>imprint</div>
-        </div>
+<section class="footer-cta">
+  <div class="container footer-cta-inner">
+    <h2>Ready to secure, automate and scale your technology?</h2>
+    <a class="btn-light-brand" routerLink="/home" fragment="contact-id">Schedule a Call</a>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <img class="footer-logo" src="assets/images/logo.png" alt="Rex System" />
+      <p>Application security, infrastructure management, DevOps and AI solutions for growing businesses.</p>
     </div>
-</footer> -->
+    <div>
+      <h4>Solutions</h4>
+      <a *ngFor="let s of solutions" [routerLink]="['/solutions', s.slug]">{{ s.title }}</a>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <a routerLink="/home">Home</a>
+      <a routerLink="/about">About Us</a>
+      <a routerLink="/services">Maintenance Packages</a>
+      <a routerLink="/home" fragment="clients-id">Clients</a>
+      <a routerLink="/privacy-policy">Privacy Policy</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="tel:+8801518932851">+8801518932851</a>
+      <a href="mailto:info@rexsystemsbd.com">info@rexsystemsbd.com</a>
+      <span>H-39, R-11, Kallaynpur, Mirpur, Dhaka-1207</span>
+    </div>
+  </div>
+  <div class="container footer-bottom">© {{ currentYear }} Rex Systems Bangladesh. All rights reserved.</div>
+</footer>

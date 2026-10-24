@@ -1,0 +1,20 @@
+# Rex Systems Bangladesh
+
+> Rex Systems Bangladesh is a Dhaka-based technology company providing application security, infrastructure management, DevOps, AI solutions and custom software. Website: https://rexsystemsbd.com
+
+Contact: info@rexsystemsbd.com | +8801518932851
+Address: H-39, R-11, Kallaynpur, Mirpur, Dhaka-1207, Bangladesh
+
+## Solutions
+- [Application Security](https://rexsystemsbd.com/solutions/application-security): web, mobile and API vulnerability assessment, penetration testing, secure code review, dependency and secrets scanning, threat modeling. Aligned with OWASP Top 10, API Security Top 10, ASVS and MASVS.
+- [Infrastructure Management](https://rexsystemsbd.com/solutions/infrastructure-management): Linux and Windows server administration, monitoring, backup and disaster recovery, patching and hardening, cloud migration, database administration.
+- [DevOps](https://rexsystemsbd.com/solutions/devops): CI/CD pipelines, Docker and Kubernetes, infrastructure as code, DevSecOps gates, release strategy, observability.
+- [AI Solutions](https://rexsystemsbd.com/solutions/ai-solutions): assistants and chatbots, retrieval over company documents, workflow and document automation, predictive analytics, AI security review.
+
+## Other pages
+- [Website Maintenance Packages](https://rexsystemsbd.com/services): fixed monthly plans, Standard BDT 1,500/month and Premium BDT 2,000/month, covering backups, monitoring, patching and support.
+- [About Us](https://rexsystemsbd.com/about): company overview.
+- [Privacy Policy](https://rexsystemsbd.com/privacy-policy)
+
+## Notes
+- Standards named on the site (OWASP, CIS Benchmarks, NIST AI RMF, DORA) describe the references used in our work. They are not certifications held by the company.

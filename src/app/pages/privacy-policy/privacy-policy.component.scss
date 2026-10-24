@@ -1,13 +1,19 @@
 .privacy-policy {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  line-height: 1.6;
-  font-family: Arial, sans-serif;
-  color: #333;
-}
+  max-width: 860px;
+  padding-top: 48px;
+  padding-bottom: 72px;
+  color: var(--ink);
 
-.privacy-policy h1, 
-.privacy-policy h2 {
-  color: #005BAC;
+  h2 {
+    margin: 32px 0 10px;
+    font-size: 22px;
+  }
+
+  ul {
+    padding-left: 22px;
+  }
+
+  a {
+    color: var(--brand);
+  }
 }

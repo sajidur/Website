@@ -1,0 +1,113 @@
+<ng-container *ngIf="solution as s">
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb-lite">
+        <a routerLink="/home">Home</a> / <a routerLink="/home" fragment="solutions">Solutions</a> / {{ s.title }}
+      </div>
+      <span class="eyebrow">Solution</span>
+      <h1>{{ s.title }}</h1>
+      <p>{{ s.tagline }}</p>
+      <div class="hero-actions">
+        <a class="btn-light-brand" [routerLink]="['/solutions', s.slug]" fragment="contact-id">Request a consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container overview">
+      <div>
+        <h2>Overview</h2>
+        <p class="intro">{{ s.intro }}</p>
+      </div>
+      <aside class="card-box">
+        <h3>Best suited for</h3>
+        <ul class="checklist">
+          <li *ngFor="let a of s.audience"><mat-icon>check_circle</mat-icon>{{ a }}</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">What we deliver</span>
+        <h2>Services included</h2>
+      </div>
+      <div class="deliver-grid">
+        <div class="card-box deliver" *ngFor="let d of s.deliverables">
+          <h3>{{ d.title }}</h3>
+          <p>{{ d.text }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">How we work</span>
+        <h2>Our process</h2>
+      </div>
+      <ol class="steps">
+        <li *ngFor="let p of s.process; let i = index">
+          <span class="num">{{ i + 1 }}</span>
+          <div>
+            <h3>{{ p.title }}</h3>
+            <p>{{ p.text }}</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="container two-col">
+      <div>
+        <span class="eyebrow">Standards</span>
+        <h2>Frameworks we work to</h2>
+        <p class="note">We align our work with these recognized references. This describes our method, not a certification.</p>
+        <div class="chips tint"><span *ngFor="let x of s.standards">{{ x }}</span></div>
+      </div>
+      <div>
+        <span class="eyebrow">Tooling</span>
+        <h2>Typical tools</h2>
+        <p class="note">We select tools to fit your environment and licensing, so the final set may differ.</p>
+        <div class="chips"><span *ngFor="let x of s.tools">{{ x }}</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow">
+      <div class="section-head">
+        <span class="eyebrow">FAQ</span>
+        <h2>Common questions</h2>
+      </div>
+      <div class="faq" *ngFor="let f of s.faqs; let i = index" [class.open]="openFaq === i">
+        <button type="button" class="faq-q" (click)="toggleFaq(i)" [attr.aria-expanded]="openFaq === i">
+          <span>{{ f.q }}</span>
+          <mat-icon>{{ openFaq === i ? 'remove' : 'add' }}</mat-icon>
+        </button>
+        <div class="faq-a" [hidden]="openFaq !== i">{{ f.a }}</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="container">
+      <div class="section-head">
+        <h2>Explore our other solutions</h2>
+      </div>
+      <div class="other-grid">
+        <a class="card-box other" *ngFor="let o of others" [routerLink]="['/solutions', o.slug]">
+          <div class="icon-tile"><mat-icon>{{ o.icon }}</mat-icon></div>
+          <h3>{{ o.title }}</h3>
+          <p>{{ o.short }}</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <app-contact-section [interest]="s.title"></app-contact-section>
+</ng-container>

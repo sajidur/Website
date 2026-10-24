@@ -1,0 +1,63 @@
+<header class="site-header" [class.scrolled]="scrolled" (mouseleave)="openMenu = ''">
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Application Security · Infrastructure · DevOps · AI</span>
+      <span class="topbar-links">
+        <a href="tel:+8801518932851"><mat-icon>phone</mat-icon>+8801518932851</a>
+        <a href="mailto:info@rexsystemsbd.com"><mat-icon>email</mat-icon>info@rexsystemsbd.com</a>
+      </span>
+    </div>
+  </div>
+
+  <nav class="container nav-inner" aria-label="Main">
+    <a class="brand" routerLink="/home" (click)="closeMenus()" aria-label="Rex Systems Bangladesh home">
+      <img src="assets/images/logo.png" alt="Rex System" />
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation" [attr.aria-expanded]="menuOpen" (click)="menuOpen = !menuOpen">
+      <mat-icon>{{ menuOpen ? 'close' : 'menu' }}</mat-icon>
+    </button>
+
+    <div class="nav-links" [class.open]="menuOpen">
+      <div class="nav-drop mega-host" [class.open]="openMenu === 'solutions'" (mouseenter)="openMenu = 'solutions'">
+        <button type="button" class="nav-drop-toggle" (click)="toggleMenu('solutions')" [attr.aria-expanded]="openMenu === 'solutions'">
+          Solutions <mat-icon>expand_more</mat-icon>
+        </button>
+        <div class="mega">
+          <div class="container mega-inner">
+            <div class="mega-intro">
+              <h4>Our solutions</h4>
+              <p>Security, infrastructure, delivery and AI, planned together and delivered by one accountable team.</p>
+              <a class="btn-brand" (click)="goToContact()">Schedule a Call</a>
+            </div>
+            <div class="mega-grid">
+              <a *ngFor="let s of solutions" class="mega-item" [routerLink]="['/solutions', s.slug]" (click)="closeMenus()">
+                <mat-icon>{{ s.icon }}</mat-icon>
+                <span>
+                  <strong>{{ s.title }}</strong>
+                  <small>{{ s.short }}</small>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a routerLink="/services" routerLinkActive="active" (click)="closeMenus()">Maintenance Packages</a>
+      <a routerLink="/home" fragment="clients-id" (click)="closeMenus()">Clients</a>
+
+      <div class="nav-drop small-menu" [class.open]="openMenu === 'company'" (mouseenter)="openMenu = 'company'">
+        <button type="button" class="nav-drop-toggle" (click)="toggleMenu('company')" [attr.aria-expanded]="openMenu === 'company'">
+          Company <mat-icon>expand_more</mat-icon>
+        </button>
+        <div class="nav-drop-menu">
+          <a routerLink="/about" (click)="closeMenus()">About Us</a>
+          <a routerLink="/home" fragment="clients-id" (click)="closeMenus()">Our Clients</a>
+          <a routerLink="/privacy-policy" (click)="closeMenus()">Privacy Policy</a>
+        </div>
+      </div>
+
+      <button class="btn-brand cta" type="button" (click)="goToContact()">Schedule a Call</button>
+    </div>
+  </nav>
+</header>

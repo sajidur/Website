@@ -12,6 +12,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from './shared/material/material.module';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { FacebookModule } from 'ngx-facebook';
+import { SharedModule } from './shared/shared/shared.module';
+import { AboutComponent } from './pages/about/about.component';
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 
 @NgModule({
@@ -20,7 +22,8 @@ import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.co
     ContentLayoutComponent,
     HeaderComponent,
     FooterComponent,
-    PrivacyPolicyComponent
+    PrivacyPolicyComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +33,7 @@ import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.co
     FormsModule,
     ReactiveFormsModule,
     MaterialModule,
+    SharedModule,
     NgxSpinnerModule,
     FacebookModule.forRoot()
   ],

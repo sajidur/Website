@@ -1,1357 +1,228 @@
-<div class="" style="overflow-y: hidden">
-  <ngx-spinner
-    color="#0074a7"
-    type="ball-clip-rotate-pulse"
-    size="medium"
-    [fullScreen]="true"
-    ><p style="color: white">Plase wait..</p></ngx-spinner
-  >
-
-  <header class="">
-    <!-- <div class="top-nav">
-      <div class="d-flex text-transform;">
-        <mat-icon style="color: rgb(255, 255, 255)">phone</mat-icon>
-        &nbsp;&nbsp;
-        <a
-          href="tel:+8801685747910"
-          style="
-            color: white;
-            margin-top: 5px;
-            margin-left: 5px;
-            margin-right: 10px;
-          "
-        >
-          +8801685747910
-        </a>
-
-        <mat-icon style="color: rgb(255, 255, 255)">email</mat-icon>
-        &nbsp;&nbsp;
-        <a
-          href="mailto:info@rexsystemsbd.com"
-          style="color: white; margin-top: 5px; margin-left: 5px"
-        >
-          info@rexsystemsbd.com
-        </a>
-      </div>
-    </div>
-
-    <hr /> -->
-
-    <nav
-      class="container mx-auto bg-white navbar p-3 navbar-expand-lg navbar-light d-flex justify-content-between"
-      style="border-radius: 6px"
-    >
-      <img
-        onclick=""
-        class="header-img ml-2"
-        src="assets/images/logo.png"
-        alt=""
-      />
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div
-        class="collapse navbar-collapse justify-content-end"
-        id="navbarNavAltMarkup"
-      >
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="/">Home</a>
-          <a class="nav-item nav-link" (click)="gotToRedirect('about-id')"
-            >Solution</a
-          >
-          <a class="nav-item nav-link" (click)="gotToRedirect('clients-id')"
-            >Clients</a
-          >
-          <a class="nav-item nav-link" (click)="gotToRedirect('service-id')"
-            >Services</a
-          >
-          <a class="nav-item nav-link" routerLink="/services"
-            >Maintenance Packages</a
-          >
-          <!-- <a class="nav-item nav-link" (click)="gotToRedirect('gallery-id')"
-            >Gallery</a
-          > -->
-
-          <button
-            class="nav-item nav-link hire-developer text-light"
-            (click)="gotToRedirect('contact-id')"
-          >
-            Hire a Developer
-          </button>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <div id="mainContianerId" class="m-0 p-0">
-    <div
-      id="carouselExampleControls"
-      class="carousel slide orange-bg"
-      data-interval="55555555"
-      data-ride="carousel"
-    >
-      <div class="banner-area1">
-        <div class="container">
-          <div class="banner-image-background">
-            <h1 class="banner-header">Enterprise Software Solutions</h1>
-            <h1 class="banner-header">That Drive Business Growth</h1>
-
-            <button class="btn bnnr-btn" (click)="gotToRedirect('contact-id')">
-              Get a Free Consultation
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="stats-area">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-6 col-md-3" *ngFor="let stat of stats">
-            <div class="stat-tile">
-              <div class="stat-value">{{ stat.value }}</div>
-              <div class="stat-label">{{ stat.label }}</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="about-us-id" class="about-us-area">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-4">
-            <h1 class="header">About Rex Systems Bangladesh</h1>
-          </div>
-          <div class="col-md-8">
-            <p class="about-p mb-3">
-              Founded in 2018, Rex Systems Bangladesh has grown from a small
-              development team into a technology partner trusted by 20+
-              businesses across retail, healthcare, recruitment, and
-              professional services. Over 8+ years and 50+ delivered
-              projects, we've stayed focused on one thing: building software
-              that holds up under real business use, not just demos.
-            </p>
-            <p class="about-p mb-0">
-              Our 15+ person team works across the full stack — from
-              point-of-sale and e-commerce to ERP and hospital information
-              systems — so you get a single accountable partner instead of
-              juggling multiple vendors.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="about-id" class="about-area">
-      <div class="container">
-        <h1 class="header">Solutions We Deliver</h1>
-        <p class="about-p">Building the Future with Technology</p>
-
-        <div class="row">
-          <div class="col-md-4">
-            <div class="solution-div">
-              <h1>Customized Software Development</h1>
-              <p>
-                We craft tailored software solutions designed to meet your
-                unique business requirements — not off-the-shelf templates
-                stretched to fit. Every build is scoped around how your
-                team actually works, so it improves efficiency instead of
-                adding friction, and scales as your business grows.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="solution-div">
-              <h1>Web and Mobile App Development</h1>
-              <p>
-                Our team builds high-performance web and mobile
-                applications with a focus on seamless functionality, from
-                customer-facing storefronts to internal operational tools.
-                We handle the full lifecycle — architecture, development,
-                testing, and deployment — under one roof.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="solution-div">
-              <h1>User Centric Design to Development</h1>
-              <p>
-                We prioritize user experience in every project, ensuring
-                intuitive design and smooth interaction. That means fewer
-                support tickets, faster staff onboarding, and higher
-                adoption once the system goes live — for your team and
-                your customers alike.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="why-choose-area">
-      <div class="container">
-        <h1 class="header">Why Businesses Choose Us</h1>
-        <p class="about-p">A partner invested in your outcomes, not just your project</p>
-
-        <div class="row mt-4">
-          <div class="col-md-3 col-sm-6" *ngFor="let item of whyChooseUs">
-            <div class="why-choose-card">
-              <span class="why-choose-icon" [ngSwitch]="item.icon">
-                <svg *ngSwitchCase="'groups'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="8" r="2.5"/><path d="M15.5 14.2c2.6.4 4.5 2.6 4.5 5.3"/></svg>
-                <svg *ngSwitchCase="'forum'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v10H9l-4 4v-4H4z"/></svg>
-                <svg *ngSwitchCase="'schedule'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
-                <svg *ngSwitchCase="'support_agent'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13a8 8 0 0 1 16 0"/><rect x="3" y="13" width="4" height="6" rx="1.5"/><rect x="17" y="13" width="4" height="6" rx="1.5"/><path d="M19 19v1a3 3 0 0 1-3 3h-2"/></svg>
-              </span>
-              <h3>{{ item.title }}</h3>
-              <p>{{ item.description }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      id="tech-stack-id"
-      class=""
-      style="background-color: #0157a814; margin-top: 5rem; padding: 5rem 0"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-2">
-            <h1 class="header">Hire a Developer</h1>
-          </div>
-          <div class="col-md-1"></div>
-          <div class="col-md-9 hire-div-p">
-            Extend your team with vetted, dedicated developers across
-            enterprise frameworks, modern JavaScript stacks, and production
-            databases — engaged on your timeline, managed for quality, and
-            integrated with the way your business already works.
-          </div>
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-md-3 col-sm-6" *ngFor="let tech of techStack">
-            <div class="why-choose-card">
-              <span class="why-choose-icon" [ngSwitch]="tech.icon">
-                <svg *ngSwitchCase="'code'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 3 12 9 18"/><polyline points="15 6 21 12 15 18"/></svg>
-                <svg *ngSwitchCase="'language'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg>
-                <svg *ngSwitchCase="'shopping_cart'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.2a2 2 0 0 0 2-1.6L20 8H6"/><circle cx="9" cy="20" r="1.4" fill="currentColor" stroke="none"/><circle cx="17" cy="20" r="1.4" fill="currentColor" stroke="none"/></svg>
-                <svg *ngSwitchCase="'android'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 10v6a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-6"/><path d="M4 10a8 8 0 0 1 16 0"/><path d="M9 18v3"/><path d="M15 18v3"/><path d="M2 11v4"/><path d="M22 11v4"/><path d="M8 4l1.5 2"/><path d="M16 4l-1.5 2"/></svg>
-                <svg *ngSwitchCase="'server'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01"/><path d="M7 17h.01"/></svg>
-                <svg *ngSwitchCase="'layers'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 9l10 6 10-6-10-6z"/><path d="M2 15l10 6 10-6"/></svg>
-                <svg *ngSwitchCase="'bolt'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3 4 14h6l-1 7 9-11h-6l1-7z"/></svg>
-                <svg *ngSwitchCase="'database'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg>
-              </span>
-              <h3>{{ tech.name }}</h3>
-              <p>{{ tech.description }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="clients-area my-5" id="clients-id">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h1 class="header my-5">
-              Trusted by 20+ Businesses Across Industries
-            </h1>
-          </div>
-        </div>
-
-        <div class="row mx-0 justify-content-center">
-          <div
-            class="d-flex flex-wrap justify-content-center align-items-center client-logos"
-            *ngFor="let client of clients"
-          >
-            <a
-              [href]="client.link || '#'"
-              target="_blank"
-              class="client-logo d-flex justify-content-center align-items-center"
-            >
-              <img
-                [src]="client.image"
-                [alt]="client.name"
-                class="client-logo-img"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      id="service-id"
-      class="business-area"
-      style="background-color: #0157a814; margin-top: 5rem; padding: 5rem 0"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-2">
-            <h1 class="header">Service Area</h1>
-          </div>
-          <div class="col-md-1"></div>
-          <div class="col-md-9 services-div-p">
-            From point-of-sale and e-commerce to ERP and hospital information
-            systems, we build the business-critical software that keeps your
-            operations running — reliable, scalable, and built around how your
-            organization actually works.
-          </div>
-        </div>
-
-        <div class="row mt-5 justify-content-between">
-          <div
-            *ngFor="let service of services"
-            class="service-div row col-md-6 py-5 px-2 bg-white mt-4"
-          >
-            <div class="col-md-2">
-              <img
-                *ngIf="service.image"
-                [src]="service.image"
-                [alt]="service.title"
-                class="service-image"
-              />
-              <span *ngIf="!service.image" class="service-icon-fallback">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
-              </span>
-            </div>
-            <div class="col-md-9">
-              <h1 class="service-title">{{ service.title }}</h1>
-              <p class="service-description">{{ service.description }}</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- <div
-          id="accordion1"
-          style="
-            border-width: 1px;
-            border-color: #e2e2e2;
-            border-radius: 0px 0px 10px 10px;
-            background-color: #ffffff;
-            box-shadow: 7px 7px 10px 0 rgb(63 116 255 / 9%);
-          "
-        >
-          <div class="btn-header d-flex three-btn">
-            <a
-              (click)="updateSelectedDom($event)"
-              class="btn tab-link button-selected btn-first"
-              id="WhoWeAreLink"
-              data-toggle="collapse"
-              href="#WhoWeAre"
-              aria-expanded="true"
-              aria-controls="collapseOneA"
-            >
-              Hire a Developer
-            </a>
-            <a
-              (click)="updateSelectedDom($event)"
-              style="border-right: 1px solid #e2e2e2"
-              class="btn collapsed tab-link button-deselected btn-second"
-              id="DevelopmentServicesLink"
-              data-toggle="collapse"
-              href="#DevelopmentServices"
-              aria-expanded="false"
-              aria-controls="collapseTwoA"
-            >
-              End-to-End Solutions
-            </a>
-
-          </div>
-          <div
-            id="WhoWeAre"
-            class="collapse show"
-            aria-labelledby="headingTwoAd"
-            data-parent="#accordion1"
-          >
-            <div class="page-content">
-              <div class="row">
-                <div class="col-sm-6" style="padding-right: 0">
-                  <div class="tab-img1"></div>
-                </div>
-                <div class="col-sm-6" style="padding-left: 0">
-                  <div id="accordion-h1">
-                    <div class="border-list">
-                      <div id="headingOne">
-                        <a
-                          class="btn collapse-title"
-                          data-toggle="collapse"
-                          data-target="#collapseOne"
-                          aria-expanded="true"
-                          aria-controls="collapseOne"
-                        >
-                          <h4 class="tab-header4">
-                            Targeted candidate sourcing
-                          </h4>
-                        </a>
-                      </div>
-
-                      <div
-                        id="collapseOne"
-                        class="collapse"
-                        aria-labelledby="headingOne"
-                        data-parent="#accordion-h1"
-                      >
-                        <p class="tab-p">
-                          Our people have built an elite network by sourcing and
-                          engaging high quality candidates. Through our strong
-                          presence in local community groups, and industry
-                          partners, our team is able to deepen their expertise
-                          and continue to grow our vast talent network. With our
-                          recruiting expertise combined with deep industry
-                          knowledge, we deliver end-to-end support for our
-                          clients.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="accordion-h2">
-                    <div class="border-list">
-                      <div id="headingTwo">
-                        <a
-                          class="btn collapsed collapse-title"
-                          data-toggle="collapse"
-                          data-target="#collapseTwo"
-                          aria-expanded="false"
-                          aria-controls="collapseTwo"
-                        >
-                          <h4 class="tab-header4">
-                            Candidate application screening
-                          </h4>
-                        </a>
-                      </div>
-                      <div
-                        id="collapseTwo"
-                        class="collapse"
-                        aria-labelledby="headingTwo"
-                        data-parent="#accordion-h2"
-                      >
-                        <p class="tab-p">
-                          Our process increases speed to hire. We establish key
-                          timeframes to accelerate the hiring process, so that
-                          you can interview the top-tier candidates as quickly
-                          as possible. From initial point of contact to an
-                          accepted job offer, we will secure the right
-                          professionals in less than 3 weeks. We offer a
-                          dedicated recruiting team experienced in volume
-                          hiring, to secure the best talent in the shortest
-                          amount of time.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="accordion-h3">
-                    <div class="border-list">
-                      <div id="headingThree">
-                        <a
-                          class="btn collapsed collapse-title"
-                          data-toggle="collapse"
-                          data-target="#collapseThree"
-                          aria-expanded="false"
-                          aria-controls="collapseThree"
-                        >
-                          <h4 class="tab-header4">Assessment and management</h4>
-                        </a>
-                      </div>
-                      <div
-                        id="collapseThree"
-                        class="collapse"
-                        aria-labelledby="headingThree"
-                        data-parent="#accordion-h3"
-                      >
-                        <p class="tab-p">
-                          Our insights are the foundation of our European
-                          Consortium reports. Our annual Salary Guide report
-                          provides a comprehensive list of salaries in top
-                          industries to help understand salary trends and
-                          determine your hiring budget. Our recruiting experts
-                          use market mapping and salary benchmarking to provide
-                          insights into the hot spot areas so that you can
-                          maintain a competitive position in your market.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="accordion-h4">
-                    <div class="border-list">
-                      <div id="headingFour">
-                        <a
-                          class="btn collapsed collapse-title"
-                          data-toggle="collapse"
-                          data-target="#collapseFour"
-                          aria-expanded="false"
-                          aria-controls="collapseFour"
-                        >
-                          <h4 class="tab-header4">
-                            Ongoing candidate engagement
-                          </h4>
-                        </a>
-                      </div>
-                      <div
-                        id="collapseFour"
-                        class="collapse"
-                        aria-labelledby="headingFour"
-                        data-parent="#accordion-h4"
-                      >
-                        <p class="tab-p">
-                          Our brand opens doors for our clients to attract the
-                          best talent and reach the widest potential audience of
-                          relevant high quality candidates. Through our digital
-                          recruitment solutions, we receive 4X the views for
-                          online job ads and have a 95% job fill rate.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            id="DevelopmentServices"
-            class="collapse"
-            aria-labelledby="headingTwoAd"
-            data-parent="#accordion1"
-          >
-            <div class="page-content">
-              <div class="row">
-                <div class="col-sm-6" style="padding-right: 0">
-                  <div class="tab-img2"></div>
-                </div>
-                <div class="col-sm-6" style="padding-left: 0">
-                  <div id="accordion-mh1">
-                    <div class="border-list">
-                      <div id="headingOne">
-                        <a
-                          class="btn collapse-title"
-                          data-toggle="collapse"
-                          data-target="#collapseOne"
-                          aria-expanded="true"
-                          aria-controls="collapseOne"
-                        >
-                          <h4 class="tab-header4">Point of Sale</h4>
-                        </a>
-                      </div>
-
-                      <div
-                        id="collapseOne"
-                        class="collapse"
-                        aria-labelledby="headingOne"
-                        data-parent="#accordion-mh1"
-                      >
-                        <p class="tab-p">
-                          Whether you’re facing unexpected demands, need to
-                          cover an absence or are implementing transformative
-                          change, we have the expertise to supply contract
-                          workers with the skills you need.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="accordion-mh2">
-                    <div class="border-list">
-                      <div id="headingTwo">
-                        <a
-                          class="btn collapsed collapse-title"
-                          data-toggle="collapse"
-                          data-target="#collapseTwo"
-                          aria-expanded="false"
-                          aria-controls="collapseTwo"
-                        >
-                          <h4 class="tab-header4">
-                            Small to Large Scale Ecommerce
-                          </h4>
-                        </a>
-                      </div>
-                      <div
-                        id="collapseTwo"
-                        class="collapse"
-                        aria-labelledby="headingTwo"
-                        data-parent="#accordion-mh2"
-                      >
-                        <p class="tab-p">
-                          At European Consortium, we replace “Advertise and
-                          Apply” with “Find and Engage” to expand our talent
-                          pool. We’ve equipped our recruiting experts with
-                          leading tech and data science to reach both passive
-                          and active candidates. We provide comprehensive
-                          support to organizations looking to expand their
-                          contract workforce in accounting and finance,
-                          architecture, construction, engineering, information
-                          technology, life sciences and property and facilities
-                          management.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="accordion-mh3">
-                    <div class="border-list">
-                      <div id="headingThree">
-                        <a
-                          class="btn collapsed collapse-title"
-                          data-toggle="collapse"
-                          data-target="#collapseThree"
-                          aria-expanded="false"
-                          aria-controls="collapseThree"
-                        >
-                          <h4 class="tab-header4">
-                            Inventory & Accounting Solutions
-                          </h4>
-                        </a>
-                      </div>
-                      <div
-                        id="collapseThree"
-                        class="collapse"
-                        aria-labelledby="headingThree"
-                        data-parent="#accordion-mh3"
-                      >
-                        <p class="tab-p">
-                          Our people have built an elite network by sourcing and
-                          engaging high quality candidates. Through our strong
-                          presence in local community groups, and industry
-                          partners, our team is able to deepen their expertise
-                          and continue to grow our vast talent network. With our
-                          recruiting expertise combined with deep industry
-                          knowledge, we deliver end-to-end support for our
-                          clients.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="accordion-mh4">
-                    <div class="border-list">
-                      <div id="headingFour">
-                        <a
-                          class="btn collapsed collapse-title"
-                          data-toggle="collapse"
-                          data-target="#collapseFour"
-                          aria-expanded="false"
-                          aria-controls="collapseFour"
-                        >
-                          <h4 class="tab-header4">
-                            Performance analysis and System design
-                          </h4>
-                        </a>
-                      </div>
-                      <div
-                        id="collapseFour"
-                        class="collapse"
-                        aria-labelledby="headingFour"
-                        data-parent="#accordion-mh4"
-                      >
-                        <p class="tab-p">
-                          Our process increases speed to hire. We establish key
-                          timeframes to accelerate the hiring process, so that
-                          you can interview the top-tier candidates as quickly
-                          as possible. From initial point of contact to an
-                          accepted job offer, we will secure the right contract
-                          professionals in less than 48 hours. We offer a
-                          dedicated recruiting team experienced in volume
-                          hiring, to secure the best talent in the shortest
-                          amount of time.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="accordion-mh5">
-                    <div class="border-list">
-                      <div id="headingFive">
-                        <a
-                          class="btn collapsed collapse-title"
-                          data-toggle="collapse"
-                          data-target="#collapseFive"
-                          aria-expanded="false"
-                          aria-controls="collapseFive"
-                        >
-                          <h4 class="tab-header4">ERP Solutions</h4>
-                        </a>
-                      </div>
-                      <div
-                        id="collapseFive"
-                        class="collapse"
-                        aria-labelledby="headingFive"
-                        data-parent="#accordion-mh5"
-                      >
-                        <p class="tab-p">
-                          Our insights are the foundation of our European
-                          Consortium reports. Our annual Salary Guide report
-                          provides a comprehensive list of salaries in top
-                          industries to help understand salary trends and
-                          determine your hiring budget. Our recruiters use
-                          market mapping and salary benchmarking to provide
-                          insights into the hot spot areas so that you can
-                          maintain a competitive position in your market.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="accordion-mh6">
-                    <div class="border-list">
-                      <div id="headingSix">
-                        <a
-                          class="btn collapsed collapse-title"
-                          data-toggle="collapse"
-                          data-target="#collapseSix"
-                          aria-expanded="false"
-                          aria-controls="collapseSix"
-                        >
-                          <h4 class="tab-header4">Android apps</h4>
-                        </a>
-                      </div>
-                      <div
-                        id="collapseSix"
-                        class="collapse"
-                        aria-labelledby="headingSix"
-                        data-parent="#accordion-mh6"
-                      >
-                        <p class="tab-p">
-                          Our brand opens doors for our clients to attract the
-                          best talent and reach the widest potential audience of
-                          relevant high quality candidates. Through our digital
-                          recruitment solutions, we receive 4X the views for
-                          online job ads and have a 95% job fill rate.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            id="ContactUs"
-            class="collapse"
-            aria-labelledby="headingTwoAd"
-            data-parent="#accordion1"
-          >
-            <div class="page-content">
-              <div class="row">
-                <div class="col-sm-6" style="padding-right: 0">
-                  <div class="tab-img3"></div>
-                </div>
-                <div class="col-sm-6" style="padding-left: 0">
-                  <div id="accordion-mh1">
-                    <div class="border-list">
-                      <div id="headingOne">
-                        <a
-                          class="btn collapse-title"
-                          data-toggle="collapse"
-                          data-target="#collapseOne"
-                          aria-expanded="true"
-                          aria-controls="collapseOne"
-                        >
-                          <h4 class="tab-header4">Big data engineers</h4>
-                        </a>
-                      </div>
-
-                      <div
-                        id="collapseOne"
-                        class="collapse"
-                        aria-labelledby="headingOne"
-                        data-parent="#accordion-mh1"
-                      >
-                        <p class="tab-p">
-                          It is the role of a big data engineer to build,
-                          maintain and ensure a production-ready big data
-                          environment. This environment this role works in will
-                          include architecture, technology standards, open
-                          source options, as well as data preparation and data
-                          management processes.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="accordion-mh2">
-                    <div class="border-list">
-                      <div id="headingTwo">
-                        <a
-                          class="btn collapsed collapse-title"
-                          data-toggle="collapse"
-                          data-target="#collapseTwo"
-                          aria-expanded="false"
-                          aria-controls="collapseTwo"
-                        >
-                          <h4 class="tab-header4">Business analysts</h4>
-                        </a>
-                      </div>
-                      <div
-                        id="collapseTwo"
-                        class="collapse"
-                        aria-labelledby="headingTwo"
-                        data-parent="#accordion-mh2"
-                      >
-                        <p class="tab-p">
-                          Business analysts work with organisations to help them
-                          improve their processes and systems. They conduct
-                          research and analysis in order to come up with
-                          solutions to business problems and help to introduce
-                          these systems to businesses and their clients.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="accordion-mh3">
-                    <div class="border-list">
-                      <div id="headingThree">
-                        <a
-                          class="btn collapsed collapse-title"
-                          data-toggle="collapse"
-                          data-target="#collapseThree"
-                          aria-expanded="false"
-                          aria-controls="collapseThree"
-                        >
-                          <h4 class="tab-header4">Cloud architects</h4>
-                        </a>
-                      </div>
-                      <div
-                        id="collapseThree"
-                        class="collapse"
-                        aria-labelledby="headingThree"
-                        data-parent="#accordion-mh3"
-                      >
-                        <p class="tab-p">
-                          In today’s market there are no boundaries, and
-                          European Consortium is a trusted partner
-                          to organizations across the U.S. and around the world.
-                          Whether you need a professional or a whole new team,
-                          we’ll provide you with quick access to tech talent who
-                          will make a difference from the moment they join. 
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="accordion-mh4">
-                    <div class="border-list">
-                      <div id="headingFour">
-                        <a
-                          class="btn collapsed collapse-title"
-                          data-toggle="collapse"
-                          data-target="#collapseFour"
-                          aria-expanded="false"
-                          aria-controls="collapseFour"
-                        >
-                          <h4 class="tab-header4">Data scientists</h4>
-                        </a>
-                      </div>
-                      <div
-                        id="collapseFour"
-                        class="collapse"
-                        aria-labelledby="headingFour"
-                        data-parent="#accordion-mh4"
-                      >
-                        <p class="tab-p">
-                          Data scientists help companies interpret and manage
-                          data and solve complex problems using expertise in a
-                          variety of data niches. They generally have a
-                          foundation in computer science, modeling, statistics,
-                          analytics, and math - coupled with a strong business
-                          sense. It’s this merging of esoteric intelligence and
-                          practical knowledge that makes the data scientist so
-                          valuable to a company
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="accordion-mh5">
-                    <div class="border-list">
-                      <div id="headingFive">
-                        <a
-                          class="btn collapsed collapse-title"
-                          data-toggle="collapse"
-                          data-target="#collapseFive"
-                          aria-expanded="false"
-                          aria-controls="collapseFive"
-                        >
-                          <h4 class="tab-header4">Java developers</h4>
-                        </a>
-                      </div>
-                      <div
-                        id="collapseFive"
-                        class="collapse"
-                        aria-labelledby="headingFive"
-                        data-parent="#accordion-mh5"
-                      >
-                        <p class="tab-p">
-                          A Java developer is responsible for developing
-                          applications and software using the programming
-                          language Java. A Java developer is a specialized type
-                          of programmer who may collaborate with web developers
-                          and software engineers to integrate Java into business
-                          applications, software, and websites
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="accordion-mh6">
-                    <div class="border-list">
-                      <div id="headingSix">
-                        <a
-                          class="btn collapsed collapse-title"
-                          data-toggle="collapse"
-                          data-target="#collapseSix"
-                          aria-expanded="false"
-                          aria-controls="collapseSix"
-                        >
-                          <h4 class="tab-header4">.Net Developers</h4>
-                        </a>
-                      </div>
-                      <div
-                        id="collapseSix"
-                        class="collapse"
-                        aria-labelledby="headingSix"
-                        data-parent="#accordion-mh6"
-                      >
-                        <p class="tab-p">
-                          A net developer is responsible for producing code
-                          using . net languages such as C# and VB. Net
-                          developers create applications from scratch, configure
-                          existing systems and provide user support. ... A net
-                          developer's overall goal is to work with internal
-                          teams to design, develop and maintain software.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="accordion-mh7">
-                    <div class="border-list">
-                      <div id="headingseven">
-                        <a
-                          class="btn collapsed collapse-title"
-                          data-toggle="collapse"
-                          data-target="#collapseseven"
-                          aria-expanded="false"
-                          aria-controls="collapseseven"
-                        >
-                          <h4 class="tab-header4">Project managers</h4>
-                        </a>
-                      </div>
-                      <div
-                        id="collapseseven"
-                        class="collapse"
-                        aria-labelledby="headingseven"
-                        data-parent="#accordion-mh7"
-                      >
-                        <p class="tab-p">
-                          In the broadest sense, project managers (PMs) are
-                          responsible for planning, organizing, and directing
-                          the completion of specific projects for an
-                          organization while ensuring these projects are on
-                          time, on budget, and within scope.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="accordion-mh8">
-                    <div class="border-list">
-                      <div id="headingEight">
-                        <a
-                          class="btn collapsed collapse-title"
-                          data-toggle="collapse"
-                          data-target="#collapseEight"
-                          aria-expanded="false"
-                          aria-controls="collapseEight"
-                        >
-                          <h4 class="tab-header4">QA</h4>
-                        </a>
-                      </div>
-                      <div
-                        id="collapseEight"
-                        class="collapse"
-                        aria-labelledby="headingEight"
-                        data-parent="#accordion-mh8"
-                      >
-                        <p class="tab-p">
-                          A quality assurance specialist ensures that the final
-                          product observes the company's quality standards. In
-                          general, these detail-oriented professionals are
-                          responsible for the development and implementation of
-                          inspection activities, the detection and resolution of
-                          problems, and the delivery of satisfactory outcomes.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-      </div>
-    </div>
-
-    <div id="gallery-id" class="img-area" >
-      <div class="container">
-        <div class="row my-5">
-          <div class="col-md-3">
-            <h1 style="padding-right: 70px" class="header">
-              Towards a better future
-            </h1>
-          </div>
-          <div class="col-md-9 gallery-div-p">
-            We believe technology has the power to drive positive change. Our
-            software company is dedicated to creating innovative solutions that
-            contribute to a sustainable future.
-          </div>
-        </div>
-
-        <img
-          class="gallery-image"
-          src="assets/images/gallery/image.jpg"
-          alt="Gallery Image"
-        />
-      </div>
-
-      <!-- <div class="container">
-        <h1 class="header">Gallery</h1>
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <img
-              class="w-100"
-              (click)="
-                imageViewer('../../../../../assets/images/gallery/img1.jpeg')
-              "
-              src="../../../../../assets/images/gallery/img1.jpeg"
-              alt=""
-            />
-          </div>
-          <div class="col-md-4 mb-4">
-            <img
-              class="w-100"
-              (click)="
-                imageViewer('../../../../../assets/images/gallery/img2.jpg')
-              "
-              src="../../../../../assets/images/gallery/img2.jpg"
-              alt=""
-            />
-          </div>
-          <div class="col-md-4 mb-4">
-            <img
-              class="w-100"
-              (click)="
-                imageViewer('../../../../../assets/images/gallery/img3.jpeg')
-              "
-              src="../../../../../assets/images/gallery/img3.jpeg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <img
-              class="w-100"
-              (click)="
-                imageViewer('../../../../../assets/images/gallery/img4.jpg')
-              "
-              src="../../../../../assets/images/gallery/img4.jpg"
-              alt=""
-            />
-          </div>
-          <div class="col-md-4 mb-4">
-            <img
-              class="w-100"
-              (click)="
-                imageViewer('../../../../../assets/images/gallery/img5.jpg')
-              "
-              src="../../../../../assets/images/gallery/img5.jpg"
-              alt=""
-            />
-          </div>
-          <div class="col-md-4 mb-4">
-            <img
-              class="w-100"
-              (click)="
-                imageViewer('../../../../../assets/images/gallery/img6.jpg')
-              "
-              src="../../../../../assets/images/gallery/img6.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-      </div> -->
-    </div>
-
-    <!-- Maintenance Packages Section -->
-    <div class="maintenance-packages-section py-5">
-      <div class="container">
-        <div class="section-title text-center mb-5">
-          <h2>Website Maintenance Packages</h2>
-          <p>Keep your website running smoothly with our comprehensive maintenance plans</p>
-        </div>
-
-        <div class="packages-grid">
-          <div *ngFor="let pkg of maintenancePackages" 
-               class="package-card"
-               [class.highlighted]="pkg.highlighted">
-            
-            <div class="package-header">
-              <h3>{{ pkg.name }}</h3>
-              <p class="package-description">{{ pkg.description }}</p>
-              <div class="price-section">
-                <span class="currency">{{ pkg.currency }}</span>
-                <span class="price">{{ pkg.price | number }}</span>
-                <span class="period">{{ pkg.period }}</span>
-              </div>
-            </div>
-
-            <div class="package-content">
-              <div class="service-section">
-                <h5>Included Services:</h5>
-                <ul class="services-list">
-                  <li *ngFor="let service of pkg.services | slice:0:8">
-                    <i class="fas fa-check-circle"></i>
-                    {{ service }}
-                  </li>
-                  <li *ngIf="pkg.services.length > 8" class="more-items">
-                    <i class="fas fa-check-circle"></i>
-                    + {{ pkg.services.length - 8 }} more services
-                  </li>
-                </ul>
-              </div>
-
-              <div class="support-section">
-                <h5>Support:</h5>
-                <ul class="support-list">
-                  <li *ngFor="let support of pkg.support">
-                    <i class="fas fa-star"></i>
-                    {{ support }}
-                  </li>
-                </ul>
-              </div>
-
-              <a routerLink="/services" class="select-btn">View Details</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="faq-id" class="faq-area">
-      <div class="container">
-        <h1 class="header text-center">Frequently Asked Questions</h1>
-        <p class="about-p text-center mb-5">Answers to what businesses usually ask before starting a project</p>
-
-        <div class="faq-list">
-          <div class="faq-item" *ngFor="let faq of faqs; let i = index" [class.open]="faq.open">
-            <button class="faq-question" (click)="toggleFaq(i)">
-              <span>{{ faq.question }}</span>
-              <span class="faq-toggle-icon">{{ faq.open ? '−' : '+' }}</span>
-            </button>
-            <div class="faq-answer" *ngIf="faq.open">
-              <p>{{ faq.answer }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="cta-banner">
-      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-        <h2 class="cta-banner-text">Ready to start your project?</h2>
-        <div class="cta-banner-actions">
-          <button class="btn cta-primary-btn" (click)="gotToRedirect('contact-id')">
-            Get a Free Consultation
-          </button>
-          <a
-            class="btn cta-secondary-btn"
-            href="https://wa.me/+8801518932851"
-            target="_blank"
-            aria-label="Chat on WhatsApp"
-          >
-            Chat on WhatsApp
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div id="contact-id" class="contact-area" >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7 form-div bg-white p-5">
-            <h1>Have you got a project in mind? Let’s talk</h1>
-            <!-- Name Field -->
-            <div class="col-sm-12 input-div">
-              <h3>Name</h3>
-              <input
-                [(ngModel)]="emailObj.name"
-                type="text"
-                class="form-control input-text"
-                placeholder="Your Name*"
-              />
-            </div>
-
-            <!-- Email Field -->
-            <div class="col-sm-12 input-div">
-              <h3>Email</h3>
-              <input
-                [(ngModel)]="emailObj.toEmail"
-                type="email"
-                class="form-control input-text"
-                placeholder="Your Email*"
-              />
-            </div>
-
-            <!-- Phone Number Field -->
-            <div class="col-sm-12 input-div">
-              <h3>Phone Number</h3>
-              <input
-                [(ngModel)]="emailObj.phoneNumber"
-                type="text"
-                class="form-control input-text"
-                placeholder="Your Phone Number*"
-              />
-            </div>
-
-            <!-- Company Field -->
-            <div class="col-sm-12 input-div">
-              <h3>Company</h3>
-              <input
-                [(ngModel)]="emailObj.company"
-                type="text"
-                class="form-control input-text"
-                placeholder="Your Company*"
-              />
-            </div>
-
-            <!-- Subject Field -->
-            <div class="col-sm-12 input-div">
-              <h3>Subject</h3>
-              <input
-                [(ngModel)]="emailObj.subject"
-                type="text"
-                class="form-control input-text"
-                placeholder="Your Subject*"
-              />
-            </div>
-
-            <!-- Message Field -->
-            <div class="col-sm-12 input-div">
-              <h3>Message</h3>
-              <textarea
-                [(ngModel)]="emailObj.message"
-                placeholder="Your Message*"
-                class="text-area-cls form-control"
-              ></textarea>
-            </div>
-
-            <!-- Submit Button -->
-            <div class="col-sm-12 text-end">
-              <button (click)="submitInfo()" class="btn submit-btn">
-                SUBMIT NOW
-              </button>
-            </div>
-          </div>
-
-          <div class="col-md-5 row">
-            <div class="col-12 d-flex justify-content-center align-items-center">
-              <div class="text-center">
-                <img
-                  style="width: 300px; padding: 50px; background: white"
-                  src="../../../../../assets/images/qr-code-whatsapp.png"
-                  alt=""
-                />
-                <a
-                  aria-label="Chat on WhatsApp"
-                  href="https://wa.me/+8801518932851"
-                  style="text-decoration: none"
-                >
-                  <h1 class="chat-whatsApp mt-5">Chat on Whatsapp</h1>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <footer class="footer-area" id="resource-id">
-      <div class="footer-bg-img">
-        <div class="container my-3">
-          <div class="row">
-            <div class="col-sm-4">
-              <h3 class="footer-headline">Address In Bangladesh</h3>
-              <div class="d-flex mb-3 text-white">
-                <mat-icon style="color: gainsboro"> location_on</mat-icon>
-                &nbsp;&nbsp;
-                <div style="margin-top: 5px">
-                  H-39, R-11, Kallaynpur, Mirpur, Dhaka-1207
-                  <!-- Suite 4, Level 4, THe Penthouse<br />
-                  Ewropa Business Center<br />
-                  Trip Dun Karm<br />
-                  B'Kara BKR 9034, Malta - EU -->
-                </div>
-              </div>
-              <h3 style="margin-top: 20px" class="footer-headline">Call</h3>
-              <div class="d-flex mb-3 text-white">
-                <mat-icon style="color: gainsboro"> phone</mat-icon>
-                &nbsp;&nbsp;
-                <div style="margin-top: 5px">
-                  +8801518932851
-                  <!-- , +40 721 198 459 -->
-                </div>
-              </div>
-              <h3 style="margin-top: 20px" class="footer-headline">Email</h3>
-              <div class="d-flex mb-3 text-white">
-                <mat-icon style="color: gainsboro">email</mat-icon>
-                &nbsp;&nbsp;
-                <div style="margin-top: 5px">info@rexsystemsbd.com</div>
-              </div>
-            </div>
-
-            <div class="col-sm-8">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.0204954220044!2d90.35694737419072!3d23.78228448755374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0c9b27d077b%3A0x54fdf14bcbcc0a56!2sRex%20System%20Bangladesh!5e0!3m2!1sen!2sbd!4v1687318374147!5m2!1sen!2sbd"
-                width="100%"
-                height="300"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-              ></iframe>
-            </div>
-          </div>
-        </div>
-        <div class="bootom-footer">
+<!-- HERO (rotating slides) -->
+<section class="hero">
   <div class="container">
-    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center text-white mt-5 gap-2">
-      <div>© {{ currentYear }} Rex Systems Bangladesh. All Rights Reserved.</div>
-      <div>
-        | <a routerLink="/privacy-policy" class="text-white text-decoration-underline">Privacy Policy</a>
+    <h1 class="seo-h1">Application Security, Infrastructure Management, DevOps and AI Solutions</h1>
+    <div class="slide" *ngFor="let s of slides; let i = index" [class.active]="i === slideIndex" [attr.aria-hidden]="i !== slideIndex">
+      <div class="slide-copy">
+        <p class="eyebrow">Rex Systems Bangladesh</p>
+        <h2 class="slide-title">{{ s.title }}</h2>
+        <p class="lead">{{ s.text }}</p>
+        <div class="hero-actions">
+          <button type="button" class="btn-brand" (click)="scrollTo('contact-id')">Schedule a Call</button>
+          <a class="btn-outline-brand" routerLink="/about">View Company Profile</a>
+        </div>
+        <div class="hero-stats">
+          <div *ngFor="let st of s.stats">
+            <strong>{{ st.value }}</strong>
+            <span>{{ st.label }}</span>
+          </div>
+        </div>
+      </div>
+
+      <a class="slide-visual card-box" [routerLink]="s.link">
+        <div class="icon-tile"><mat-icon>{{ s.icon }}</mat-icon></div>
+        <h3>{{ s.linkLabel }}</h3>
+        <ul class="checklist">
+          <li *ngFor="let p of s.points"><mat-icon>check_circle</mat-icon>{{ p }}</li>
+        </ul>
+        <span class="more">Explore {{ s.linkLabel }} <mat-icon>arrow_forward</mat-icon></span>
+      </a>
+    </div>
+
+    <div class="dots">
+      <button *ngFor="let s of slides; let i = index" type="button" [class.on]="i === slideIndex" [attr.aria-label]="'Show slide ' + (i + 1)" (click)="goToSlide(i)"></button>
+    </div>
+  </div>
+</section>
+
+<!-- TRUSTED BY -->
+<section class="trusted">
+  <div class="container">
+    <p class="trusted-title">Trusted by organizations in Bangladesh and abroad</p>
+    <div class="trusted-row">
+      <img *ngFor="let c of clients | slice:0:8" [src]="c.image" [alt]="c.name" loading="lazy" />
+    </div>
+  </div>
+</section>
+
+<!-- CORE CAPABILITIES -->
+<section id="solutions" class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Core capabilities</span>
+      <h2>Everything you need to build, secure and run technology</h2>
+      <p>Four connected service areas, plus custom software, delivered by one accountable team.</p>
+    </div>
+    <div class="cap-grid">
+      <a class="card-box cap" *ngFor="let c of capabilities" [routerLink]="c.link" [fragment]="$any(c).fragment">
+        <div class="icon-tile"><mat-icon>{{ c.icon }}</mat-icon></div>
+        <h3>{{ c.title }}</h3>
+        <p>{{ c.text }}</p>
+        <span class="more">Learn more <mat-icon>arrow_forward</mat-icon></span>
+      </a>
+    </div>
+    <div class="center"><a class="btn-outline-brand" routerLink="/about">About Rex Systems</a></div>
+  </div>
+</section>
+
+<!-- WHAT YOU GET: solution detail strips -->
+<section class="section soft">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What you get</span>
+      <h2>Concrete deliverables in every area</h2>
+    </div>
+    <div class="deliver-grid">
+      <div class="card-box deliver" *ngFor="let s of solutions">
+        <h3><mat-icon>{{ s.icon }}</mat-icon>{{ s.title }}</h3>
+        <ul class="checklist">
+          <li *ngFor="let d of s.deliverables | slice:0:5"><mat-icon>check_circle</mat-icon>{{ d.title }}</li>
+        </ul>
+        <a class="more" [routerLink]="['/solutions', s.slug]">See full scope <mat-icon>arrow_forward</mat-icon></a>
       </div>
     </div>
   </div>
-</div>
+</section>
 
+<!-- COMPANY OVERVIEW -->
+<section class="section">
+  <div class="container overview">
+    <div>
+      <span class="eyebrow">Company overview</span>
+      <h2>A Dhaka-based team that builds, secures and operates software</h2>
+      <p>
+        Rex Systems Bangladesh began as a custom software company and now
+        helps clients protect their applications, run dependable infrastructure,
+        automate delivery and adopt AI.
+      </p>
+      <h4>Standards we work to</h4>
+      <div class="chips tint"><span *ngFor="let s of standards">{{ s }}</span></div>
+      <p class="fine">These are the references we align our work with. They are not certifications held by Rex Systems.</p>
+    </div>
+    <div class="stat-card">
+      <div *ngFor="let s of stats">
+        <strong>{{ s.value }}</strong>
+        <span>{{ s.label }}</span>
       </div>
-    </footer>
+    </div>
   </div>
-  <div id="imageViewModal" class="popUpImageModal">
-    <div class="closeBtn" (click)="closeImage()">&times;</div>
-    <img class="img-responsive modal-content" src="{{ imageLink }}" />
+</section>
+
+<!-- TECH STACK -->
+<section class="section soft">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Tech stack</span>
+      <h2>Yes, we cover your tech stack</h2>
+      <p>We choose tools to fit your environment, so the final set may differ.</p>
+    </div>
+    <div class="tech-grid">
+      <div class="card-box" *ngFor="let g of techGroups">
+        <h4>{{ g.title }}</h4>
+        <div class="chips"><span *ngFor="let t of g.items">{{ t }}</span></div>
+      </div>
+    </div>
   </div>
-</div>
+</section>
+
+<!-- PROCESS -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Process</span>
+      <h2>How an engagement works</h2>
+    </div>
+    <div class="process-grid">
+      <div class="proc" *ngFor="let p of process; let i = index">
+        <span class="proc-no">{{ i + 1 }}</span>
+        <h3>{{ p.title }}</h3>
+        <ul>
+          <li *ngFor="let x of p.points">{{ x }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="section soft">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Why Rex Systems</span>
+      <h2>Why businesses work with us</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why" *ngFor="let w of whyUs">
+        <div class="icon-tile"><mat-icon>{{ w.icon }}</mat-icon></div>
+        <h3>{{ w.title }}</h3>
+        <p>{{ w.text }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOFTWARE -->
+<section id="software" class="section">
+  <div class="container software">
+    <div>
+      <span class="eyebrow">Custom software</span>
+      <h2>Software built with security and operations in mind</h2>
+      <p>
+        We still design, develop and support business systems, now with
+        security testing, automated deployment and monitoring included from the start.
+      </p>
+    </div>
+    <div class="chips"><span *ngFor="let s of softwareServices">{{ s }}</span></div>
+  </div>
+</section>
+
+<!-- CLIENTS -->
+<section id="clients-id" class="section soft">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Clients</span>
+      <h2>Our clients</h2>
+    </div>
+    <div class="client-grid">
+      <ng-container *ngFor="let c of clients">
+        <a *ngIf="c.link; else noLink" class="client" [href]="c.link" target="_blank" rel="noopener noreferrer" [attr.aria-label]="c.name">
+          <img [src]="c.image" [alt]="c.name" loading="lazy" />
+        </a>
+        <ng-template #noLink>
+          <div class="client"><img [src]="c.image" [alt]="c.name" loading="lazy" /></div>
+        </ng-template>
+      </ng-container>
+    </div>
+  </div>
+</section>
+
+<!-- MAINTENANCE TEASER -->
+<section class="section">
+  <div class="container maintenance">
+    <div>
+      <span class="eyebrow">Managed website care</span>
+      <h2>Website maintenance packages</h2>
+      <p>Fixed monthly plans covering backups, monitoring, security patching and support, with response times stated up front.</p>
+    </div>
+    <a class="btn-brand" routerLink="/services">View plans and pricing</a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section soft">
+  <div class="container narrow">
+    <div class="section-head">
+      <span class="eyebrow">FAQ</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq" *ngFor="let f of faqs; let i = index" [class.open]="f.open">
+      <button type="button" class="faq-q" (click)="toggleFaq(i)" [attr.aria-expanded]="f.open">
+        <span>{{ f.q }}</span>
+        <mat-icon>{{ f.open ? 'remove' : 'add' }}</mat-icon>
+      </button>
+      <div class="faq-a" [hidden]="!f.open">{{ f.a }}</div>
+    </div>
+  </div>
+</section>
+
+<app-contact-section></app-contact-section>

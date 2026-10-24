@@ -9,6 +9,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContactusService } from 'src/app/shared/services/contactus.service';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { SharedModule } from 'src/app/shared/shared/shared.module';
 
 
 
@@ -25,6 +26,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     MaterialModule,
     HttpClientModule,
     NgxSpinnerModule,
+    SharedModule,
     RouterModule
   ],
   providers: [ContactusService],

@@ -1,0 +1,63 @@
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb-lite"><a routerLink="/home">Home</a> / About Us</div>
+    <span class="eyebrow">Company</span>
+    <h1>About Rex Systems Bangladesh</h1>
+    <p>A Dhaka-based technology company helping businesses build, secure and operate reliable software.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container about-grid">
+    <div>
+      <h2>Who we are</h2>
+      <p>
+        Rex Systems Bangladesh began as a custom software company, building
+        business systems such as point of sale, e-commerce, ERP and hospital
+        information systems for clients in Bangladesh and abroad.
+      </p>
+      <p>
+        Running those systems taught us where projects fail: insecure code,
+        fragile servers and manual releases. Today we focus on four connected
+        areas that address exactly those problems: application security,
+        infrastructure management, DevOps and AI.
+      </p>
+      <p>
+        We work as an extension of your team, with written scope, transparent
+        pricing and plain-language reporting.
+      </p>
+    </div>
+    <div class="card-box facts">
+      <h3>At a glance</h3>
+      <div class="facts-grid">
+        <div *ngFor="let s of stats">
+          <strong>{{ s.value }}</strong>
+          <span>{{ s.label }}</span>
+        </div>
+      </div>
+      <ul class="checklist">
+        <li><mat-icon>location_on</mat-icon>H-39, R-11, Kallaynpur, Mirpur, Dhaka-1207</li>
+        <li><mat-icon>email</mat-icon>info@rexsystemsbd.com</li>
+        <li><mat-icon>phone</mat-icon>+8801518932851</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What we do</span>
+      <h2>Our focus areas</h2>
+    </div>
+    <div class="focus-grid">
+      <a class="card-box focus" *ngFor="let s of solutions" [routerLink]="['/solutions', s.slug]">
+        <div class="icon-tile"><mat-icon>{{ s.icon }}</mat-icon></div>
+        <h3>{{ s.title }}</h3>
+        <p>{{ s.short }}</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<app-contact-section></app-contact-section>

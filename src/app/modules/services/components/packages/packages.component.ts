@@ -120,7 +120,7 @@ export class PackagesComponent implements OnInit {
         icon: 'warning',
         title: 'Incomplete Form',
         text: 'Please fill all required fields and select a package.',
-        confirmButtonColor: '#667eea'
+        confirmButtonColor: '#0058aa'
       });
       return;
     }
@@ -149,7 +149,7 @@ export class PackagesComponent implements OnInit {
           icon: 'success',
           title: 'Success!',
           text: 'Your inquiry has been sent successfully. We will contact you soon.',
-          confirmButtonColor: '#667eea'
+          confirmButtonColor: '#0058aa'
         }).then(() => {
           this.contactForm.reset();
           this.selectedPackage = '';
@@ -170,7 +170,7 @@ export class PackagesComponent implements OnInit {
           icon: 'error',
           title: 'Error!',
           text: errorMessage,
-          confirmButtonColor: '#667eea'
+          confirmButtonColor: '#0058aa'
         });
         console.error('Error:', error);
       }
