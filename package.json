@@ -24,6 +24,7 @@
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
     "jquery": "3.5.0",
+    "material-icons": "^1.13.12",
     "ngx-facebook": "^3.0.0-0",
     "ngx-spinner": "^13.0.0",
     "npm": "^8.2.0",

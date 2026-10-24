@@ -7,7 +7,8 @@
 
 .site-header {
   position: relative;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line);
   transition: box-shadow 0.2s;
 
@@ -70,8 +71,9 @@
   > a,
   .nav-drop-toggle {
     color: var(--ink);
-    font-size: 15px;
-    font-weight: 500;
+    font-family: var(--font-head);
+    font-size: 14.5px;
+    font-weight: 600;
     text-decoration: none;
     background: none;
     border: 0;
@@ -86,7 +88,7 @@
   }
 
   .cta {
-    padding: 10px 20px;
+    padding: 11px 22px;
     font-size: 14px;
   }
 }

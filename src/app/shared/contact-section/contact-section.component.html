@@ -1,49 +1,69 @@
-<section id="contact-id" class="section soft contact">
+<section id="contact-id" class="section contact">
   <div class="container contact-grid">
     <div class="contact-info">
       <span class="eyebrow">Contact us</span>
-      <h2>Talk to an expert</h2>
+      <h2>Let's talk about what you need secured, automated or built</h2>
       <p>
         Book a free, no-obligation consultation. Tell us about your systems and
-        goals, and we will recommend a practical next step.
+        goals, and we will reply with a practical next step.
       </p>
       <ul class="contact-list">
-        <li><mat-icon>phone</mat-icon><a href="tel:+8801518932851">+8801518932851</a></li>
-        <li><mat-icon>email</mat-icon><a href="mailto:info@rexsystemsbd.com">info@rexsystemsbd.com</a></li>
-        <li><mat-icon>location_on</mat-icon><span>H-39, R-11, Kallaynpur, Mirpur, Dhaka-1207, Bangladesh</span></li>
+        <li>
+          <span class="ic"><mat-icon>phone</mat-icon></span>
+          <span><small>Call</small><a href="tel:+8801518932851">+8801518932851</a></span>
+        </li>
+        <li>
+          <span class="ic"><mat-icon>email</mat-icon></span>
+          <span><small>Email</small><a href="mailto:info@rexsystemsbd.com">info@rexsystemsbd.com</a></span>
+        </li>
+        <li>
+          <span class="ic"><mat-icon>location_on</mat-icon></span>
+          <span><small>Visit</small>H-39, R-11, Kallaynpur, Mirpur, Dhaka-1207, Bangladesh</span>
+        </li>
       </ul>
-      <a class="btn-outline-brand" href="https://wa.me/+8801518932851" target="_blank" rel="noopener noreferrer">
-        Chat on WhatsApp
+      <a class="btn-ghost-light" href="https://wa.me/+8801518932851" target="_blank" rel="noopener noreferrer">
+        <mat-icon>chat</mat-icon> Chat on WhatsApp
       </a>
     </div>
 
-    <form class="card-box contact-form" (ngSubmit)="submitInfo()" #contactForm="ngForm">
+    <form class="contact-form" (ngSubmit)="submitInfo(contactForm)" #contactForm="ngForm" novalidate>
+      <h3>Send us a message</h3>
       <div class="field-row">
-        <label>Name
-          <input name="name" [(ngModel)]="emailObj.name" type="text" placeholder="Your name" required />
-        </label>
-        <label>Email
-          <input name="email" [(ngModel)]="emailObj.toEmail" type="email" placeholder="you@company.com" required />
-        </label>
+        <div class="field">
+          <label for="cf-name">Name *</label>
+          <input id="cf-name" name="name" #name="ngModel" [(ngModel)]="emailObj.name" type="text" autocomplete="name" placeholder="Your name" required />
+          <small class="err" *ngIf="name.invalid && (name.touched || contactForm.submitted)">Please enter your name.</small>
+        </div>
+        <div class="field">
+          <label for="cf-email">Email *</label>
+          <input id="cf-email" name="email" #email="ngModel" [(ngModel)]="emailObj.toEmail" type="email" autocomplete="email" placeholder="you@company.com" required email />
+          <small class="err" *ngIf="email.invalid && (email.touched || contactForm.submitted)">Please enter a valid email address.</small>
+        </div>
       </div>
       <div class="field-row">
-        <label>Phone
-          <input name="phone" [(ngModel)]="emailObj.phoneNumber" type="text" placeholder="Phone number" />
-        </label>
-        <label>Company
-          <input name="company" [(ngModel)]="emailObj.company" type="text" placeholder="Company" />
-        </label>
+        <div class="field">
+          <label for="cf-phone">Phone</label>
+          <input id="cf-phone" name="phone" [(ngModel)]="emailObj.phoneNumber" type="tel" autocomplete="tel" placeholder="Phone number" />
+        </div>
+        <div class="field">
+          <label for="cf-company">Company</label>
+          <input id="cf-company" name="company" [(ngModel)]="emailObj.company" type="text" autocomplete="organization" placeholder="Company" />
+        </div>
       </div>
-      <label>I'm interested in
-        <select name="interest" [(ngModel)]="emailObj.interest">
+      <div class="field">
+        <label for="cf-interest">I'm interested in</label>
+        <select id="cf-interest" name="interest" [(ngModel)]="emailObj.interest">
           <option value="">Select a service</option>
           <option *ngFor="let i of interests" [value]="i">{{ i }}</option>
         </select>
-      </label>
-      <label>Message
-        <textarea name="message" [(ngModel)]="emailObj.message" rows="5" placeholder="Tell us about your project or concern" required></textarea>
-      </label>
-      <button type="submit" class="btn-brand btn-block" [disabled]="contactForm.invalid">Send message</button>
+      </div>
+      <div class="field">
+        <label for="cf-message">Message *</label>
+        <textarea id="cf-message" name="message" #message="ngModel" [(ngModel)]="emailObj.message" rows="5" placeholder="Tell us about your project or concern" required></textarea>
+        <small class="err" *ngIf="message.invalid && (message.touched || contactForm.submitted)">Please tell us how we can help.</small>
+      </div>
+      <button type="submit" class="btn-brand btn-block">Send message <mat-icon>send</mat-icon></button>
+      <p class="privacy">Your details are used only to respond to your enquiry. <a routerLink="/privacy-policy">Privacy Policy</a></p>
     </form>
   </div>
 </section>

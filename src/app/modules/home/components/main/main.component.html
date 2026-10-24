@@ -1,105 +1,62 @@
-<!-- HERO (rotating slides) -->
+<!-- HERO -->
 <section class="hero">
-  <div class="container">
-    <h1 class="seo-h1">Application Security, Infrastructure Management, DevOps and AI Solutions</h1>
-    <div class="slide" *ngFor="let s of slides; let i = index" [class.active]="i === slideIndex" [attr.aria-hidden]="i !== slideIndex">
-      <div class="slide-copy">
-        <p class="eyebrow">Rex Systems Bangladesh</p>
-        <h2 class="slide-title">{{ s.title }}</h2>
-        <p class="lead">{{ s.text }}</p>
-        <div class="hero-actions">
-          <button type="button" class="btn-brand" (click)="scrollTo('contact-id')">Schedule a Call</button>
-          <a class="btn-outline-brand" routerLink="/about">View Company Profile</a>
-        </div>
-        <div class="hero-stats">
-          <div *ngFor="let st of s.stats">
-            <strong>{{ st.value }}</strong>
-            <span>{{ st.label }}</span>
-          </div>
-        </div>
-      </div>
-
-      <a class="slide-visual card-box" [routerLink]="s.link">
-        <div class="icon-tile"><mat-icon>{{ s.icon }}</mat-icon></div>
-        <h3>{{ s.linkLabel }}</h3>
-        <ul class="checklist">
-          <li *ngFor="let p of s.points"><mat-icon>check_circle</mat-icon>{{ p }}</li>
-        </ul>
-        <span class="more">Explore {{ s.linkLabel }} <mat-icon>arrow_forward</mat-icon></span>
-      </a>
-    </div>
-
-    <div class="dots">
-      <button *ngFor="let s of slides; let i = index" type="button" [class.on]="i === slideIndex" [attr.aria-label]="'Show slide ' + (i + 1)" (click)="goToSlide(i)"></button>
-    </div>
-  </div>
-</section>
-
-<!-- TRUSTED BY -->
-<section class="trusted">
-  <div class="container">
-    <p class="trusted-title">Trusted by organizations in Bangladesh and abroad</p>
-    <div class="trusted-row">
-      <img *ngFor="let c of clients | slice:0:8" [src]="c.image" [alt]="c.name" loading="lazy" />
-    </div>
-  </div>
-</section>
-
-<!-- CORE CAPABILITIES -->
-<section id="solutions" class="section">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Core capabilities</span>
-      <h2>Everything you need to build, secure and run technology</h2>
-      <p>Four connected service areas, plus custom software, delivered by one accountable team.</p>
-    </div>
-    <div class="cap-grid">
-      <a class="card-box cap" *ngFor="let c of capabilities" [routerLink]="c.link" [fragment]="$any(c).fragment">
-        <div class="icon-tile"><mat-icon>{{ c.icon }}</mat-icon></div>
-        <h3>{{ c.title }}</h3>
-        <p>{{ c.text }}</p>
-        <span class="more">Learn more <mat-icon>arrow_forward</mat-icon></span>
-      </a>
-    </div>
-    <div class="center"><a class="btn-outline-brand" routerLink="/about">About Rex Systems</a></div>
-  </div>
-</section>
-
-<!-- WHAT YOU GET: solution detail strips -->
-<section class="section soft">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">What you get</span>
-      <h2>Concrete deliverables in every area</h2>
-    </div>
-    <div class="deliver-grid">
-      <div class="card-box deliver" *ngFor="let s of solutions">
-        <h3><mat-icon>{{ s.icon }}</mat-icon>{{ s.title }}</h3>
-        <ul class="checklist">
-          <li *ngFor="let d of s.deliverables | slice:0:5"><mat-icon>check_circle</mat-icon>{{ d.title }}</li>
-        </ul>
-        <a class="more" [routerLink]="['/solutions', s.slug]">See full scope <mat-icon>arrow_forward</mat-icon></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- COMPANY OVERVIEW -->
-<section class="section">
-  <div class="container overview">
-    <div>
-      <span class="eyebrow">Company overview</span>
-      <h2>A Dhaka-based team that builds, secures and operates software</h2>
-      <p>
-        Rex Systems Bangladesh began as a custom software company and now
-        helps clients protect their applications, run dependable infrastructure,
-        automate delivery and adopt AI.
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="pill"><span class="dot"></span> Security · Infrastructure · DevOps · AI</span>
+      <h1>
+        Build, secure and run your technology
+        <span class="grad">with confidence.</span>
+      </h1>
+      <p class="lead">
+        Rex Systems Bangladesh helps businesses find and fix security weaknesses,
+        keep infrastructure reliable, ship software faster and put AI to
+        practical use.
       </p>
-      <h4>Standards we work to</h4>
-      <div class="chips tint"><span *ngFor="let s of standards">{{ s }}</span></div>
-      <p class="fine">These are the references we align our work with. They are not certifications held by Rex Systems.</p>
+      <div class="hero-actions">
+        <button type="button" class="btn-brand" (click)="scrollTo('contact-id')">
+          Get a free consultation <mat-icon>arrow_forward</mat-icon>
+        </button>
+        <a class="btn-ghost-light" routerLink="/home" fragment="solutions">Explore solutions</a>
+      </div>
+      <ul class="trust">
+        <li *ngFor="let t of trust"><mat-icon>verified</mat-icon>{{ t }}</li>
+      </ul>
     </div>
-    <div class="stat-card">
+
+    <div class="console" role="region" aria-label="Our solutions">
+      <div class="console-tabs" role="tablist">
+        <button
+          *ngFor="let s of solutions; let i = index"
+          type="button"
+          role="tab"
+          [class.on]="i === tabIndex"
+          [attr.aria-selected]="i === tabIndex"
+          (click)="selectTab(i)"
+        >
+          <mat-icon>{{ s.icon }}</mat-icon>
+          <span>{{ s.title.replace(' Solutions', '').replace('Management', 'Mgmt.') }}</span>
+        </button>
+      </div>
+      <div class="console-body">
+        <div class="panel" *ngFor="let s of solutions; let i = index" [hidden]="i !== tabIndex" role="tabpanel">
+          <h2>{{ s.title }}</h2>
+          <p>{{ s.tagline }}</p>
+          <ul>
+            <li *ngFor="let d of s.deliverables | slice:0:4"><mat-icon>check_circle</mat-icon>{{ d.title }}</li>
+          </ul>
+          <a class="panel-link" [routerLink]="['/solutions', s.slug]">
+            Explore {{ s.title }} <mat-icon>arrow_forward</mat-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-wrap">
+  <div class="container">
+    <div class="stats">
       <div *ngFor="let s of stats">
         <strong>{{ s.value }}</strong>
         <span>{{ s.label }}</span>
@@ -108,38 +65,82 @@
   </div>
 </section>
 
-<!-- TECH STACK -->
-<section class="section soft">
+<!-- SOLUTIONS BENTO -->
+<section id="solutions" class="section">
   <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Tech stack</span>
-      <h2>Yes, we cover your tech stack</h2>
-      <p>We choose tools to fit your environment, so the final set may differ.</p>
+    <div class="section-head" data-aos="fade-up">
+      <span class="eyebrow">What we do</span>
+      <h2>Four connected services. One accountable team.</h2>
+      <p>Security, infrastructure, delivery and AI work best when planned together.</p>
     </div>
-    <div class="tech-grid">
-      <div class="card-box" *ngFor="let g of techGroups">
-        <h4>{{ g.title }}</h4>
-        <div class="chips"><span *ngFor="let t of g.items">{{ t }}</span></div>
+
+    <div class="bento">
+      <a class="tile" *ngFor="let b of bento; let i = index" [routerLink]="b.link" data-aos="fade-up" [attr.data-aos-delay]="i * 80">
+        <span class="no">{{ b.no }}</span>
+        <div class="icon-tile"><mat-icon>{{ b.icon }}</mat-icon></div>
+        <h3>{{ b.title }}</h3>
+        <p>{{ b.text }}</p>
+        <ul>
+          <li *ngFor="let p of b.points"><mat-icon>check</mat-icon>{{ p }}</li>
+        </ul>
+        <span class="go">View details <mat-icon>arrow_forward</mat-icon></span>
+      </a>
+    </div>
+
+    <div class="software" id="software" data-aos="fade-up">
+      <div>
+        <span class="eyebrow">Also from Rex Systems</span>
+        <h3>Custom software, built with security and operations included</h3>
       </div>
+      <div class="chips"><span *ngFor="let s of softwareServices">{{ s }}</span></div>
     </div>
   </div>
 </section>
 
 <!-- PROCESS -->
-<section class="section">
+<section class="section dark">
   <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Process</span>
-      <h2>How an engagement works</h2>
+    <div class="section-head" data-aos="fade-up">
+      <span class="eyebrow">How we work</span>
+      <h2>A clear four-step engagement</h2>
+      <p>You always know what happens next, who is responsible and what it costs.</p>
     </div>
-    <div class="process-grid">
-      <div class="proc" *ngFor="let p of process; let i = index">
-        <span class="proc-no">{{ i + 1 }}</span>
+    <div class="timeline">
+      <div class="step" *ngFor="let p of process; let i = index" data-aos="fade-up" [attr.data-aos-delay]="i * 100">
+        <div class="step-icon"><mat-icon>{{ p.icon }}</mat-icon></div>
+        <span class="step-no">Step {{ i + 1 }}</span>
         <h3>{{ p.title }}</h3>
-        <ul>
-          <li *ngFor="let x of p.points">{{ x }}</li>
-        </ul>
+        <p>{{ p.text }}</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- STANDARDS + TOOLKIT -->
+<section class="section">
+  <div class="container toolkit">
+    <div data-aos="fade-right">
+      <span class="eyebrow">Standards</span>
+      <h2>Work that follows recognized references</h2>
+      <p class="muted">We align our methods with these frameworks. They describe how we work and are not certifications held by Rex Systems.</p>
+      <ul class="standards">
+        <li *ngFor="let s of standards">
+          <mat-icon>verified_user</mat-icon>
+          <span><strong>{{ s.name }}</strong><small>{{ s.area }}</small></span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="stack card-box" data-aos="fade-left">
+      <span class="eyebrow">Toolkit</span>
+      <h3>We cover your tech stack</h3>
+      <div class="stack-tabs" role="tablist">
+        <button *ngFor="let g of techGroups; let i = index" type="button" role="tab" [class.on]="i === techTab" (click)="techTab = i">{{ g.title }}</button>
+      </div>
+      <div class="chips" *ngFor="let g of techGroups; let i = index" [hidden]="i !== techTab">
+        <span *ngFor="let t of g.items">{{ t }}</span>
+      </div>
+      <p class="fine">We choose tools to fit your environment, so the final set may differ.</p>
     </div>
   </div>
 </section>
@@ -147,12 +148,12 @@
 <!-- WHY US -->
 <section class="section soft">
   <div class="container">
-    <div class="section-head">
+    <div class="section-head" data-aos="fade-up">
       <span class="eyebrow">Why Rex Systems</span>
       <h2>Why businesses work with us</h2>
     </div>
     <div class="why-grid">
-      <div class="why" *ngFor="let w of whyUs">
+      <div class="why" *ngFor="let w of whyUs; let i = index" data-aos="fade-up" [attr.data-aos-delay]="i * 80">
         <div class="icon-tile"><mat-icon>{{ w.icon }}</mat-icon></div>
         <h3>{{ w.title }}</h3>
         <p>{{ w.text }}</p>
@@ -161,66 +162,62 @@
   </div>
 </section>
 
-<!-- SOFTWARE -->
-<section id="software" class="section">
-  <div class="container software">
-    <div>
-      <span class="eyebrow">Custom software</span>
-      <h2>Software built with security and operations in mind</h2>
-      <p>
-        We still design, develop and support business systems, now with
-        security testing, automated deployment and monitoring included from the start.
-      </p>
-    </div>
-    <div class="chips"><span *ngFor="let s of softwareServices">{{ s }}</span></div>
-  </div>
-</section>
-
 <!-- CLIENTS -->
-<section id="clients-id" class="section soft">
+<section id="clients-id" class="section clients">
   <div class="container">
-    <div class="section-head">
+    <div class="section-head" data-aos="fade-up">
       <span class="eyebrow">Clients</span>
-      <h2>Our clients</h2>
+      <h2>Trusted by organizations in Bangladesh and abroad</h2>
     </div>
+  </div>
+  <div class="container">
     <div class="client-grid">
       <ng-container *ngFor="let c of clients">
-        <a *ngIf="c.link; else noLink" class="client" [href]="c.link" target="_blank" rel="noopener noreferrer" [attr.aria-label]="c.name">
+        <a *ngIf="c.link; else noLink" class="logo" [href]="c.link" target="_blank" rel="noopener noreferrer" [attr.aria-label]="c.name">
           <img [src]="c.image" [alt]="c.name" loading="lazy" />
         </a>
         <ng-template #noLink>
-          <div class="client"><img [src]="c.image" [alt]="c.name" loading="lazy" /></div>
+          <div class="logo"><img [src]="c.image" [alt]="c.name" loading="lazy" /></div>
         </ng-template>
       </ng-container>
     </div>
   </div>
 </section>
 
-<!-- MAINTENANCE TEASER -->
-<section class="section">
-  <div class="container maintenance">
-    <div>
-      <span class="eyebrow">Managed website care</span>
-      <h2>Website maintenance packages</h2>
-      <p>Fixed monthly plans covering backups, monitoring, security patching and support, with response times stated up front.</p>
+<!-- MAINTENANCE BANNER -->
+<section class="section tight">
+  <div class="container">
+    <div class="banner" data-aos="fade-up">
+      <div>
+        <span class="eyebrow">Managed website care</span>
+        <h2>Keep your website secure, backed up and fast</h2>
+        <p>Fixed monthly plans with backups, uptime monitoring, security patching and support, with response times stated up front.</p>
+      </div>
+      <div class="banner-cta">
+        <div class="from">From <strong>BDT 1,500</strong> / month</div>
+        <a class="btn-light-brand" routerLink="/services">View plans <mat-icon>arrow_forward</mat-icon></a>
+      </div>
     </div>
-    <a class="btn-brand" routerLink="/services">View plans and pricing</a>
   </div>
 </section>
 
 <!-- FAQ -->
 <section class="section soft">
-  <div class="container narrow">
-    <div class="section-head">
+  <div class="container faq-wrap">
+    <div class="faq-intro" data-aos="fade-right">
       <span class="eyebrow">FAQ</span>
-      <h2>Frequently asked questions</h2>
+      <h2>Questions, answered</h2>
+      <p>Cannot find what you are looking for? Talk to us directly.</p>
+      <button type="button" class="btn-outline-brand" (click)="scrollTo('contact-id')">Contact us</button>
     </div>
-    <div class="faq" *ngFor="let f of faqs; let i = index" [class.open]="f.open">
-      <button type="button" class="faq-q" (click)="toggleFaq(i)" [attr.aria-expanded]="f.open">
-        <span>{{ f.q }}</span>
-        <mat-icon>{{ f.open ? 'remove' : 'add' }}</mat-icon>
-      </button>
-      <div class="faq-a" [hidden]="!f.open">{{ f.a }}</div>
+    <div class="faq-list">
+      <div class="faq" *ngFor="let f of faqs; let i = index" [class.open]="f.open">
+        <button type="button" class="faq-q" (click)="toggleFaq(i)" [attr.aria-expanded]="f.open">
+          <span>{{ f.q }}</span>
+          <mat-icon>{{ f.open ? 'remove' : 'add' }}</mat-icon>
+        </button>
+        <div class="faq-a" [hidden]="!f.open">{{ f.a }}</div>
+      </div>
     </div>
   </div>
 </section>

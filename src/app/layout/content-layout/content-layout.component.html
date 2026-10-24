@@ -1,8 +1,16 @@
+<a class="skip-link" href="#main-content" (click)="skipToMain($event)">Skip to main content</a>
 <ngx-spinner color="#0058aa" type="ball-clip-rotate-pulse" size="medium" [fullScreen]="true">
   <p style="color: white">Please wait..</p>
 </ngx-spinner>
 <app-header></app-header>
-<main>
+<main id="main-content" tabindex="-1">
   <router-outlet></router-outlet>
 </main>
 <app-footer></app-footer>
+
+<button type="button" class="to-top" [class.show]="showTop" aria-label="Back to top" (click)="toTop()">
+  <mat-icon>keyboard_arrow_up</mat-icon>
+</button>
+<a class="side-chat" href="https://wa.me/+8801518932851" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+  <mat-icon>chat</mat-icon><span>Chat with us</span>
+</a>

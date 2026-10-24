@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { ContactusService } from 'src/app/shared/services/contactus.service';
 import Swal from 'sweetalert2';
 import { NgxSpinnerService } from 'ngx-spinner';
@@ -9,7 +10,7 @@ import { CONTACT_INTERESTS } from '../data/site-content';
   templateUrl: './contact-section.component.html',
   styleUrls: ['./contact-section.component.scss']
 })
-export class ContactSectionComponent {
+export class ContactSectionComponent implements OnInit {
   @Input() interest = '';
 
   interests = CONTACT_INTERESTS;
@@ -29,7 +30,10 @@ export class ContactSectionComponent {
     this.emailObj.interest = this.interest;
   }
 
-  submitInfo(): void {
+  submitInfo(form: NgForm): void {
+    if (form.invalid) {
+      return;
+    }
     this.spinner.show();
     const requestData = {
       name: this.emailObj.name,
@@ -45,6 +49,7 @@ export class ContactSectionComponent {
         this.spinner.hide();
         Swal.fire({ icon: 'success', title: 'Message sent successfully', timer: 3000 });
         this.resetForm();
+        form.resetForm({ interest: this.interest });
       },
       error: () => {
         this.spinner.hide();
