@@ -17,6 +17,7 @@ const ROUTES = [
   '/solutions/infrastructure-management',
   '/solutions/devops',
   '/solutions/ai-solutions',
+  '/products',
   '/services',
   '/about',
   '/privacy-policy',

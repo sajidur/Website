@@ -1,0 +1,137 @@
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: #fff;
+  transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: var(--brand-600);
+    box-shadow: var(--shadow);
+  }
+}
+
+.cover {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 190px;
+  background:
+    radial-gradient(circle at 80% 0%, rgba(92, 196, 255, 0.35), transparent 50%),
+    linear-gradient(150deg, var(--brand-deep), var(--brand));
+
+  .big {
+    width: 72px;
+    height: 72px;
+    font-size: 72px;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  &.shot {
+    background: var(--bg-soft);
+    border-bottom: 1px solid var(--line);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+
+  .cat {
+    position: absolute;
+    left: 14px;
+    top: 14px;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.95);
+    color: var(--brand-dark);
+    font-size: 12.5px;
+    font-weight: 600;
+    box-shadow: var(--shadow-sm);
+  }
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 24px;
+
+  p {
+    margin-bottom: 18px;
+    color: var(--muted);
+    font-size: 15px;
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+
+  h2 {
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .logo {
+    flex: none;
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+
+  .icon-tile.sm {
+    flex: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+  }
+}
+
+.go {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  color: var(--brand);
+  font-family: var(--font-head);
+  font-weight: 700;
+  text-decoration: none;
+
+  mat-icon {
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+  }
+
+  &.muted {
+    color: var(--muted);
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}

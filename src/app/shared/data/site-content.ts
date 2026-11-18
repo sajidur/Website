@@ -239,3 +239,33 @@ export const CLIENTS = [
   { name: 'bonik', link: 'https://www.bonik.online/', image: 'assets/images/clients/bonik.png' },
   { name: 'Grameen Distribution', link: 'https://grameendistribution.com/', image: 'assets/images/clients/gdl-logo.png' },
 ];
+
+export interface Product {
+  name: string;
+  icon: string;
+  category: string;
+  text: string;
+  url?: string;
+  demo?: boolean;
+  /** Product logo, shown on the card when available. */
+  logo?: string;
+  /** Screenshot of the live product, shown as the card cover when available. */
+  image?: string;
+}
+
+const IMG = 'assets/images/products/';
+
+export const PRODUCTS: Product[] = [
+  { name: 'BookMyExpert', icon: 'event_available', category: 'Marketplace', text: 'Book trusted local and online experts such as electricians, tutors, consultants and developers. Compare services and reviews, then book and pay safely.', url: 'http://bookmyexpert.online/', logo: IMG + 'bookmyexpert-logo.png', image: IMG + 'bookmyexpert.jpg' },
+  { name: 'RestoPOS', icon: 'restaurant', category: 'Restaurant point of sale', text: 'Restaurant point of sale with kitchen display, billing and offline sync.', url: 'https://restropos.rexsystemsbd.com/', demo: true, logo: IMG + 'restropos-logo.svg' },
+  { name: 'Rex ERP', icon: 'business', category: 'Business management', text: 'ERP covering accounting, inventory and payroll in one system.', url: 'http://erp.rexsystemsbd.com/' },
+  { name: 'PlatformX', icon: 'campaign', category: 'Advertising', text: 'Advertising platform for running and managing ad campaigns.' },
+  { name: 'Rex Accounting', icon: 'account_balance', category: 'Finance', text: 'Accounting software for bookkeeping and financial reporting.', url: 'http://accounting.rexsystemsbd.com/' },
+  { name: 'Club ERP', icon: 'groups', category: 'Club management', text: 'Management system for private clubs and their members.', url: 'http://cluberp.rexsystemsbd.com/' },
+  { name: 'My Chamber', icon: 'medical_services', category: 'Healthcare', text: 'Chamber management for doctors, with AI-assisted prescription writing, dosage suggestions and medication management.', url: 'https://mychamber.online/', image: IMG + 'mychamber.jpg' },
+  { name: 'Piku', icon: 'sports_esports', category: 'Kids learning', text: 'Interactive educational games for children, including memory match, color quiz and number counting.', url: 'https://piku.rexsystemsbd.com/', image: IMG + 'piku.jpg' },
+  { name: 'Bonik', icon: 'storefront', category: 'Dealer management', text: 'Order and dealer management with sales tracking, inventory management and real-time order monitoring.', url: 'https://www.bonik.online/', logo: IMG + 'bonik-logo.jpg', image: IMG + 'bonik.jpg' },
+  { name: 'Core HRMS', icon: 'badge', category: 'Human resources', text: 'Complete human resource management system for your people operations.', url: 'http://hrms.rexsystemsbd.com/login' },
+  { name: 'Point of Sale', icon: 'point_of_sale', category: 'Retail point of sale', text: 'Point of sale and stock management for retail shops.', url: 'http://pos.rexsystemsbd.com/' },
+  { name: 'Weddy Support', icon: 'favorite', category: 'Matchmaking', text: 'Partner finding platform where all interactions follow Islamic principles.', url: 'https://weddy.support/', image: IMG + 'weddy.jpg' },
+];

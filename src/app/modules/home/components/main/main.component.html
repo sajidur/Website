@@ -97,6 +97,28 @@
   </div>
 </section>
 
+<!-- PRODUCTS -->
+<section id="products" class="section soft">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <span class="eyebrow">Our products</span>
+      <h2>Ready-to-use platforms built by Rex Systems</h2>
+      <p>From point of sale and ERP to HR, accounting and healthcare, explore the products we have built.</p>
+    </div>
+    <div class="prod-grid">
+      <a class="prod" *ngFor="let p of products" routerLink="/products">
+        <img *ngIf="p.logo; else tile" class="plogo" [src]="p.logo" [alt]="p.name + ' logo'" loading="lazy" />
+        <ng-template #tile><div class="icon-tile"><mat-icon>{{ p.icon }}</mat-icon></div></ng-template>
+        <div>
+          <h3>{{ p.name }}</h3>
+          <small>{{ p.category }}</small>
+        </div>
+      </a>
+    </div>
+    <div class="center"><a class="btn-brand" routerLink="/products">View all products <mat-icon>arrow_forward</mat-icon></a></div>
+  </div>
+</section>
+
 <!-- PROCESS -->
 <section class="section dark">
   <div class="container">

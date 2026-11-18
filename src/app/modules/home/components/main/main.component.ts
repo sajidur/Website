@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import * as AOS from 'aos';
-import { CLIENTS, GENERAL_FAQS, SOLUTIONS } from 'src/app/shared/data/site-content';
+import { CLIENTS, GENERAL_FAQS, PRODUCTS, SOLUTIONS } from 'src/app/shared/data/site-content';
 
 @Component({
   selector: 'home',
@@ -10,6 +10,7 @@ import { CLIENTS, GENERAL_FAQS, SOLUTIONS } from 'src/app/shared/data/site-conte
 export class MainComponent implements OnInit, OnDestroy {
   solutions = SOLUTIONS;
   clients = CLIENTS;
+  products = PRODUCTS;
   faqs = GENERAL_FAQS.map((f) => ({ ...f, open: false }));
 
   tabIndex = 0;

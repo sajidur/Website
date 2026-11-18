@@ -13,6 +13,7 @@ import { MaterialModule } from './shared/material/material.module';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { FacebookModule } from 'ngx-facebook';
 import { SharedModule } from './shared/shared/shared.module';
+import { ProductsComponent } from './pages/products/products.component';
 import { AboutComponent } from './pages/about/about.component';
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 
@@ -23,7 +24,8 @@ import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.co
     HeaderComponent,
     FooterComponent,
     PrivacyPolicyComponent,
-    AboutComponent
+    AboutComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { FacebookService, InitParams } from 'ngx-facebook';
+import * as AOS from 'aos';
 import { filter } from 'rxjs/operators';
 import { GENERAL_FAQS } from './shared/data/site-content';
 import { SeoService } from './shared/services/seo.service';
@@ -20,9 +21,14 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.initFacebookService();
+    AOS.init({ duration: 700, once: true, offset: 60 });
     this.router.events
       .pipe(filter((e) => e instanceof NavigationEnd))
-      .subscribe(() => this.applySeo());
+      .subscribe(() => {
+        this.applySeo();
+        // Re-scan the new page for [data-aos] elements.
+        setTimeout(() => AOS.refreshHard(), 150);
+      });
   }
 
   // Pages that carry `data.seo` in the router config get their meta tags here.

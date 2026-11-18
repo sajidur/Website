@@ -1,0 +1,36 @@
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb-lite"><a routerLink="/home">Home</a> / Products</div>
+    <span class="eyebrow">Products</span>
+    <h1>Software products by Rex Systems</h1>
+    <p>Ready-to-use platforms we have built and operate, from point of sale and ERP to HR, accounting and more.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="product-grid">
+      <article class="product" *ngFor="let p of products" data-aos="fade-up">
+        <div class="cover" [class.shot]="p.image">
+          <img *ngIf="p.image" [src]="p.image" [alt]="p.name + ' screenshot'" loading="lazy" />
+          <mat-icon *ngIf="!p.image" class="big">{{ p.icon }}</mat-icon>
+          <span class="cat">{{ p.category }}</span>
+        </div>
+        <div class="body">
+          <div class="title">
+            <img *ngIf="p.logo; else tile" class="logo" [src]="p.logo" [alt]="p.name + ' logo'" loading="lazy" />
+            <ng-template #tile><div class="icon-tile sm"><mat-icon>{{ p.icon }}</mat-icon></div></ng-template>
+            <h2>{{ p.name }}</h2>
+          </div>
+          <p>{{ p.text }}</p>
+          <a *ngIf="p.url; else soon" class="go" [href]="p.url" target="_blank" rel="noopener noreferrer">
+            {{ p.demo ? 'View live demo' : 'Visit product' }} <mat-icon>open_in_new</mat-icon>
+          </a>
+          <ng-template #soon><span class="go muted">Contact us for details</span></ng-template>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<app-contact-section interest="Custom Software"></app-contact-section>
